@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MineFragment">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/icon_user_bg"
+        app:layout_constraintDimensionRatio="h,375:270"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sl_info"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="LesDoB用户5"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.allen.library.shape.ShapeLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                app:shapeCornersRadius="@dimen/dp_16"
+                app:shapeSolidColor="@color/Color1A1A">
+
+                <com.allen.library.shape.ShapeRelativeLayout
+                    android:id="@+id/rl_session_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_78"
+                    android:gravity="center_vertical"
+                    app:shapeSelectorPressedColor="@color/ColorF5F5">
+
+                    <ImageView
+                        android:id="@+id/iv_session_log"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:src="@drawable/icon_session_log" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_toRightOf="@+id/iv_session_log"
+                        android:text="对话记录"
+                        android:layout_alignTop="@+id/iv_session_log"
+                        android:layout_alignBottom="@+id/iv_session_log"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:src="@drawable/icon_more_info" />
+
+                </com.allen.library.shape.ShapeRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:background="#05000000" />
+
+                <com.allen.library.shape.ShapeRelativeLayout
+                    android:id="@+id/rl_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_78"
+                    android:gravity="center_vertical"
+                    app:shapeSelectorPressedColor="@color/ColorF5F5">
+
+                    <ImageView
+                        android:id="@+id/iv_collect"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:src="@drawable/icon_collect" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_toRightOf="@+id/iv_collect"
+                        android:text="我的收藏"
+                        android:layout_alignTop="@+id/iv_collect"
+                        android:layout_alignBottom="@+id/iv_collect"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <ImageView
+
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:src="@drawable/icon_more_info" />
+
+                </com.allen.library.shape.ShapeRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:background="#05000000" />
+
+                <com.allen.library.shape.ShapeRelativeLayout
+                    android:id="@+id/rl_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_78"
+                    android:gravity="center_vertical"
+                    app:shapeSelectorPressedColor="@color/white">
+
+                    <ImageView
+                        android:id="@+id/iv_setting"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:src="@drawable/icon_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_alignTop="@+id/iv_setting"
+                        android:layout_alignBottom="@+id/iv_setting"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/iv_setting"
+                        android:text="@string/app_setting"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <ImageView
+
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:src="@drawable/icon_more_info" />
+
+                </com.allen.library.shape.ShapeRelativeLayout>
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/dp_56"
+                    android:visibility="gone"
+                    app:banner_auto_loop="true"
+                    app:banner_indicator_gravity="right"
+                    app:banner_indicator_height="@dimen/dp_6"
+                    app:banner_indicator_marginBottom="@dimen/dp_8"
+                    app:banner_indicator_marginRight="@dimen/dp_12"
+                    app:banner_indicator_normal_color="@color/white40"
+                    app:banner_indicator_normal_width="@dimen/dp_6"
+                    app:banner_indicator_radius="@dimen/dp_3"
+                    app:banner_indicator_selected_color="@color/white"
+                    app:banner_indicator_selected_width="@dimen/dp_6"
+                    app:banner_indicator_space="@dimen/dp_4"
+                    app:banner_loop_time="6000"
+                    app:banner_radius="@dimen/dp_12" />
+
+            </com.allen.library.shape.ShapeLinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.jmbon.widget.Shadow.ShadowFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_radius="@dimen/dp_45"
+        app:shadow_shadowAlpha="0.24"
+        app:shadow_shadowColor="#000000"
+        app:shadow_shadowElevation="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130"
+            android:src="@drawable/default_man_activies_icon" />
+    </com.jmbon.widget.Shadow.ShadowFrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="software_name">LesDoB</string>
+    <string name="all_column">全部专栏</string>
+    <string name="common_question">常见问题</string>
+    <string name="tube_step">试管流程</string>
+    <string name="one_letter">来自LesDoB的一封信</string>
+
+</resources>

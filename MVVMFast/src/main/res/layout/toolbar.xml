@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apkdv.mvvmfast.view.titlebar.widget.CommonTitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp_8"
+    app:centerTextColor="@color/color_262626"
+    app:centerTextMarquee="false"
+    app:centerTextSize="@dimen/sp_17"
+    app:centerType="textView"
+    app:leftDrawablePadding="0dp"
+    app:leftImageResource="@drawable/icon_back_black"
+    app:leftText="返回"
+    app:leftType="imageButton"
+    app:titleBarHeight="@dimen/dp_56" />

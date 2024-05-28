@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="@dimen/dp_20"
+        android:textColor="#ff7f7f7f"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.文章名称" />
+
+
+    <TextView
+        android:id="@+id/tv_article_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textColor="#ffbfbfbf"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="[文章发布日期 2020-7-20]" />
+
+    <TextView
+        android:id="@+id/tv_reference_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textColor="#ffbfbfbf"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_article_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_goneMarginLeft="@dimen/dp_0"
+        tools:text="[文章发布日期 2020-7-20]" />
+</androidx.constraintlayout.widget.ConstraintLayout>

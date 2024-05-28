@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_80"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/v_line"/>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/white10"
+        app:layout_constraintBottom_toTopOf="@id/fl_input"/>
+
+    <FrameLayout
+        android:id="@+id/fl_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_74"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingVertical="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_64"
+            android:paddingVertical="@dimen/dp_6"
+            android:gravity="center_vertical"
+            android:background="@color/transparent"
+            android:hint="对话从这里开始..."
+            android:maxLength="500"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white40"
+            android:textSize="@dimen/sp_16"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:imeOptions="actionSend"/>
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:alpha="0.2"
+            android:src="@drawable/advisory_send_icon" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

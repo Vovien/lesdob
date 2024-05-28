@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/aboutPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            app:sBottomDividerLineMarginLeft="@dimen/dp_20"
+            app:sBottomDividerLineMarginRight="@dimen/dp_20"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/text_color"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/about_privacy_policy"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/icon_more_info"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/aboutTermsService"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/text_color"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/about_terms_service"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/icon_more_info"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/aboutBusinessLicense"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/text_color"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/about_business_license"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/icon_more_info"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/social_circle_rule"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/text_color"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/social_circle_rule"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/icon_more_info"
+            app:sRightTextColor="@color/color_BFBFBF"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/log_off_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/text_color"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/user_agreement_login_off_title"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/icon_more_info"
+            app:sRightTextColor="@color/color_BFBFBF"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/call_app"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/text_color"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/contact_app"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/icon_more_info"
+            app:sRightTextColor="@color/color_BFBFBF"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp_20">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="备案编号"
+                android:textSize="@dimen/sp_17"
+                android:textColor="@color/text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="鄂ICP备2023016486号-4A"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/color_979797"/>
+        </FrameLayout>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            android:visibility="gone"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/text_color"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/update_version"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/icon_more_info"
+            app:sRightTextColor="@color/color_BFBFBF"
+            app:sRightTextString="V1.0.0"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/app_score"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            android:visibility="gone"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sDividerLineHeight="@dimen/dp_1"
+            app:sGradientAngle="90"
+            app:sLeftTextColor="@color/color_262626"
+            app:sLeftTextSize="@dimen/sp_17"
+            app:sLeftTextString="@string/app_score"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightIconRes="@drawable/ic_go_forward"
+            app:sRightViewMarginRight="@dimen/dp_25" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_8"
+            android:background="@color/color_F9F9F9" />
+
+        <TextView
+            android:id="@+id/tv_about_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:textColor="@color/text_99_color"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:visibility="gone"
+            android:text="医疗免责声明：任何关于疾病的建议都不能替代执业医师的面对面诊断，请谨慎参阅。本站不承担由此引起的法律责任。"
+            android:textColor="@color/color_262626"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

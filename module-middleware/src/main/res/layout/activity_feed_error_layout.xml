@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/frame_btn"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_20"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingEnd="@dimen/dp_20">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@null"
+            android:gravity="left"
+            android:scrollbarThumbVertical="@drawable/scroll_bar_ver_style"
+            android:scrollbars="vertical"
+            android:textColor="#ff262626"
+            android:textColorHint="#ffbfbfbf"
+            android:textSize="17sp"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_image"
+            tools:hint="详情描述下“B超看男女“内容中存在的问题吧(必填)" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/shape_input_login_f5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content">
+
+            <TextView
+                android:id="@+id/tv_email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_12"
+                android:text="联系邮箱"
+                android:textColor="#ff7f7f7f"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_toLeftOf="@+id/iv_go"
+                android:layout_toRightOf="@+id/tv_email_title"
+                android:gravity="right"
+                android:hint="请填写"
+                android:textColor="#ff262626"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:src="@drawable/ic_go_forward" />
+        </RelativeLayout>
+
+
+        <com.jmbon.widget.progress_button.JmbonButton
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_64"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:jButtonStyle="green_full"
+            app:jSelectText="发布"
+            app:jShowLoading="true"
+            app:jShowLoadingWhenClick="true"
+            app:jUseSelector="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl_email" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tubewiki.android">
+
+    <uses-permission android:name="android.permission.VIBRATE" /><!--手机震动-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.INTERNET" />   <!-- 网络访问 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 检查wifi网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 检查网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 切换网络通道 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="remove"/> <!-- 本地信息缓存 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 开关wifi状态，解决国内机型移动网络权限问题需要 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove"/><!--医生医院小程序定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:node="remove"/> <!--医生医院小程序定位-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:node="remove"/>
+
+    <application
+        android:name="com.apkdv.mvvmfast.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jmbon"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme,android:allowBackup,android:label"
+        tools:targetApi="n">
+        <!-- 小程序 aar 配置-->
+        <meta-data
+            android:name="nebula.android.meta.enable"
+            android:value="true" />
+        <!--        <meta-data-->
+        <!--            android:name="com.huawei.hms.client.appid"-->
+        <!--            android:value="appid=104302609"-->
+        <!--            tools:replace="android:value" />-->
+        <meta-data
+            android:name="com.tubewiki.android.MainConfiguration"
+            android:value="ConfigModule" />
+
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppGlobalTheme.SplashNoAnimation">
+            <intent-filter> <!--正常启动-->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <!--必有项-->
+                <action android:name="android.intent.action.VIEW" />
+                <!--如果希望该应用可以通过浏览器的连接启动，则添加该项-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--协议部分-->
+                <data
+                    android:host="welcome"
+                    android:path="/activity"
+                    android:scheme="tubewiki" />
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="um.630585b505844627b52a82e7" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommonBlackNoTitleTheme">
+            <intent-filter>
+                <!--必有项-->
+                <action android:name="android.intent.action.VIEW" />
+                <!--如果希望该应用可以通过浏览器的连接启动，则添加该项-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--协议部分-->
+                <data
+                    android:host="com.tubewiki.android"
+                    android:path="/main_activity"
+                    android:scheme="jmbon" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="um.630585b505844627b52a82e7" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TransitionTransparentActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppGlobalTheme.Transparent">
+
+            <intent-filter>
+                <!--必有项-->
+                <action android:name="android.intent.action.VIEW" />
+                <!--如果希望该应用可以通过浏览器的连接启动，则添加该项-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--协议部分-->
+                <data
+                    android:host="com.tubewiki.android"
+                    android:path="/trans_activity"
+                    android:scheme="jmbon" />
+            </intent-filter>
+
+            <intent-filter>
+                <!--必有项-->
+                <action android:name="android.intent.action.VIEW" />
+                <!--如果希望该应用可以通过浏览器的连接启动，则添加该项-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--协议部分-->
+                <data
+                    android:host="jmbon.com"
+                    android:path="/index"
+                    android:scheme="tubewiki" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.PrivacyAgreementActivity"
+            android:theme="@style/AppGlobalTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- ********腾讯tpns推送 推送 start******** -->
+        <!--设置服务接入点 后台配置上海-->
+        <meta-data
+            android:name="XG_SERVER_SUFFIX"
+            android:value="tpns.sh.tencent.com" />
+
+
+        <!-- 自实现小米推送的接收广播 -->
+        <receiver
+            android:name="com.jmbon.middleware.push.XiaomiMsgReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <!-- ********小米推送service和receiver设置end******** -->
+
+        <!-- ********华为推送设置start******** -->
+        <service
+            android:name="com.jmbon.middleware.push.HUAWEIHmsMessageService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ********华为推送设置end******** -->
+
+        <!-- ********魅族推送设置start******** -->
+        <receiver android:name="com.jmbon.middleware.push.MEIZUPushReceiver">
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <!-- 接收register消息 -->
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <!-- 接收unregister消息 -->
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <!-- 兼容低版本Flyme3推送服务配置 -->
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.tencent.qcloud.tim.demo.thirdpush" />
+            </intent-filter>
+        </receiver>
+        <!-- ********魅族推送设置end******** -->
+
+        <!-- ********vivo推送设置start******** -->
+
+
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="com.jmbon.middleware.push.VIVOPushMessageReceiverImpl">
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ********vivo推送设置end******** -->
+
+        <activity android:name="com.mob.tools.MobUIShell" />
+
+    </application>
+
+    <queries>
+        <!--        // 指定微信包名-->
+        <package android:name="com.tencent.mm" />
+        <!--        //指定qq包名-->
+        <package android:name="com.tencent.mobileqq" />
+        <package android:name="com.sina.weibo" />
+        <package android:name="com.eg.android.AlipayGphone" />
+        <package android:name="hk.alipay.wallet" />
+    </queries>
+
+
+</manifest>

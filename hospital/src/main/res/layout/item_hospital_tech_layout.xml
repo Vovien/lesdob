@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_list"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_50"
+    android:background="@drawable/bg_border_stoke_f5_white_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingEnd="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_15"
+    app:shadow_radius="@dimen/dp_8"
+    app:shadow_shadowAlpha="0.2"
+    app:shadow_shadowColor="#000000"
+    app:shadow_shadowElevation="@dimen/dp_8">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="「夫精人工授精技术」"
+        android:textColor="@color/color_currency"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</com.jmbon.widget.Shadow.ShadowLinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:background="@drawable/bg_border_stoke_f9_white_bg"
+    android:padding="@dimen/dp_16"
+    app:shadow_radius="@dimen/dp_8"
+    app:shadow_shadowAlpha="0.2"
+    app:shadow_shadowColor="#000000"
+    app:shadow_shadowElevation="@dimen/dp_8">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:src="@drawable/icon_tube_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_66"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="张抒扬"
+        android:textColor="#ff262626"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_cover" />
+
+    <TextView
+        android:id="@+id/tv_office"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="主治医师主治医师"
+        android:textColor="#ff7f7f7f"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_title" />
+
+
+    <ImageView
+        android:id="@+id/iv_score"
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="@dimen/dp_18"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:src="@drawable/icon_score_star"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintEnd_toStartOf="@+id/tv_score"
+        app:layout_constraintTop_toTopOf="@id/iv_cover" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0"
+        android:textColor="#ff5384ff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_cover" />
+
+    <LinearLayout
+        android:id="@+id/ll_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cover">
+
+        <TextView
+            android:id="@+id/tv_hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:text="四川省华西四川华西华西四川华西医院四川省华西四川华西医院"
+            android:textColor="#ff262626"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_hospital_office"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="生殖科生殖科生殖科生殖科生殖科生殖科生殖科"
+            android:textColor="#ff262626"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_special"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="擅长：试管婴儿、试管婴儿、试管婴儿、试管婴儿、试管婴儿、试管婴儿、试管婴儿"
+        android:textColor="#ff7f7f7f"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_hospital" />
+
+    <TextView
+        android:id="@+id/tv_ask_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/shape_hospital_ask_num_f5_radius_12"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_4"
+        android:text="咨询量999"
+        android:textColor="#ff7f7f7f"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_special" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="@id/tv_ask_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_ask_num"
+        app:layout_constraintTop_toTopOf="@id/tv_ask_num">
+
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</com.jmbon.widget.Shadow.ShadowConstraintLayout>

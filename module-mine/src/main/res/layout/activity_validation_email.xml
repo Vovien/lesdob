@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20">
+
+    <TextView
+        android:id="@+id/text_mail_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:text="@string/already_email_to_mailbox"
+        android:textColor="@color/color_262626"
+	    android:textSize="@dimen/sp_17" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dp_32"
+		android:text="请您查收并验证。"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_17" />
+
+
+	<com.jmbon.widget.progress_button.JmbonButton
+		android:id="@+id/click_verification_link"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_50"
+		android:layout_marginTop="@dimen/dp_76"
+		android:text="@string/click_on_email_verification_link"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_16"
+		android:textStyle="bold"
+		app:jButtonStyle="green_full"
+		app:jSelectText="@string/home_have_follow"
+		app:jShowLoading="true"
+		app:jShowLoadingWhenClick="true"
+		app:jUseSelector="true" />
+
+
+	<com.allen.library.SuperButton
+		android:id="@+id/not_received_mail"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_50"
+		android:layout_marginTop="@dimen/dp_12"
+		android:text="@string/not_yet_received_mail"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_16"
+		android:textStyle="bold"
+        app:sCornersRadius="@dimen/dp_10"
+        app:sSelectorNormalColor="@color/white"
+	    app:sSelectorDisableColor="@color/white"
+	    app:sStrokeColor="@color/color_7F7F7F"
+        app:sStrokeWidth="@dimen/dp_1"
+        app:sUseSelector="true" />
+
+    <com.jmbon.widget.CountDownTextView
+        android:id="@+id/text_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:text="@string/to_obtain"
+        android:textColor="@color/color_currency"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone" />
+
+</LinearLayout>

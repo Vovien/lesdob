@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.tubewiki.android",
+  "variantName": "bit32_release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 180,
+      "versionName": "1.8.0",
+      "outputFile": "tubewiki-v1.8.0-180-online-bit32_release-32.apk"
+    }
+  ],
+  "elementType": "File"
+}

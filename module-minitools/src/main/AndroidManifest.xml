@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jmbon.minitools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity android:name=".recommend.activity.ChooseContainerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/CommonGrayNoTitleTheme"/>
+
+        <activity android:name=".recommend.activity.ChooseHomeActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommonGrayNoTitleTheme"/>
+
+        <activity android:name=".recommend.activity.TubeGuideActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommonGrayNoTitleTheme"/>
+
+        <activity
+            android:name=".advisory.activity.AdvisoryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommonBlackTheme"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <activity
+            android:name=".content.activity.HelpGroupActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommonBlackTheme" />
+    </application>
+
+
+
+</manifest>

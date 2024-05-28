@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/titleBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_44"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:background="@color/ColorFAFA"
+    android:focusableInTouchMode="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.jmbon.widget.Shadow.ShadowLinearLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="@dimen/dp_73"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_radius="@dimen/dp_22">
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="wrap_content"
+            android:maxWidth="@dimen/dp_40"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/pregnancy_status"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/main_me_down_icon" />
+    </com.jmbon.widget.Shadow.ShadowLinearLayout>
+
+    <com.jmbon.widget.Shadow.ShadowFrameLayout
+        android:id="@+id/scan"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:background="@drawable/main_me_top_circle_white_shadow_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/msgBtnLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_radius="@dimen/dp_22"
+        app:shadow_shadowElevation="4dp">
+
+        <ImageView
+            android:id="@+id/settingBtn"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_sacn" />
+    </com.jmbon.widget.Shadow.ShadowFrameLayout>
+
+    <com.jmbon.widget.Shadow.ShadowFrameLayout
+        android:id="@+id/msgBtnLayout"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="@drawable/main_me_top_circle_white_shadow_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_radius="@dimen/dp_22"
+        app:shadow_shadowElevation="4dp">
+
+        <ImageView
+            android:id="@+id/msgBtn"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_notify" />
+
+        <View
+            android:id="@+id/messageHotDot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:background="@drawable/me_red_bg_corner_shape"
+            android:visibility="gone" />
+    </com.jmbon.widget.Shadow.ShadowFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:padding="@dimen/dp_16"
+    app:shapeCornersRadius="@dimen/dp_12"
+    app:shapeSolidColor="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="咨询信息"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:text="发起咨询以修改后信息为准"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_modify"
+        android:layout_width="@dimen/dp_55"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeCornersRadius="@dimen/dp_10"
+        app:shapeStrokeColor="@color/color_262626"
+        app:shapeStrokeWidth="@dimen/dp_1" />
+
+    <TextView
+        android:id="@+id/tv_user_info_title"
+        android:layout_width="@dimen/dp_91"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="咨询人："
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        app:layout_goneMarginTop="@dimen/dp_0"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_tip" />
+
+    <TextView
+        android:id="@+id/tv_user_info"
+        tools:text="本人 男 35岁 无生育史 "
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tv_user_info_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_user_info_title" />
+
+    <TextView
+        android:id="@+id/tv_report_title"
+        android:layout_width="@dimen/dp_91"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="上传报告："
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_info" />
+
+    <TextView
+        android:id="@+id/tv_no_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tv_user_info_title"
+        app:layout_constraintTop_toTopOf="@id/tv_report_title" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_report"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/tv_user_info_title"
+        app:layout_constraintTop_toTopOf="@id/tv_report_title" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_24"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_report"
+        app:layout_constraintRight_toRightOf="@id/iv_report"
+        app:shapeCornersBottomRightRadius="@dimen/dp_12"
+        app:shapeCornersTopLeftRadius="@dimen/dp_12"
+        app:shapeSolidColor="@color/black40"
+        tools:text="9张" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/anchor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tv_report_title, iv_report" />
+
+    <TextView
+        android:id="@+id/tv_question_title"
+        android:layout_width="@dimen/dp_91"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="问题描述："
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/anchor" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        tools:text="描述描述描述描述描述描述描述描描述描述描述描述…"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tv_question_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_question_title" />
+</com.allen.library.shape.ShapeConstraintLayout>

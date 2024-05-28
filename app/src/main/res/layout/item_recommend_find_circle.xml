@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_24"
+    android:paddingEnd="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_24">
+
+    <ImageView
+        android:id="@+id/imageCircle"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCircleName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:singleLine="true"
+        android:lineHeight="@dimen/dp_28"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageCircle"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="试管婴儿👶育儿圈" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:ellipsize="end"
+        android:lineHeight="@dimen/dp_17"
+        android:maxLines="2"
+        android:textColor="@color/white60"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textCircleName"
+        app:layout_constraintTop_toBottomOf="@id/textCircleName"
+        tools:text="圈子描述圈子描述圈子描述圈子描述圈子描述圈子描述描述圈子描述圈子描圈子描述圈子描述圈子描述圈子描述圈子描述圈子描述描述圈子描述圈子描圈子描述圈子描述圈子描述圈子描述圈子描述圈子描述描述圈子描述圈子描圈子描述圈子描述圈子描述圈子描述圈子描述圈子描述描述圈子描述圈子描" />
+
+    <TextView
+        android:id="@+id/textDiscuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:singleLine="true"
+        android:textColor="@color/white40"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@id/floatUser"
+        app:layout_constraintStart_toEndOf="@id/floatUser"
+        app:layout_constraintTop_toTopOf="@id/floatUser"
+        tools:text="286人正在热议" />
+
+    <com.jmbon.widget.FloatLayout
+        android:id="@+id/floatUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="@id/imageCircle"
+        app:layout_constraintStart_toStartOf="@id/textCircleName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

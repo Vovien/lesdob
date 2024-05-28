@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_20">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/CircleStyle" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="232dp"
+        android:layout_marginEnd="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_6"
+        android:lineSpacingMultiplier="1.1"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:paddingVertical="@dimen/dp_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintEnd_toStartOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeCornersBottomLeftRadius="@dimen/dp_12"
+        app:shapeCornersBottomRightRadius="@dimen/dp_12"
+        app:shapeCornersTopLeftRadius="@dimen/dp_12"
+        app:shapeCornersTopRightRadius="@dimen/dp_2"
+        app:shapeSolidColor="#855555" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_report"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginEnd="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_6"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_32"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_report"
+        app:layout_constraintRight_toRightOf="@id/iv_report"
+        app:shapeCornersBottomRightRadius="@dimen/dp_12"
+        app:shapeCornersTopLeftRadius="@dimen/dp_12"
+        app:shapeSolidColor="@color/black40" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+<!--    <com.apkdv.mvvmfast.view.DotProgressBar-->
+<!--        android:id="@+id/dot_progress"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="@dimen/dp_20"-->
+<!--        android:layout_gravity="center" />-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/dot_progress"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_25"
+        android:layout_gravity="center"
+        app:lottie_cacheComposition="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="false"
+        app:lottie_fileName="lottie/green_loading.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="false"
+        app:lottie_renderMode="hardware"/>
+
+    <TextView
+        android:id="@+id/text_no_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="没有更多数据了"
+        android:textColor="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+</FrameLayout>

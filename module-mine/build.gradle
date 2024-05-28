@@ -1,0 +1,18 @@
+apply {
+    from("$rootDir/module-build.gradle")
+}
+apply plugin: 'org.jetbrains.kotlin.android'
+dependencies {
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt rootProject.ext.dependencies["arouter_compiler"]
+    implementation project(path: ':module-middleware')
+    compileOnly project(path: ':module-pay')
+    compileOnly 'androidx.navigation:navigation-ui-ktx:2.3.2'
+    compileOnly('androidx.navigation:navigation-fragment-ktx:2.3.2') {
+        exclude group: 'androidx.navigation', module: "navigation-fragment"
+    }
+    compileOnly 'com.kunminx.arch:smooth-navigation:4.0.0-beta1'
+    implementation rootProject.ext.androidx["annotation"]
+
+}

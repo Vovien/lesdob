@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clBox"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/dp_4"
+    android:paddingStart="@dimen/dp_8"
+    android:paddingEnd="@dimen/dp_12"
+    android:background="@drawable/bg_video_case">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgtRelatedArticles"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/icon_related_articles" />
+
+    <TextView
+        android:id="@+id/textSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_6"
+        android:text="舒服舒服1111"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:maxLines="1" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/wait_answer_bg"
+    app:shadow_radius="@dimen/dp_8"
+    app:shadow_shadowAlpha="0.1"
+    app:shadow_shadowColor="#000000"
+    app:shadow_shadowElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingRight="16dp">
+
+
+        <com.jmbon.widget.SuperView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:vSelectorNormalColor="@color/colorF9F9F9"
+            app:vSelectorPressedColor="@color/colorF9F9F9"
+            app:vUseSelector="true" />
+
+        <com.jmbon.widget.SuperView
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:vSelectorNormalColor="@color/colorF9F9F9"
+            app:vSelectorPressedColor="@color/colorF9F9F9"
+            app:vUseSelector="true" />
+
+    </LinearLayout>
+
+</com.jmbon.widget.Shadow.ShadowFrameLayout>

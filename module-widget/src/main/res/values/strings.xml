@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="someone_answered_your_question">有人回答了你的问题</string>
+	<string name="has_new_answer">有了新的答案</string>
+	<string name="message_from_circle">来自圈子的消息</string>
+</resources>

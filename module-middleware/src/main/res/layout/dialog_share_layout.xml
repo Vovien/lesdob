@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/dialog_currency_bg">
+
+	<ImageView
+		android:id="@+id/iv_close"
+		android:layout_width="@dimen/dp_28"
+		android:layout_height="@dimen/dp_28"
+		android:layout_marginEnd="@dimen/dp_20"
+		android:src="@drawable/icon_share_close"
+		app:layout_constraintBottom_toBottomOf="@id/tv_title"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/dp_50"
+		android:gravity="center"
+		android:lineHeight="@dimen/dp_22"
+		android:text="@string/share_to"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_16"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<View
+		android:id="@+id/title_line"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_1"
+		android:background="@color/ColorF5F5"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+	<com.jmbon.widget.Shadow.ShadowConstraintLayout
+		android:id="@+id/rl_circle"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginStart="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_16"
+		android:layout_marginEnd="@dimen/dp_20"
+		android:background="@color/white"
+		android:paddingStart="@dimen/dp_12"
+		android:paddingEnd="@dimen/dp_12"
+		android:visibility="visible"
+		app:layout_constraintDimensionRatio="5.99:1"
+		app:layout_constraintTop_toBottomOf="@+id/title_line"
+		app:shadow_radius="@dimen/dp_8">
+
+		<TextView
+			android:id="@+id/text_share"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|center_vertical"
+			android:singleLine="true"
+			android:text="分享到圈子"
+			android:textColor="@color/color_262626"
+			android:textSize="@dimen/sp_16"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ImageView
+			android:id="@+id/image_share_icon"
+			android:layout_width="@dimen/dp_32"
+			android:layout_height="@dimen/dp_32"
+			android:layout_gravity="center_vertical|end"
+			android:src="@drawable/icon_share_circle"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp_1"
+			android:layout_alignParentBottom="true"
+			android:background="@color/colorF9F9F9"
+			android:visibility="gone" />
+	</com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/dp_20"
+		android:layout_marginEnd="@dimen/dp_20"
+		android:paddingTop="@dimen/dp_32"
+		android:paddingBottom="@dimen/dp_56"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/rl_circle">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/ll_wechat"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginEnd="@dimen/dp_19"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintDimensionRatio="1:1.446"
+			app:layout_constraintEnd_toStartOf="@+id/ll_wechat_circle"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintHorizontal_chainStyle="spread_inside"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteY="73dp">
+
+			<com.jmbon.widget.Shadow.ShadowConstraintLayout
+				android:id="@+id/image_1"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:background="@color/white"
+				android:padding="@dimen/dp_12"
+				app:layout_constraintDimensionRatio="H,1:1"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:shadow_radius="@dimen/dp_35">
+
+				<ImageView
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:scaleType="fitXY"
+					android:src="@drawable/icon_wechat"
+					app:layout_constraintDimensionRatio="H,1:1"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+
+			</com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+			<TextView
+				android:id="@+id/text_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_8"
+				android:layout_marginBottom="@dimen/dp_20"
+				android:gravity="center"
+				android:text="@string/wechat"
+				android:textColor="@color/color_262626"
+				android:textSize="@dimen/sp_12"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/image_1" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/ll_wechat_circle"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginStart="18.5dp"
+			android:layout_marginEnd="18.5dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintDimensionRatio="1:1.446"
+			app:layout_constraintEnd_toStartOf="@+id/ll_qq"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/ll_wechat"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteY="64dp">
+
+			<com.jmbon.widget.Shadow.ShadowConstraintLayout
+				android:id="@+id/image_2"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:background="@color/white"
+				android:padding="@dimen/dp_12"
+				app:layout_constraintDimensionRatio="H,1:1"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:shadow_radius="@dimen/dp_35">
+
+				<ImageView
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:scaleType="fitXY"
+					android:src="@drawable/icon_wechat_circle"
+					app:layout_constraintDimensionRatio="H,1:1"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+
+			</com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+			<TextView
+				android:id="@+id/text_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_8"
+				android:layout_marginBottom="@dimen/dp_20"
+				android:gravity="center"
+				android:text="@string/wechat_circle"
+				android:textColor="@color/color_262626"
+				android:textSize="@dimen/sp_12"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/image_2" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/ll_qq"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginStart="18.5dp"
+			android:layout_marginEnd="18.5dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintDimensionRatio="1:1.446"
+			app:layout_constraintEnd_toStartOf="@+id/ll_weibo"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/ll_wechat_circle"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteY="64dp">
+
+			<com.jmbon.widget.Shadow.ShadowConstraintLayout
+				android:id="@+id/image_3"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:background="@color/white"
+				android:padding="@dimen/dp_12"
+				app:layout_constraintDimensionRatio="H,1:1"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:shadow_radius="@dimen/dp_35">
+
+				<ImageView
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:scaleType="fitXY"
+					android:src="@drawable/icon_qq"
+					app:layout_constraintDimensionRatio="H,1:1"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+
+			</com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+			<TextView
+				android:id="@+id/text_3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_8"
+				android:layout_marginBottom="@dimen/dp_20"
+				android:gravity="center"
+				android:text="@string/qq"
+				android:textColor="@color/color_262626"
+				android:textSize="@dimen/sp_12"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/image_3" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/ll_weibo"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginStart="18.5dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintDimensionRatio="1:1.446"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/ll_qq"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteY="92dp">
+
+			<com.jmbon.widget.Shadow.ShadowConstraintLayout
+				android:id="@+id/image_4"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:background="@color/white"
+				android:padding="@dimen/dp_12"
+				app:layout_constraintDimensionRatio="H,1:1"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:shadow_radius="@dimen/dp_35">
+
+				<ImageView
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:scaleType="fitXY"
+					android:src="@drawable/icon_weibo"
+					app:layout_constraintDimensionRatio="H,1:1"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+
+			</com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+			<TextView
+				android:id="@+id/text_4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_8"
+				android:layout_marginBottom="@dimen/dp_20"
+				android:gravity="center"
+				android:text="@string/weibo"
+				android:textColor="@color/color_262626"
+				android:textSize="@dimen/sp_12"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/image_4" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:padding="@dimen/dp_12">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.1"
+        android:maxLines="2"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="试管婴儿备孕群备孕群备孕群" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_add_group"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_36"
+        android:gravity="center"
+        android:text="立即加群"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:shapeCornersRadius="@dimen/dp_7"
+        app:shapeSolidColor="#FF4B4B" />
+
+    <FrameLayout
+        android:id="@+id/fl_member_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_16"
+        app:layout_constraintBottom_toTopOf="@id/tv_add_group"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/iv_online"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_4"
+        app:layout_constraintBottom_toBottomOf="@id/fl_member_icons"
+        app:layout_constraintLeft_toRightOf="@id/fl_member_icons"
+        app:layout_constraintTop_toTopOf="@id/fl_member_icons"
+        app:shapeCornersRadius="@dimen/dp_2"
+        app:shapeSolidColor="#43DF58" />
+
+    <TextView
+        android:id="@+id/tv_online_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@id/fl_member_icons"
+        app:layout_constraintLeft_toRightOf="@id/iv_online"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fl_member_icons"
+        tools:text="343姐妹在线" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gp_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="fl_member_icons, iv_online, tv_online_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

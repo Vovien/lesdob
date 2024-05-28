@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smart_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.donkingliang.consecutivescroller.SmoothRateConsecutiveScrollerLayout
+        android:id="@+id/scroller_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/dp_20">
+
+
+        <com.jmbon.widget.Shadow.ShadowConstraintLayout
+            android:id="@+id/cl_title"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:orientation="horizontal"
+            app:shadow_radius="@dimen/dp_8"
+            app:shadow_shadowAlpha="0.2"
+            app:shadow_shadowColor="#000000"
+            app:shadow_shadowElevation="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dp_16"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="MassachssachusalMassachssachusalMassachssachusalMassachssachusalMassachssachusalMassachssachusal Hospital， MGH"
+                android:textColor="#ff262626"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/iv_cover"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginEnd="@dimen/dp_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_title"
+                tools:src="@drawable/icon_tube_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_simple_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="生殖科  生殖科"
+                android:textColor="#ff7f7f7f"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_cover"
+                app:layout_constraintEnd_toEndOf="@id/tv_title"
+                app:layout_constraintStart_toStartOf="@id/tv_title" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_cover" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/st_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52"
+                app:layout_constraintTop_toBottomOf="@+id/view_line"
+                app:sDividerLineColor="@color/white_color_line"
+                app:sDividerLineHeight="@dimen/dp_1"
+                app:sLeftViewMarginLeft="@dimen/dp_16"
+                app:sLeftTextColor="@color/color_7F7F7F"
+                app:sLeftTextSize="@dimen/sp_14"
+                app:sLeftTextString="四川省华西医院"
+                app:sRightTvDrawableRight="@drawable/ic_go_forward"
+                app:sRightViewMarginLeft="@dimen/dp_50"
+                app:sRightViewMarginRight="@dimen/dp_16"
+                app:sUseRipple="false" />
+        </com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_24" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/expand_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:fillViewport="true"
+            app:layout_isConsecutive="false"
+            app:layout_isNestedScroll="true">
+
+            <com.jmbon.widget.textview.ExpandTextView
+                android:id="@+id/text_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#ff262626"
+                android:textSize="16sp" />
+
+
+            <!--            <com.jmbon.widget.ExtendTextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_margin="@dimen/dp_12"-->
+            <!--                android:background="@color/white"-->
+            <!--                app:animation_duration="150"-->
+            <!--                app:text_color="@color/color_262626"-->
+            <!--                app:text_size="@dimen/sp_16" />-->
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_24" />
+
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_24">
+
+
+            <LinearLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:divider="@drawable/article_dash_line"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/colorF9F9F9" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40" />
+
+        <TextView
+            android:id="@+id/tv_hospital_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:drawableStart="@drawable/shape_title_tag"
+            android:drawablePadding="@dimen/dp_8"
+            android:gravity="center"
+            android:text="擅长领域"
+            android:textColor="#ff262626"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_20" />
+
+        <com.jmbon.widget.FloatLayout
+            android:id="@+id/float_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            app:childHorizontalSpacing="@dimen/dp_10"
+            app:childVerticalSpacing="@dimen/dp_10" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40" />
+
+        <FrameLayout
+            android:id="@+id/fl_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_32" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@color/colorF9F9F9" />
+
+        <LinearLayout
+            android:id="@+id/rl_feed_error"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--            纠错-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_weight="1"
+                android:text="@string/if_you_are_suspicious_the_content_please_click_on_right_side_the_error_correction"
+                android:textColor="@color/color_BFBFBF"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@drawable/icon_check_error" />
+
+            <TextView
+                android:id="@+id/tv_feed_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:text="@string/error_correction"
+                android:textColor="@color/color_7F7F7F"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@color/colorF9F9F9" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40" />
+
+
+        <TextView
+            android:id="@+id/tv_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorFAFA"
+            android:drawablePadding="@dimen/dp_8"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_40"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="同院医生"
+            android:textColor="#ff262626"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/dp_20"
+            android:paddingStart="@dimen/dp_20"
+            android:background="@color/color_fa" />
+
+
+        <TextView
+            android:id="@+id/tv_more_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/color_fa"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="到底啦"
+            android:textColor="#ffbfbfbf"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="77dp" />
+
+    </com.donkingliang.consecutivescroller.SmoothRateConsecutiveScrollerLayout>
+
+    <com.jmbon.widget.tablayout.SlidingTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:visibility="gone"
+        app:tl_iconVisible="false"
+        app:tl_indicator_anim_duration="300"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_color="@color/color_currency"
+        app:tl_indicator_corner_radius="1dp"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_margin_bottom="1dp"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_openTextDmg="true"
+        app:tl_tab_padding="10dp"
+        app:tl_tab_space_equal="false"
+        app:tl_tab_view_margin="@dimen/dp_40"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/color_262626"
+        app:tl_textSelectSize="15sp"
+        app:tl_textUnSelectColor="@color/color_7F7F7F"
+        app:tl_textUnSelectSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="#08000000" />
+
+
+        <com.allen.library.shape.ShapeLinearLayout
+            android:id="@+id/fl_custom_scheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginVertical="@dimen/dp_10"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:shapeCornersRadius="@dimen/dp_11"
+            app:shapeSolidColor="#FF5384FF">
+
+            <TextView
+                android:id="@+id/tv_custom_scheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约医生"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加生育顾问，免费帮您预约"
+                android:textColor="#99FFFFFF"
+                android:textSize="@dimen/sp_12"
+                android:layout_gravity="center" />
+
+
+        </com.allen.library.shape.ShapeLinearLayout>
+
+    </FrameLayout>
+
+
+    <com.jmbon.widget.Shadow.ShadowLinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_gravity="bottom|right"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_109"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:shadow_radius="@dimen/dp_28"
+        app:shadow_shadowAlpha="0.4"
+        app:shadow_shadowColor="#000000"
+        app:shadow_shadowElevation="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目录"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </com.jmbon.widget.Shadow.ShadowLinearLayout>
+
+</FrameLayout>

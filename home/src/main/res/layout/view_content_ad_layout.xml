@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="h,2:1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/icon_slogan_image" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintLeft_toLeftOf="@id/iv_image"
+        app:layout_constraintRight_toRightOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="@id/iv_image"
+        app:shapeCornersTopLeftRadius="@dimen/dp_12"
+        app:shapeCornersTopRightRadius="@dimen/dp_12"
+        app:shapeGradientAngle="bottom_top"
+        app:shapeGradientEndColor="@color/transparent"
+        app:shapeGradientStartColor="#381926" />
+
+    <TextView
+        android:id="@+id/tv_case_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_11"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white75"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintLeft_toLeftOf="@id/iv_image"
+        tools:text="#孕小帮APP授权案例 \@感谢宝妈李姐无私分享" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.1"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_case_source"
+        tools:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题" />
+
+    <com.allen.library.shape.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_53"
+        android:paddingHorizontal="@dimen/dp_16"
+        app:layout_constraintTop_toBottomOf="@id/iv_image"
+        app:shapeCornersBottomLeftRadius="@dimen/dp_12"
+        app:shapeCornersBottomRightRadius="@dimen/dp_12"
+        app:shapeSolidColor="@color/colorF5F5F5">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_16"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="添加生育顾问获取案例"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_add"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.allen.library.shape.ShapeTextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp_11"
+            android:text="立即添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeCornersRadius="@dimen/dp_9"
+            app:shapeSolidColor="#FF5384FF" />
+    </com.allen.library.shape.ShapeConstraintLayout>
+
+</merge>

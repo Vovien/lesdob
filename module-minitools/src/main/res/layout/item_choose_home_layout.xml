@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableRight="@drawable/choose_home_right_arrow_icon"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/dp_100"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:textColor="@color/color_262626"
+    android:textSize="@dimen/sp_20"
+    android:textStyle="bold"
+    tools:text="我要试管"
+    app:shapeSolidColor="@color/white"
+    app:shapeCornersRadius="@dimen/dp_12"/>

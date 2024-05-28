@@ -1,0 +1,6 @@
+<resources>
+    <string name="software_name">LesDoB</string>
+    <string name="recommend_hospital">推荐医院</string>
+    <string name="all_hospital_doctor">该院所有医生</string>
+
+</resources>

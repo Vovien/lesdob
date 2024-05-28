@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingEnd="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_2">
+
+    <ImageView
+        android:id="@+id/icBack"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingEnd="@dimen/dp_16"
+        android:scaleType="center"
+        android:src="@drawable/icon_back_black"
+        app:layout_constraintBottom_toBottomOf="@id/ed_input"
+        app:layout_constraintEnd_toStartOf="@id/ed_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ed_input" />
+
+    <com.jmbon.widget.ClearableEditText
+        android:id="@+id/ed_input"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_44"
+        android:background="@drawable/search_edit_bg"
+        android:drawableStart="@drawable/icon_white_search"
+        android:drawablePadding="@dimen/dp_4"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionSearch"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_10"
+        android:singleLine="true"
+        android:textColorHint="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toStartOf="@+id/text_cancel"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/icBack"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:drawableLeft="@drawable/icon_search_black" />
+
+    <TextView
+        android:id="@+id/text_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_20"
+        android:text="@string/currency_cancle"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@id/ed_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ed_input"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

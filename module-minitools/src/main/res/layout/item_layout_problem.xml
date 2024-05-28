@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.progress_button.JmbonButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:gravity="center"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:text="子宫问题"
+    android:textColor="@color/color_262626"
+    android:textSize="@dimen/sp_16"
+    app:jCornersRadius="@dimen/dp_10"
+    app:jShowLoading="false"
+    app:jShowLoadingWhenClick="false"
+    app:shapeSolidColor="@color/color_F9F9F9">
+
+</com.jmbon.widget.progress_button.JmbonButton>

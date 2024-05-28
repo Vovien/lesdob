@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srlEnableRefresh="false">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_operate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            app:behavior_hideable="true"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <com.allen.library.shape.ShapeConstraintLayout
+                android:id="@+id/cl_tube_test"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_56"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_19"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_custom_scheme"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeCornersRadius="@dimen/dp_14"
+                app:shapeStrokeColor="#FF4EC004"
+                app:shapeStrokeWidth="0.5dp">
+
+                <com.allen.library.shape.ShapeFrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="16dp"
+                    app:shapeSolidColor="#FF4EC004"
+                    app:shapeCornersTopLeftRadius="@dimen/dp_14"
+                    app:shapeCornersTopRightRadius="@dimen/dp_0"
+                    app:shapeCornersBottomLeftRadius="@dimen/dp_0"
+                    app:shapeCornersBottomRightRadius="@dimen/dp_14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_tube_test"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_wechat_wight"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/tv_tube_test" />
+
+
+                </com.allen.library.shape.ShapeFrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_tube_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="助孕交流群"
+                    android:textColor="#FF4EC004"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </com.allen.library.shape.ShapeConstraintLayout>
+
+            <com.allen.library.shape.ShapeTextView
+                android:id="@+id/tv_custom_scheme"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_56"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/dp_6"
+                android:text="定制生育方案"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/cl_tube_test"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cl_tube_test"
+                app:shapeCornersRadius="@dimen/dp_14"
+                app:shapeSolidColor="#FF4B4B" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_10"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.allen.library.shape.ShapeTextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/dp_4"
+                    android:paddingTop="@dimen/dp_2"
+                    android:paddingBottom="@dimen/dp_3"
+                    android:text="高成功率"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeCornersBottomLeftRadius="@dimen/dp_2"
+                    app:shapeCornersBottomRightRadius="@dimen/dp_6"
+                    app:shapeCornersTopLeftRadius="@dimen/dp_6"
+                    app:shapeCornersTopRightRadius="@dimen/dp_2"
+                    app:shapeGradientAngle="left_right"
+                    app:shapeGradientEndColor="#6AD3F1"
+                    app:shapeGradientStartColor="#3E39FA"
+                    app:shapeSizeHeight="@dimen/dp_0"
+                    app:shapeStrokeColor="@color/white"
+                    app:shapeStrokeWidth="@dimen/dp_1" />
+
+                <com.allen.library.shape.ShapeTextView
+                    android:id="@+id/tv_anim"
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_label"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_label"
+                    app:shapeGradientAngle="left_right"
+                    app:shapeGradientCenterColor="@color/transparent"
+                    app:shapeGradientEndColor="@color/transparent"
+                    app:shapeGradientStartColor="@color/white"
+                    app:shapeSizeHeight="@dimen/dp_0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_44"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:src="@drawable/icon_column_return"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginRight="@dimen/dp_44"
+            android:alpha="0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineHeight="@dimen/dp_24"
+            android:singleLine="true"
+            android:textColor="#ff262626"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="俄罗斯试管婴儿成功率" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/empty_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_64"
+        android:text="专题已删除"
+        android:textColor="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>

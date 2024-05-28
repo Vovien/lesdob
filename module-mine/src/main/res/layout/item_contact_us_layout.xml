@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_40">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jmbon.widget.SuperView
+            android:layout_width="@dimen/dp_6"
+            android:layout_height="@dimen/dp_16"
+            app:vCornersRadius="@dimen/dp_3"
+            app:vSelectorDisableColor="@color/color_currency"
+            app:vSelectorNormalColor="@color/color_currency"
+            app:vUseSelector="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+
+            android:text="用户咨询"
+            android:textColor="#ff262626"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="028-62368188"
+        android:textColor="#ff262626"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="kefu@jmbon.com"
+        android:textColor="#ff262626"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

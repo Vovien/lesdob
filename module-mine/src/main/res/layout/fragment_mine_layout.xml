@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorFAFA">
+
+    <com.jmbon.widget.MineScrollFocusScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_48"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <com.jmbon.widget.Shadow.ShadowConstraintLayout
+                android:id="@+id/toUserPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@color/ColorFAFA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shadow_radius="@dimen/dp_8">
+
+                <ImageView
+                    android:id="@+id/imageAvatar"
+                    android:layout_width="@dimen/dp_64"
+                    android:layout_height="@dimen/dp_64"
+                    android:background="@drawable/icon_white_back_bg"
+                    android:src="@drawable/default_women_unctivies_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_flag"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dp_4"
+                    android:layout_marginBottom="@dimen/dp_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageAvatar"
+                    app:layout_constraintEnd_toEndOf="@id/imageAvatar"
+                    tools:src="@drawable/icon_doctor_flag" />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/textSub"
+                    app:layout_constraintEnd_toStartOf="@id/text_more"
+                    app:layout_constraintStart_toEndOf="@id/imageAvatar"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textSub"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:singleLine="true"
+                    android:text="@string/welcome_to_join_sisters_family_bond"
+                    android:textColor="@color/color_BFBFBF"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/text_more"
+                    app:layout_constraintStart_toStartOf="@id/textName"
+                    app:layout_constraintTop_toBottomOf="@id/textName" />
+
+                <TextView
+                    android:id="@+id/text_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:drawableEnd="@drawable/ic_go_forward"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_home_page"
+                    android:textColor="@color/color_BFBFBF"
+                    android:textSize="@dimen/sp_14"
+                    app:drawableEndCompat="@drawable/icon_mine_more_new"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+            <include
+                android:id="@+id/user_function"
+                layout="@layout/fragment_user_function" />
+
+            <include
+                android:id="@+id/menses_table"
+                layout="@layout/fragment_mine_menses_table" />
+
+            <include
+                android:id="@+id/tube_table"
+                layout="@layout/fragment_mine_test_tube_bill_table" />
+
+            <include
+                android:id="@+id/function"
+                layout="@layout/fragment_mine_function" />
+
+            <com.jmbon.widget.Shadow.ShadowLinearLayout
+                android:id="@+id/llCircle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_16"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shadow_radius="@dimen/dp_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/browse_circle_recently"
+                        android:textColor="@color/color_262626"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textMoreCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/small_icon_more"
+                        android:drawablePadding="@dimen/dp_2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/dp_20"
+                        android:text="@string/commond_more"
+                        android:textColor="#B2B2B2"
+                        android:textSize="@dimen/sp_14"
+                        app:drawableEndCompat="@drawable/small_icon_more"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/circleList"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_75"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:clipToPadding="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingStart="@dimen/dp_20"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </com.jmbon.widget.Shadow.ShadowLinearLayout>
+
+            <com.jmbon.widget.Shadow.ShadowLinearLayout
+                android:id="@+id/llTools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shadow_radius="@dimen/dp_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_small_tools"
+                        android:textColor="@color/color_262626"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_more_tools"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/small_icon_more"
+                        android:drawablePadding="@dimen/dp_2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/dp_20"
+                        android:text="@string/commond_more"
+                        android:textColor="#B2B2B2"
+                        android:textSize="@dimen/sp_14"
+                        app:drawableEndCompat="@drawable/small_icon_more"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/toolsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:clipToPadding="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/dp_16" />
+            </com.jmbon.widget.Shadow.ShadowLinearLayout>
+
+            <include
+                android:id="@+id/setting"
+                layout="@layout/fragment_mine_setting" />
+
+        </LinearLayout>
+    </com.jmbon.widget.MineScrollFocusScrollView>
+
+    <include
+        android:id="@+id/view_title_bar"
+        layout="@layout/view_mine_title_bar" />
+
+</FrameLayout>

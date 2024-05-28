@@ -1,0 +1,211 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'com.tencent.vasdolly'
+    id 'tinycompress'
+    id 'center.uploadpgy.plugin'
+}
+
+def apkName = ""
+def apkBuildName = "测试(debug)"
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        applicationId "com.yxbabe.lesdob"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        manifestPlaceholders = [
+                XG_ACCESS_ID : "1580004973",
+                XG_ACCESS_KEY: "AH57JGXHWNNC",
+                VIVO_APPID   : "105483203",
+                VIVO_APPKEY  : "28b7cba67ff36005356d1354757c4b3c",
+        ]
+
+        def runTasks = gradle.startParameter.taskNames
+        if (runTasks[0].toString().contains('Release') || runTasks[0].toString().contains('release')){
+            apkBuildName = "正式(release)"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        release {
+            storeFile file("aifuji")
+            storePassword "Jmbon0928."
+            keyAlias "lesdob"
+            keyPassword "Jmbon0928."
+            v1SigningEnabled true
+            v2SigningEnabled true
+
+        }
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    kapt {
+        arguments {
+            arg("AROUTER_MODULE_NAME", project.getName())
+        }
+    }
+    buildTypes {
+        release {
+            zipAlignEnabled true  // 开启zip压缩优化
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', 'mpProguard.cfg'
+            ndk {
+                //选择要添加的对应cpu类型的.so库。
+                abiFilters "${if (support_64 == "true") { 'arm64-v8a' } else { 'armeabi-v7a' }}"
+                //abiFilters "${if (support_64 == "true") { 'arm64-v8a' } else { 'armeabi-v7a' }}"
+            }
+
+        }
+        bit32_release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', 'mpProguard.cfg'
+            ndk {
+                //选择要添加的对应cpu类型的.so库。
+                abiFilters "${if (support_64 == "true") { 'armeabi-v7a' } else { 'arm64-v8a' }}"
+                // abiFilters "${if (support_64 == "true") { 'arm64-v8a' } else { 'armeabi-v7a' }}"
+            }
+
+        }
+
+        pre_relesae {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', 'mpProguard.cfg'
+            ndk {
+                //选择要添加的对应cpu类型的.so库。
+                // abiFilters 'armeabi-v7a', 'arm64-v8a'
+                abiFilters "${if (support_64 == "true") { 'arm64-v8a' } else { 'armeabi-v7a' }}"
+            }
+
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            shrinkResources false
+            ext.alwaysUpdateBuildId = false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', 'mpProguard.cfg'
+            project.gradle.startParameter.excludedTaskNames.add('lint')
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            ndk {
+                //选择要添加的对应cpu类型的.so库。
+                //abiFilters 'armeabi-v7a', 'arm64-v8a'
+                abiFilters "${if (support_64 == "true") { 'arm64-v8a' } else { 'armeabi-v7a' }}"
+            }
+
+        }
+    }
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def support64 = "${if (support_64 == "true" && variant.buildType.name != "bit32_release") { '64' } else { '32' }}"
+            def fileName = "lesdob-v${defaultConfig.versionName}-${defaultConfig.versionCode}-online-${variant.buildType.name}-${support64}.apk"
+            outputFileName = fileName
+            apkName = outputFileName
+            //这个修改输出的APK路径
+//            if (variant.buildType.name != "debug") {//防止AS无法安装debug包(apk)
+//                //打包位置在项目根目录下的apk文件夹下
+//                variant.getPackageApplicationProvider().get().outputDirectory = new File(project.rootDir.absolutePath + "/apk/" + variant.buildType.name + "/")
+//            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+}
+
+// gradle rebuildChannel 配置此任务用于不希望重新构建apk，直接根据指定的apk生成渠道包
+rebuildChannel {
+//    channelFile = file("app_channel.txt")
+//    //指定的apk生成渠道包,文件名中如果有base将被替换为渠道名，否则渠道名将作为前缀
+//    baseApk = new File(project.rootDir.absolutePath, "apk/jmbon-v2.0.7.1-11-online-release-64_2071_2_小米_sign.apk")
+//    //默认为new File(project.buildDir, "rebuildChannel")
+//    outputDir = new File(project.rootDir.absolutePath, "rebuildChannels")
+//    //快速模式：生成渠道包时不进行校验（速度可以提升10倍以上，默认为false）
+//    fastMode = false
+//    //低内存模式（仅针对V2签名，默认为false）：只把签名块、中央目录和EOCD读取到内存，不把最大头的内容块读取到内存，在手机上合成APK时，可以使用该模式
+//    lowMemory = false
+    apkName = "lesdob-v1.2.0-120-online-release-64_120_jiagu_sign.apk"
+
+    baseApk = new File(project.rootDir.absolutePath, "apk/${apkName}")
+    outputDir = new File(project.rootDir.absolutePath, "apk/rebuildChannels_${if (apkName.contains("32")) 32 else 64}")
+    fastMode = true
+
+}
+
+// 上传到蒲公英的相关配置
+uploadPgyParams {
+    apiKey = "24854cfc6bbd326e50e5cb7e1f9a6c75"
+    uploadApkFilePath = "D:\\WorkSpace\\Android\\tubewiki\\app\\build\\intermediates\\apk\\debug\\tubewiki-v1.1.0-2-online-debug-64.apk"
+}
+
+//// 上传测试包后发送消息到企业微信
+buildWeixinGroupParams {
+    println("www===${apkBuildName}")
+    webHookUrl = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=221f7fde-6488-431b-ab67-375b43addfd0"
+    //文本（text）、markdown（markdown）、图文（news），默认 markdown。由于字数限制，只有markdown支持携带Git记录
+    msgtype = "markdown"
+    contentTitle = "LesDoBAndroid${apkBuildName}包"
+    contentText = "最新开发${apkBuildName}包已经上传至蒲公英, 可以下载使用了"
+    isSupportGitLog = false
+}
+
+dependencies {
+    kapt rootProject.ext.dependencies["arouter_compiler"]
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    kapt rootProject.ext.dependencies["arouter_compiler"]
+    implementation rootProject.ext.androidx["annotation"]
+    implementation project(path: ':module-mine')
+    implementation project(path: ':home')
+//    implementation project(path: ':hospital')
+    implementation project(path: ':module-middleware')
+    implementation project(path: ':module-pay')
+    implementation project(path: ':resources')
+    implementation project(path: ':module-minitools')
+//    implementation project(path: ':module-video')
+//    implementation project(path: ':module-group:main')
+//    implementation project(path: ':module-group:chat')
+//    implementation('com.alipay.android.phone.wallet:nebulaucsdk-build:999.3.22.2.30.211011154625@aar') {
+//        force = true
+//    }
+
+
+}
+
+// 图片压缩配置
+pluginConfig {
+    apiKey 'tSBgVz9j4txgrVLRP5t1JFZWrx5xLsy7'
+    compressRatioThreshold 35
+}

@@ -1,0 +1,156 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        consumerProguardFiles "consumer-rules.pro"
+        buildConfigField("String", "USER_PROTOCOL", "\"https://lesdob.yxbabe.cn/about/54\"")
+        buildConfigField("String", "PRIVACY_PROTOCOL", "\"https://lesdob.yxbabe.cn/about/55\"")
+        buildConfigField("String", "COMMUNITY_MANAGE_RULE", "\"https://lesdob.yxbabe.cn/about/61\"")
+        buildConfigField("String", "NOTICE_OF_CANCELLATION_CLAUSE", "\"https://lesdob.yxbabe.cn/about/56\"")
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", debug_host)
+            buildConfigField("String", "BASE_USER_URL", debug_user_host)
+            buildConfigField("String", "BASE_COMMON_URL", debug_common_host)
+            buildConfigField("String", "BURY_HOST", bury_test_host)
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField("String", "BASE_URL", release_host)
+            buildConfigField("String", "BASE_USER_URL", release_user_host)
+            buildConfigField("String", "BASE_COMMON_URL", release_common_host)
+            buildConfigField("String", "BURY_HOST", bury_production_host)
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        bit32_release {
+            buildConfigField("String", "BASE_URL", release_host)
+            buildConfigField("String", "BASE_USER_URL", release_user_host)
+            buildConfigField("String", "BASE_COMMON_URL", release_common_host)
+            buildConfigField("String", "BURY_HOST", bury_production_host)
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src/main/res', 'src/main/res/layout'
+            }
+        }
+    }
+    kapt {
+        arguments {
+            arg("AROUTER_MODULE_NAME", project.getName())
+        }
+    }
+
+
+    buildFeatures {
+        viewBinding true
+    }
+    kotlinOptions {
+        freeCompilerArgs = ["-Xallow-result-return-type"]
+    }
+}
+
+
+dependencies {
+    //implementation fileTree(dir: "libs", include: ["*.jar"])
+    api rootProject.ext.androidxs
+    api rootProject.ext.network
+    api rootProject.ext.need
+    //material-dialogs
+    api rootProject.ext.dependencies["livedata"]
+    implementation rootProject.ext.dependencies["gson"]
+    //
+    api rootProject.ext.dependencies["utilcodex"]
+    api rootProject.ext.dependencies["eventbus"]
+    api rootProject.ext.dependencies["mmkv"]
+    api rootProject.ext.dependencies["lifecycle-runtime"]
+
+    api rootProject.ext.dependencies["arouter"]
+
+    kapt rootProject.ext.dependencies["arouter_compiler"]
+    //glide
+    kapt rootProject.ext.dependencies["glide-compiler"]
+
+    api "cn.numeron:discovery.library:1.4.1"
+    //流布局
+    api 'com.google.android:flexbox:2.0.1'
+
+    //pictureselector
+//            api rootProject.ext.dependencies["pictureselector"]
+
+    //supertextview
+    api rootProject.ext.dependencies["supertextview"]
+    api(rootProject.ext.dependencies["xpopup"]) {
+        exclude module: 'appcompat'
+        exclude module: 'recyclerview'
+        exclude module: 'material'
+        exclude module: 'glide'
+    }
+
+    api rootProject.ext.dependencies["shadowlayout"]
+    //流布局
+//    api rootProject.ext.dependencies["flexbox"]
+
+
+    //room
+    api rootProject.ext.dependencies["room-runtime"]
+    //room解释器，用于在编译期间生成查询代码，不会编译进apk
+    kapt rootProject.ext.dependencies["room-compiler"]
+    // 可选 - Kotlin Extensions and Coroutines support for Room
+    api rootProject.ext.dependencies["room-ktx"]
+    //阿里云oss
+    api rootProject.ext.dependencies["aliyun-oss"]
+    //腾讯im
+   // api rootProject.ext.dependencies["tencent_im"]
+    api(rootProject.ext.dependencies["multitype"]) {
+        exclude module: 'recyclerview'
+        exclude module: 'annotation'
+    }
+
+
+//    api "io.reactivex.rxjava2:rxandroid:2.1.1"
+//    api "io.reactivex.rxjava2:rxjava:2.2.7"
+
+    api 'com.github.getActivity:ToastUtils:9.2'
+
+
+    // 资源文件
+    api project(path: ':resources')
+    api rootProject.ext.androidx["annotation"]
+
+    //骨架加载,aar替换
+    //api rootProject.ext.dependencies["skeleton"]
+    api rootProject.ext.dependencies["shimmerlayout"]
+    api rootProject.ext.dependencies["bannerviewpager"]
+    api rootProject.ext.dependencies["lottie"]
+
+    // 基础依赖包，必须要依赖
+    api 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    // kotlin扩展（可选）
+    api 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2'
+}
+

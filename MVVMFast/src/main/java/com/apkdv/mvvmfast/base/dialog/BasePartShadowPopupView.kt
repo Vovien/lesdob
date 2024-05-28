@@ -1,0 +1,37 @@
+package com.apkdv.mvvmfast.base.dialog
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.LinearLayout
+import androidx.viewbinding.ViewBinding
+import com.apkdv.mvvmfast.ktx.inflateBindingWithGeneric
+import com.lxj.xpopup.XPopup
+import com.lxj.xpopup.impl.PartShadowPopupView
+
+/**
+ * @author : wangzhen
+ * time   : 2021/3/26
+ * desc   : 改造BottomPopupView  使用 viewbinding
+ * version: 1.0
+ */
+abstract class BasePartShadowPopupView<T : ViewBinding>(context: Context) : PartShadowPopupView(context) {
+
+    protected lateinit var binding: T
+
+    init {
+        XPopup.setAnimationDuration(500)
+    }
+
+    override fun addInnerContent() {
+        binding = inflateBindingWithGeneric(LayoutInflater.from(context))
+        binding.root.layoutParams = LinearLayout.LayoutParams(attachPopupContainer.layoutParams.width,
+           LinearLayout.LayoutParams.WRAP_CONTENT)
+        attachPopupContainer.addView(binding.root)
+
+    }
+
+    fun getMyRootView(): View {
+        return binding.root
+    }
+}

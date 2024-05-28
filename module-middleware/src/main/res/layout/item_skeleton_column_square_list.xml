@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="#F9F9F9"
+        android:outlineSpotShadowColor="#08000000"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/dp_8"
+        app:cardElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#F9F9F9"
+        app:strokeWidth="@dimen/dp_1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dp_13"
+            app:layout_constraintDimensionRatio="157:144">
+
+            <com.jmbon.widget.SuperView
+                android:id="@+id/iv_column_bg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="158:79"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:vCornersTopLeftRadius="@dimen/dp_8"
+                app:vCornersTopRightRadius="@dimen/dp_8"
+                app:vSelectorNormalColor="@color/ColorF5F5"
+                app:vSelectorPressedColor="@color/ColorF5F5"
+                app:vUseSelector="true" />
+
+            <com.jmbon.widget.SuperView
+                android:id="@+id/tv_title"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_column_bg"
+
+                app:vSelectorNormalColor="@color/colorF9F9F9"
+                app:vSelectorPressedColor="@color/colorF9F9F9"
+                app:vUseSelector="true" />
+
+            <com.jmbon.widget.SuperView
+                android:id="@+id/tv_column_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:vSelectorNormalColor="@color/colorF9F9F9"
+                app:vSelectorPressedColor="@color/colorF9F9F9"
+                app:vUseSelector="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

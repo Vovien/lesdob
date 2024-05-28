@@ -1,0 +1,146 @@
+* {
+    font-family: PingFangSC-Regular, PingFang SC;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+    letter-spacing: 1.15px;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0 20px;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    color: rgba(38, 38, 38, 0.8);
+    background: rgba(83, 132, 255, 0.2);
+}
+
+.content {
+    font-size: 18px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #262626;
+    line-height: 36px;
+}
+
+.content p {
+    font-size: 18px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #262626;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+
+.content a {
+    color: #F57C1E;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit;
+    background: transparent;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+.content h2 {
+    margin: 40px 0 24px 0;
+    font-size: 22px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 700;
+    color: #262626;
+    line-height: 30px;
+    overflow: hidden;
+    word-break: break-all;
+    position: relative;
+    padding-left: 16px;
+    letter-spacing: 0px;
+}
+
+.content h2::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 8px;
+    height: 20px;
+    background: #5384FF;
+    border-radius: 4px;
+}
+
+.content h3 {
+    margin: 40px 0 24px 0;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 700;
+    color: #262626;
+    line-height: 28px;
+    overflow: hidden;
+    word-break: break-all;
+    letter-spacing: 0px;
+}
+
+.content blockquote {
+    border-left: 2px solid #5384FF;
+    padding: 16px 16px 16px 14px;
+    background: rgba(83, 132, 255, 0.05);
+    word-break: break-all;
+    margin: 32px 0;
+    font-size: 17px;
+    font-weight: normal;
+    color: #7f7f7f;
+    line-height: 31px;
+}
+
+.content blockquote p {
+    margin: 0;
+}
+
+.content ul {
+    padding-left: 32px;
+    margin: 32px 0;
+    list-style: disc;
+}
+
+.content ol {
+    padding-left: 32px;
+    margin: 32px 0;
+    list-style: decimal;
+}
+
+.content li {
+    font-size: 18px;
+    font-weight: normal;
+    color: #7f7f7f;
+    line-height: 31px;
+    word-break: break-all;
+    margin-bottom: 16px;
+}
+
+.content .editorImgBox {
+    text-align: center;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.content img {
+    width: 100%;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}

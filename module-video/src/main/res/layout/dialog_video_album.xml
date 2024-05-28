@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/shape_video_top_black_bg">
+
+	<TextView
+		android:id="@+id/textTitle"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_44"
+		android:layout_marginStart="@dimen/dp_50"
+		android:layout_marginEnd="@dimen/dp_50"
+		android:gravity="center"
+		android:singleLine="true"
+		android:text="试管婴儿合集 · xxx集"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_14"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<ImageView
+		android:id="@+id/imageClose"
+		android:layout_width="@dimen/dp_24"
+		android:layout_height="@dimen/dp_24"
+		android:layout_marginEnd="@dimen/dp_20"
+		android:src="@drawable/icon_close_album_dialog"
+		app:layout_constraintBottom_toBottomOf="@id/textTitle"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<View
+		android:id="@+id/viewLine"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_1"
+		android:background="#0C000000"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+	<com.scwang.smart.refresh.layout.SmartRefreshLayout
+		android:id="@+id/smart_refresh"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:overScrollMode="never"
+		app:srlEnableLoadMore="false"
+		app:srlEnableRefresh="false"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/viewLine">
+
+		<com.apkdv.mvvmfast.view.state.MultiStateContainer
+			android:id="@+id/container"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:overScrollMode="never" />
+		</com.apkdv.mvvmfast.view.state.MultiStateContainer>
+
+	</com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="169dp"
+    android:layout_margin="@dimen/dp_8"
+    android:padding="@dimen/dp_12"
+    app:shapeCornersRadius="@dimen/dp_8"
+    app:shapeStrokeColor="@color/color_262626"
+    app:shapeStrokeWidth="0.5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:src="@drawable/icon_tube_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:singleLine="true"
+            android:text="检查建档"
+            android:textColor="#ff262626"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_cover" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="年龄原来不是怀孕的年龄原来不是怀孕的年龄原来不是怀孕的年龄原来不是怀孕的“拦路虎”！"
+            android:textColor="#ff7f7f7f"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.allen.library.shape.ShapeConstraintLayout>

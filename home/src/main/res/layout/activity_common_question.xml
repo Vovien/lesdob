@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:background="@drawable/bg_common_question"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/home_common_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/ctb_transparent_title"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginTop="@dimen/dp_44"
+            android:paddingHorizontal="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:src="@drawable/home_arrow_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="常见问题"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/dp_18"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:text="试管必看・真实案例"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/home_to_look"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ctb_transparent_title" />
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:nestedScrollingEnabled="false"
+            app:banner_auto_loop="true"
+            app:banner_indicator_gravity="center"
+            app:banner_indicator_height="@dimen/dp_6"
+            app:banner_indicator_marginTop="@dimen/dp_10"
+            app:banner_indicator_normal_color="#66FFFFFF"
+            app:banner_indicator_normal_width="@dimen/dp_6"
+            app:banner_indicator_radius="@dimen/dp_3"
+            app:banner_indicator_selected_color="@color/white"
+            app:banner_indicator_selected_width="@dimen/dp_6"
+            app:banner_indicator_space="@dimen/dp_4"
+            app:banner_loop_time="6000"
+            app:layout_constraintTop_toBottomOf="@id/tv_hint" />
+
+        <com.youth.banner.indicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner" />
+
+        <com.allen.library.shape.ShapeFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:shapeCornersBottomLeftRadius="@dimen/dp_0"
+            app:shapeCornersBottomRightRadius="@dimen/dp_0"
+            app:shapeCornersTopLeftRadius="8dp"
+            app:shapeCornersTopRightRadius="@dimen/dp_8"
+            app:shapeSolidColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.apkdv.mvvmfast.view.StateLayout
+        android:id="@+id/state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_category"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+    </com.apkdv.mvvmfast.view.StateLayout>
+</LinearLayout>
+
+

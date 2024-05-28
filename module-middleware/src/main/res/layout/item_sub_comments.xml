@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/dp_12"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="不要昵称可以吧你大爷的"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toEndOf="@id/image_user"
+        app:layout_constraintTop_toTopOf="@id/image_user" />
+
+    <TextView
+        android:id="@+id/text_reply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/dp_8"
+        android:text="打大神大"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/icon_see_more"
+        android:drawableTint="@color/colorD8D8D8"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toEndOf="@id/text_user_name"
+        app:layout_constraintTop_toTopOf="@id/text_user_name" />
+
+    <TextView
+        android:id="@+id/text_sub_comments_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:lineHeight="@dimen/dp_20"
+        android:text="好像是在湖南台播的"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="@id/text_send_like"
+        app:layout_constraintEnd_toStartOf="@+id/text_send_like"
+        app:layout_constraintStart_toEndOf="@+id/image_user"
+        app:layout_constraintTop_toBottomOf="@id/text_user_name" />
+
+    <TextView
+        android:id="@+id/text_send_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/icon_like"
+        android:gravity="center"
+        android:textColor="@color/color_BFBFBF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_sub_comments_content"
+        app:layout_constraintTop_toTopOf="@id/image_user" />
+
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textColor="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="@id/text_user_name"
+        app:layout_constraintTop_toBottomOf="@id/text_sub_comments_content" />
+
+    <TextView
+        android:id="@+id/text_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:text="回复"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="@id/text_time"
+        app:layout_constraintStart_toEndOf="@id/text_time"
+        app:layout_constraintTop_toTopOf="@id/text_time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

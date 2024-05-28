@@ -1,0 +1,298 @@
+<resources>
+    <string name="software_name">LesDoB</string>
+    <string name="edit_profile">编辑资料</string>
+    <string name="edit_profile_short">编辑</string>
+    <string name="private_message">私信</string>
+    <string name="message_notification">消息通知</string>
+    <string name="about_sisters_bond">关于LesDoB</string>
+    <string name="login_security">登录安全</string>
+    <string name="log_off_submit">注销账号申请</string>
+    <string name="about_business_license">营业执照</string>
+    <string name="update_version">版本更新</string>
+    <string name="contact_app">联系我们</string>
+    <string name="app_score">去评分</string>
+    <string name="app_setting">设置</string>
+    <string name="released_by_dynamic">我发布的动态</string>
+    <string name="exceptional_message">打赏消息</string>
+    <string name="direct_messages_to_set">私信设置</string>
+    <string name="news_notice">关注消息</string>
+    <string name="hot_news_notice">为您推荐</string>
+    <string name="when_hot_today_let_me_know">有热点内容时推荐给我</string>
+    <string name="when_someone_follow_me_let_me_know">有人关注我时通知我</string>
+    <string name="when_someone_is_exceptional_for_me_let_me_know">有人对我打赏时通知我</string>
+    <string name="allowing_others_to_send_me_messages">允许他人给我发私信</string>
+    <string name="released_by_dynamic_des">文章或者回答有新评论时通知我</string>
+    <string name="login_password">登录密码</string>
+    <string name="secure_email">安全邮箱</string>
+    <string name="modify_phone">修改手机</string>
+    <string name="bing_wx">微信绑定</string>
+    <string name="description">简介</string>
+    <string name="gender">性别（男）</string>
+    <string name="not_set">未设置</string>
+    <string name="not_bind">未绑定</string>
+    <string name="display">显示</string>
+    <string name="nickname">昵称</string>
+    <string name="displayed_on_home_page_my_gender">在主页上显示我的性别</string>
+    <string name="click_change_head_portrait">点击更换头像</string>
+    <string name="nickname_for_only_allow_to_modify_2_times_in_year">一年内只允许修改2次昵称。当前还可更改%d次</string>
+    <string name="number_characters_has_reached_limit">字符数已达上限</string>
+    <string name="modify_name">修改名字</string>
+    <string name="save">保存</string>
+    <string name="ok">好的</string>
+    <string name="do_not_save">不保存</string>
+    <string name="going_home_whether_save_editor">即将返回，是否保存编辑</string>
+
+    <string name="introduce_yourself_to_others">向别人介绍一下你自己吧</string>
+    <string name="input_name_hint">2~10个汉字或4~20个字母</string>
+    <string name="input_nick_name_hint">请填写昵称</string>
+    <string name="welcome_to_sisters">你好，欢迎来到LesDoB</string>
+    <string name="please_selected_gender">选择您的性别</string>
+    <string name="please_selected_age">选择您的年龄</string>
+    <string name="user_info_title_info">花两步让我们了解你</string>
+    <string name="user_info_title_info_step1">第一步</string>
+    <string name="user_info_title_info_step2">第二步</string>
+    <string name="your_gender">我们想知道您的性别，方便更好地服务您。</string>
+    <string name="you_cannot_change">选定性别后无法更改，但可以不展示。</string>
+    <string name="open_sisters_trip_to_bond">选好了，开启LesDoB之旅</string>
+    <string name="i_am_lady">我是女士</string>
+    <string name="i_am_man">我是男士</string>
+    <string name="key_to_machine_number_to_log_in">本机号码一键登录</string>
+    <string name="input_validation_code">输入6位验证码</string>
+    <string name="verification_code_has_been_sent">验证码已发送至 %S</string>
+    <string name="machine_number_quick_to_log_in">本机号码快捷登录</string>
+    <string name="machine_number_unregistered_will_automatically_create_new_account">本机号码未注册将自动创建新账号</string>
+    <string name="use_other_mobile_phone_number">使用其他手机号</string>
+    <string name="account_password">账号密码登录</string>
+    <string name="read_agree_to">登录即同意</string>
+    <string name="read_and_agree_jmbon_to">我已阅读LesDoB</string>z
+    <string name="enter_phone_number">输入手机号码</string>
+    <string name="please_enter_phone_number">请输入手机号</string>
+    <string name="quick_login">登录了解Les生育</string>
+    <string name="identify_check">身份认证</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="phone_number_login">手机号登录</string>
+    <string name="automatically_create_new_account">未注册的手机号验证后将自动创建新账号</string>
+    <string name="phone_master_check">请输入当前注册手机号接受验证码确保本人操作</string>
+    <string name="please_enter_correct_phone_number">请输入正确的手机号</string>
+    <string name="please_enter_login_phone_number">请输入注册的手机号码</string>
+    <string name="please_enter_phone_number_to_accept_verification_code_to_reset_password">请输入手机号接受验证码以重置密码</string>
+    <string name="privacy_policy">《隐私政策》</string>
+    <string name="user_agreement">《用户协议》</string>
+    <string name="user_agreement_login_off">《用户注销告知书》</string>
+    <string name="user_agreement_login_off_title">用户注销告知书</string>
+    <string name="to_obtain">重新获取</string>
+    <string name="login">登录</string>
+    <string name="auth_agree">同意授权</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="verification_code_sent_successfully">验证码发送成功</string>
+    <string name="password_to_login">密码登录</string>
+    <string name="account_for_registered_mobile_phone_number">账号为注册过的手机号</string>
+    <string name="account_password_error">账号或密码错误</string>
+    <string name="please_enter_password">请输入密码</string>
+    <string name="enter_new_password">输入新密码</string>
+    <string name="setup_password">设置密码</string>
+    <string name="password_is_required_to">必须包含至少一个符号或数字，且至少为 8 个字符。</string>
+    <string name="update_password">更新密码</string>
+    <string name="authentication">身份验证</string>
+    <string name="input_current_for_phone_number_to_receive_verification_code">请输入当前注册手机号以接收验证码</string>
+    <string name="password_successfully">密码设置成功</string>
+    <string name="binding_email">绑定邮箱</string>
+    <string name="please_check_verify">请您查收并验证。</string>
+    <string name="already_email_to_mailbox">我们已向邮箱 %s 发送了一封邮件。</string>
+    <string name="already_re_email_to_mailbox">我们已重新向邮箱 %s 发送了一封邮件。</string>
+    <string name="click_on_email_verification_link">我已点击邮件验证链接</string>
+    <string name="not_yet_received_mail">未收到邮件，重新发送</string>
+    <string name="email_to_send">%d秒后重新发送</string>
+    <string name="enter_new_phone_number">输入新手机号</string>
+    <string name="new_phone_number_will_be_as_login_account">新的手机号将作为你LesDoB登录账号</string>
+
+    <string name="bind_new_phone_number">绑定手机号</string>
+    <string name="bind_phone_tips">根据国家政策需要绑定手机号进行实名认证</string>
+
+    <string name="wallet">钱包</string>
+    <string name="exceptional">打赏</string>
+    <string name="fans">粉丝</string>
+    <string name="fans_list">粉丝列表</string>
+    <string name="focus_list">关注列表</string>
+    <string name="my_follow">我的关注</string>
+    <string name="comment">评论</string>
+    <string name="answer">回答</string>
+    <string name="message_center">消息中心</string>
+    <string name="message_comment">评论</string>
+    <string name="message_jmhome">官方消息</string>
+    <string name="message_jmemail">LesDoB官方邮件</string>z
+    <string name="delict_report_detail">被侵权举报详情</string>z
+    <string name="hanlde_report_detail">处理反馈</string>z
+    <string name="hanlde_report_result">处理结果通知</string>z
+    <string name="message_mutually">互动消息</string>
+    <string name="message_violate_rule">违规详情</string>
+    <string name="message_audit_result">审核结果</string>
+    <string name="message_check_result">审核详情</string>
+    <string name="login_error">登录出错</string>
+    <string name="change_your_photo">更换头像</string>
+    <string name="with_head_is_in_success">更换头像成功</string>
+    <string name="not_displayed">不显示</string>
+    <string name="change_background_successfully">更换背景成功</string>
+    <string name="change_background">更换背景</string>
+    <string name="enter_correct_email_format">输入正确的邮箱格式</string>
+    <string name="an_account_can_only_bind_mailbox">一个账号只能绑定一个邮箱</string>
+    <string name="binding_new_email">绑定新邮箱</string>
+    <string name="please_log_in_using_new_phone_number_sisters_nations_next_time">下次请使用新的手机号登录LesDoB。</string>
+    <string name="mobile_phone_is_changed">手机修改成功</string>
+    <string name="back_to_purse">回到钱包</string>
+    <string name="withdrawal_application_is_successful">提现申请成功</string>
+    <string name="instant_to_account_after_approval">审核通过后即时到账，请关注支付宝/微信通知</string>
+    <string name="has_been_set">已设置</string>
+    <string name="logout">退出登录</string>
+    <string name="log_off_call">致电客服申请注销</string>
+    <string name="log_off_now">我想清楚了，立即注销</string>
+    <string name="kefu">在线客服</string>
+    <string name="log_off">注销账号</string>
+    <string name="pregnancy_status">状态</string>
+    <string name="in_pregnancy_prepared">备孕中</string>
+    <string name="pregnant">已怀孕</string>
+    <string name="have_baby">有宝宝</string>
+    <string name="password_must_contain_least_one_symbols_numbers">密码格式不规范，至少含有一个符号或数字。</string>
+
+    <array name="mine_index">
+        <item>回答</item>
+        <item>提问</item>
+        <item>文章</item>
+    </array>
+
+    <array name="mutually_item">
+        <item>全部</item>
+        <item>点赞</item>
+        <item>收藏</item>
+    </array>
+    <array name="jm_message_item">
+        <item>全部</item>
+        <item>悬赏</item>
+        <item>审核</item>
+        <item>违规</item>
+        <item>举报</item>
+    </array>
+    <array name="select_city">
+        <item>国内城市</item>
+        <item>海外城市</item>
+    </array>
+    <array name="sex_item">
+        <item>女</item>
+        <item>男</item>
+    </array>
+    <array name="pregnancy_item">
+        <item>育儿</item>
+        <item>备孕</item>
+        <item>怀孕</item>
+    </array>
+    <string name="wallet_message">前往钱包查看</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_revenue">总金额</string>
+    <string name="withdrawal">提现</string>
+    <string name="rebate">抵扣券</string>
+    <string name="money_password">提现密码</string>
+    <string name="exceptional_person">打赏者</string>
+    <string name="exceptional_time">时间</string>
+    <string name="exceptional_type">类型</string>
+    <string name="article_title">文章标题</string>
+    <string name="please_move_to_web_page_for_details">咨询板块暂未开发移动端<br />请移至网页端查看详情</string>
+    <string name="income_details">收入详情</string>
+    <string name="withdrawal_details">提现详情</string>
+    <string name="withdrawal_setting">提现设置</string>
+    <string name="withdrawal_to">提现到</string>
+    <string name="withdrawal_order">订单</string>
+    <string name="binding_least_one_withdrawal_account_set_up_withdrawal_password_before_withdrawal">至少绑定一个提现账号并设置提现密码方可提现</string>
+    <string name="withdrawal_account_binding">提现账号绑定</string>
+    <string name="ali_pay">支付宝</string>
+    <string name="immediately_binding">立即绑定</string>
+    <string name="cancel_binding">解除绑定</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="wechat">微信</string>
+    <string name="six_pure_digital_password">6个纯数字密码</string>
+    <string name="pwd_digits">0123456789</string>
+    <string name="pwd_digits2">*0123456789</string>
+    <string name="password_confirmation">密码确认</string>
+    <string name="password_error">密码错误</string>
+    <string name="confirm">确认</string>
+    <string name="set_withdrawal_password">设置提现密码</string>
+    <string name="setting_success">设置成功</string>
+    <string name="unbind_success">解绑成功</string>
+    <string name="unbind_fail">解绑失败</string>
+    <string name="modify_success">修改成功</string>
+    <string name="modify_withdrawal_password">修改提现密码</string>
+    <string name="enter_original_password">输入原密码</string>
+    <string name="original_password_error">原密码错误</string>
+    <string name="connect_kefu">联系客服</string>
+    <string name="connect_kefu_phone">客服电话</string>
+    <string name="call_kefu">致电客服</string>
+    <string name="call_kefu_phone">028-62368188</string>
+    <string name="next_step">下一步</string>
+    <string name="current_state">当前状态<br />%s</string>
+    <string name="welcome_back">欢迎回来</string>
+    <string name="log_in_successfully">登录成功</string>
+    <string name="phone_bind_successfully">手机绑定成功</string>
+    <string name="person_edit_info_empty">简介内容不能为空</string>
+    <string name="please_setting_money_password">请先设置提现密码</string>z
+    <string name="cancel_binding_failed">尚有提现正在审核中\n无法解绑</string>
+    <string name="withdrawal_amount">提现金额</string>
+    <string name="all_withdrawal">全部提现</string>
+    <string name="withdrawal_amount_is_beyond_balance">提现金额超出余额</string>
+    <string name="withdraw_to">提现到</string>
+    <string name="unbind_tips">为了您的信息安全，解除绑定之前需要输入提现密码进行身份验证。</string>
+    <string name="unbind_account">解除绑定</string>
+    <string name="withdrawal_password">输入提现密码</string>
+    <string name="please_set_withdrawal_password">请先设置提现密码</string>
+    <string name="please_set_cash_account">请先设置提现账号</string>
+    <string name="withdraw_result">提现结果</string>
+    <string name="back_to_wallet">回到钱包</string>
+    <string name="order_number">订单号</string>
+    <string name="withdrawaling">提现中</string>
+    <string name="mine_my_answer">我的回答</string>
+    <string name="personal_home_page">我的主页</string>
+    <string name="my_home_page">个人主页</string>
+    <string name="mine_draft_box">草稿箱</string>
+    <string name="collect">我的收藏</string>
+    <string name="mine_rebate">抵扣券</string>
+    <string name="my_circle">圈子</string>
+    <string name="mine_feedback">意见反馈</string>
+    <string name="mine_help">帮助</string>
+    <string name="mine_help_center">帮助中心</string>
+    <string name="customer_service">客服</string>
+    <string name="mine_small_tools">姐妹小工具</string>
+    <string name="browse_circle_recently">最近浏览的圈子</string>
+    <string name="set_up_service">设置与服务</string>
+    <string name="please_enter_correct_email_format">请输入正确的邮箱格式</string>
+    <string name="login_register_indicates_that_you_have_read_agree_to_sisters">登录即同意</string>
+    <string name="sweep_code_success">扫码成功，登录确认</string>
+    <string name="confirm_landing">确认登录</string>
+    <string name="cancel_login">取消登录</string>
+    <string name="sweep_login_code">扫码登录</string>
+    <string name="welcome_to_join_sisters_family_bond">欢迎加入LesDoB大家庭</string>
+    <string name="please_check_user_agreement_privacy">请勾选用户协议以及隐私协议</string>
+    <string name="please_write_down_your_opinion_suggestion_here">请在这里写下您的意见建议</string>
+    <string name="experience_problem">体验问题</string>
+    <string name="content_problem">内容问题</string>
+    <string name="operating_bug">操作BUG</string>
+    <string name="product_problems">产品问题</string>
+    <string name="wait_think">再想想</string>
+    <string name="log_off_account_now">立即注销</string>
+    <string name="thank_you_for_your_contribution_to_community">感谢您对社区做的贡献</string>
+    <string name="see_you_again">期待与您再次相遇</string>
+    <string name="please_read_check_cancellation_notice_by_user">请阅读并勾选 用户注销告知书</string>
+
+
+    <string name="cp_locate_failed">定位失败</string>
+    <string name="cp_locating">正在定位…</string>
+    <string name="for_your_public_information">2.获得你的公开信息（头像、昵称）</string>
+    <string name="among_sisters_account_allows_you_to_use_you">3.允许使用你在孕小帮账号上绑定的手机号绑定LesDoB及使用相关服务</string>
+    <string name="get_your_basic_information">1.获得你的基础资料（个人主页背景图）</string>
+    <string name="after_login_authorization">登录授权后 LesDoB 将获得以下3项权限：</string>
+    <string name="authorize_login_sisters">一键登录LesDoB并授权</string>
+    <string name="no_account_will_register_direct">没有LesDoB账号的用户将直接注册登录</string>
+    <string name="please_check_user_agreement_privacy_policy">请勾选用户协议和隐私政策</string>
+    <string name="log_off_tips">尊敬的用户，为了保证您的申请能够顺利通过，请您检查<u>LesDoB账号</u>是否满足以下条件：</string>
+
+
+</resources>

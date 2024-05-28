@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/button_8dp_corners_shape"
+        android:state_checked="true">
+    </item>
+    <item
+        android:drawable="@drawable/gray_corner_bg_shape">
+    </item>
+</selector>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="240dp"
+    android:layout_height="310dp"
+    android:background="@color/transparent">
+
+    <com.allen.library.shape.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        app:shapeCornersRadius="@dimen/dp_8"
+        app:shapeSolidColor="@color/white">
+
+        <ImageView
+            android:id="@+id/im_top"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_popwindow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="发现新版本！"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_top">
+
+            <TextView
+                android:id="@+id/text_update_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="1.解决了已知问题\n2.优化了用户体验"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/sp_15" />
+
+            <com.jmbon.widget.download_progress.AnimDownloadProgressButton
+                android:id="@+id/jb_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                android:layout_marginTop="@dimen/dp_49"
+                android:gravity="center"
+                android:text="立即更新"
+                app:progressbtn_backgroud_color="@color/color_currency"
+                app:progressbtn_backgroud_second_color="#C6EDEE"
+                app:progressbtn_radius="@dimen/dp_8"
+                app:progressbtn_text_color="@color/white" />
+
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="跳过版本"
+                android:textColor="@color/color_7F7F7F" />
+
+        </LinearLayout>
+    </com.allen.library.shape.ShapeConstraintLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp_110"
+        android:layout_height="@dimen/dp_110"
+        android:layout_gravity="right|end"
+        android:src="@drawable/icon_rocket" />
+
+
+</FrameLayout>

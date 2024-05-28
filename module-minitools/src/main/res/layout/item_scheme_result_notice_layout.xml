@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/case_result_item_indicator"
+        android:drawablePadding="@dimen/dp_8"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/dp_18"
+        android:textStyle="bold"
+        tools:text="完善检查：" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/dp_18"
+        tools:text="卵泡发育监测、精子碎片率等6项检查。" />
+</LinearLayout>

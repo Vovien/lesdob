@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="216dp"
+    android:layout_height="237dp">
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_104"
+        android:layout_marginStart="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_marginEnd="@dimen/dp_1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_tube_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.allen.library.shape.ShapeConstraintLayout
+        android:id="@+id/ll_info"
+        android:layout_width="216dp"
+        android:layout_height="237dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeCornersRadius="@dimen/dp_8"
+        app:shapeStrokeColor="@color/color_262626"
+        app:shapeStrokeWidth="@dimen/dp_1">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_116"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff262626"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="检查建档检查建档检查建档检查建档检查建档检查建档" />
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="@dimen/dp_4"
+            android:layout_marginStart="@dimen/dp_12"
+            android:background="@drawable/shape_circle_dot_bf"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_desc1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_desc1" />
+
+        <TextView
+
+            android:id="@+id/tv_desc1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff7f7f7f"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dot1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="检查建档检查建啊" />
+
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="@dimen/dp_4"
+            android:layout_marginStart="@dimen/dp_12"
+            android:background="@drawable/shape_circle_dot_bf"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_desc2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_desc2" />
+
+        <TextView
+
+            android:id="@+id/tv_desc2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff7f7f7f"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dot2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc1"
+            tools:text="检查建检查建啊" />
+
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="@dimen/dp_4"
+            android:layout_marginStart="@dimen/dp_12"
+            android:background="@drawable/shape_circle_dot_bf"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_desc3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_desc3" />
+
+        <TextView
+
+            android:id="@+id/tv_desc3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff7f7f7f"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dot3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc2"
+            tools:text="检查建档检查建档检查建啊检查建档检查建档检查建啊" />
+
+
+    </com.allen.library.shape.ShapeConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_shiguan_pregnant">试管婴儿</string>
+    <string name="home_select_read_pregnant">备孕中</string>
+    <string name="home_select_have_pregnant">已怀孕</string>
+    <string name="home_select_have_baby">有宝宝</string>
+    <string name="downloaded">&#160;%s %%</string>
+    <string name="release_up">释放切换</string>
+    <string name="release_up_answer">释放切换下一个答案</string>
+    <string name="pull_down_switch">下拉查看</string>
+    <string name="pull_up_switch">上拉查看</string>
+    <string name="pull_up_switch_answer">上拉查看下一个答案</string>
+    <string name="next_recommend_content">以下为推荐内容</string>
+    <string name="finish_qa_content">当前问题答案已浏览完毕</string>
+    <string name="finish_article_content">当前文章已浏览完毕</string>
+    <string name="recommend_content">推荐内容</string>
+    <string name="continue_browser_curr_qa">继续浏览当前问题回答</string>
+</resources>

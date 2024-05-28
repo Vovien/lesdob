@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:ellipsize="end"
+
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="@dimen/dp_6"
+        android:maxLines="2"
+        android:text="26岁是怀孕在最佳年龄范围内？"
+        android:textColor="@color/color_262626"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <ImageView
+            android:id="@+id/civ_head"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="@color/color_7F7F7F"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="赵小臭赵小臭赵小臭赵小臭赵小臭" />
+
+        <View
+            android:id="@+id/view_ver"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:background="@color/colorD8D8D8" />
+
+        <TextView
+            android:id="@+id/tv_user_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="xxxxxxx话题优秀回答者"
+            android:textColor="@color/color_7F7F7F"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineHeight="22.4dp"
+
+        android:maxLines="2"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/iv_cover"
+        app:layout_constraintTop_toBottomOf="@id/ll_data"
+        tools:text="但是感觉自己都是个孩子但是感觉自己都是个孩子但是感觉自己都是个孩子但是感觉自己都是个孩子但是感觉自己都是个孩子但是感觉自己都是个孩子，最佳发现意外怀孕，孩子肯定得要，但是我又太早了啊阿斯顿发阿斯顿发阿斯顿发" />
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="84:63"
+        app:layout_constraintLeft_toRightOf="@id/tv_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_content"
+        tools:src="@drawable/main_home_hot_top_bg" />
+
+    <ImageView
+        android:id="@+id/iv_video"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:src="@drawable/icon_video_play"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintDimensionRatio="84:63"
+        app:layout_constraintLeft_toLeftOf="@id/iv_cover"
+        app:layout_constraintRight_toRightOf="@id/iv_cover"
+        app:layout_constraintTop_toTopOf="@id/iv_cover" />
+
+
+    <include
+        android:id="@+id/bottomView"
+        layout="@layout/include_mine_item_bottom_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorF9F9F9"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

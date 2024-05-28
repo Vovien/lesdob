@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tube_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_144"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:background="@drawable/white_bg_corner_shape"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jmbon.widget.SuperView
+            android:layout_width="6dp"
+            android:layout_height="@dimen/dp_12"
+            app:vCornersRadius="@dimen/dp_3"
+            app:vSolidColor="@color/color_currency" />
+
+        <TextView
+            android:id="@+id/tv_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:text="试管账单"
+            android:textColor="#ff262626"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_eye"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_8"
+            android:src="@drawable/icon_bill_eye_close_gray"
+            app:layout_constraintBottom_toBottomOf="@id/tv_bill"
+            app:layout_constraintStart_toEndOf="@id/tv_bill"
+            app:layout_constraintTop_toTopOf="@+id/tv_bill"
+        />
+    </LinearLayout>
+
+
+    <com.jmbon.widget.Shadow.ShadowConstraintLayout
+        android:id="@+id/tube_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_84"
+        android:background="@drawable/color_test_tube_bill_pre_bg"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_radius="@dimen/dp_8"
+        app:shadow_shadowAlpha="0.08"
+        app:shadow_shadowColor="#0EA9B0"
+        app:shadow_shadowElevation="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/icon_test_tube_bill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="已花费（元）"
+            android:textColor="#BFFFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:text="*** ***"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_more"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+    </com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+</LinearLayout>

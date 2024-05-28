@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.apkdv.mvvmfast.view.StateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:orientation="horizontal">
+
+        <com.jmbon.widget.Shadow.ShadowConstraintLayout
+            android:id="@+id/scl_menu1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_19"
+            android:paddingEnd="@dimen/dp_9"
+            android:paddingBottom="@dimen/dp_19"
+            app:shadow_radius="@dimen/dp_8"
+            app:shadow_shadowAlpha="0.3"
+            app:shadow_shadowColor="#000000"
+            app:shadow_shadowElevation="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/tv_title1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ff262626"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/iv_cover1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_cover1"
+                tools:text="时间表时间表时间表时间表时间表" />
+
+            <TextView
+                android:id="@+id/tv_sub_title1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ffbfbfbf"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/iv_cover1"
+                app:layout_constraintEnd_toEndOf="@id/tv_title1"
+                app:layout_constraintStart_toStartOf="@id/tv_title1"
+                tools:text="试管婴儿过程" />
+
+            <ImageView
+                android:id="@+id/iv_cover1"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_44"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/icon_user_letter" />
+        </com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+        <com.jmbon.widget.Shadow.ShadowConstraintLayout
+            android:id="@+id/scl_menu2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_19"
+            android:paddingEnd="@dimen/dp_9"
+            android:paddingBottom="@dimen/dp_19"
+            app:shadow_radius="@dimen/dp_8"
+            app:shadow_shadowAlpha="0.3"
+            app:shadow_shadowColor="#000000"
+            app:shadow_shadowElevation="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ff262626"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/iv_cover2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_cover2"
+                tools:text="时间表时间表时间表时间表时间表" />
+
+            <TextView
+                android:id="@+id/tv_sub_title2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ffbfbfbf"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/iv_cover2"
+                app:layout_constraintEnd_toEndOf="@id/tv_title2"
+                app:layout_constraintStart_toStartOf="@id/tv_title2"
+                tools:text="试管婴儿过程" />
+
+            <ImageView
+                android:id="@+id/iv_cover2"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_44"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/icon_user_letter" />
+        </com.jmbon.widget.Shadow.ShadowConstraintLayout>
+
+    </LinearLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        app:banner_auto_loop="true"
+        app:banner_indicator_marginBottom="@dimen/dp_8"
+        app:banner_indicator_marginRight="@dimen/dp_12"
+        app:banner_indicator_gravity="right"
+        app:banner_indicator_space="@dimen/dp_4"
+        app:banner_indicator_radius="@dimen/dp_3"
+        app:banner_indicator_normal_color="@color/white40"
+        app:banner_indicator_normal_width="@dimen/dp_6"
+        app:banner_indicator_selected_color="@color/white"
+        app:banner_indicator_selected_width="@dimen/dp_6"
+        app:banner_indicator_height="@dimen/dp_6"
+        app:banner_loop_time="6000"
+        app:banner_radius="@dimen/dp_12" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ColorF5F5"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</com.apkdv.mvvmfast.view.StateLayout>

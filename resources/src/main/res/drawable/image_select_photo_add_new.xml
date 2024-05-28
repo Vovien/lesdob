@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="rectangle">
+			<corners android:radius="8dp" />
+			<solid android:color="#f5f5f5" />
+
+		</shape>
+	</item>
+	<item
+		android:top="25dp"
+		android:bottom="25dp"
+		android:left="25dp"
+		android:right="25dp"
+
+		android:gravity="center">
+		<bitmap
+			android:src="@drawable/icon_add_follow"
+			android:tint="#d2d2d2" />
+	</item>
+</layer-list>

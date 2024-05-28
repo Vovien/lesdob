@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_240"
+    android:layout_height="wrap_content"
+    app:shapeCornersRadius="@dimen/dp_8"
+    app:shapeSolidColor="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:text="推荐不满意吗？"
+        android:textColor="#ff262626"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="left"
+        android:text="您可以把想了解的知识告诉我们，我们会及时更新，谢谢。"
+        android:textColor="#ff262626"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <com.jmbon.widget.progress_button.JmbonButton
+        android:id="@+id/jb_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:text="我要反馈"
+        app:jButtonStyle="green_full"
+        app:jCornersRadius="@dimen/dp_8"
+        app:jSelectText="我要反馈"
+        app:jSelectorNormalColor="@color/white"
+        app:jUseSelector="true"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:gravity="center"
+        android:text="不了，谢谢"
+        android:textColor="#FF7F7F7F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jb_feedback" />
+</com.allen.library.shape.ShapeConstraintLayout>

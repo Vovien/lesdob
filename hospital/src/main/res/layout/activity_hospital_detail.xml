@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smart_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.donkingliang.consecutivescroller.SmoothRateConsecutiveScrollerLayout
+        android:id="@+id/scroller_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/dp_23">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="MassachssachusalMassachssachusalMassachssachusalMassachssachusalMassachssachusalMassachssachusal Hospital， MGH"
+                android:textColor="#ff262626"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/iv_cover"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_80"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_title"
+                tools:src="@drawable/icon_tube_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_simple_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="简称  麻省总医院"
+                android:textColor="#ff7f7f7f"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_title"
+                app:layout_constraintStart_toStartOf="@id/tv_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_24" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/expand_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:fillViewport="true"
+            app:layout_isConsecutive="false"
+            app:layout_isNestedScroll="true">
+
+            <com.jmbon.widget.textview.ExpandTextView
+                android:id="@+id/text_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#ff262626"
+                android:textSize="16sp" />
+
+
+            <!--            <com.jmbon.widget.ExtendTextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_margin="@dimen/dp_12"-->
+            <!--                android:background="@color/white"-->
+            <!--                app:animation_duration="150"-->
+            <!--                app:text_color="@color/color_262626"-->
+            <!--                app:text_size="@dimen/sp_16" />-->
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_13" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_140"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:visibility="visible" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:text="医院电话"
+            android:textColor="#ff262626"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_20" />
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0574-87085588"
+                android:textColor="#ff262626"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginStart="@dimen/dp_8"
+                android:src="@drawable/icon_hispital_phone" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:text="医院地址"
+            android:textColor="#ff262626"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_20" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:text="55 Fruit St, Boston, MA 02114美国"
+            android:textColor="#ff262626"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:text="复制"
+            android:textColor="#ff5384ff"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_24">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/colorF9F9F9" />
+
+            <LinearLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:divider="@drawable/article_dash_line"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/colorF9F9F9" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_42" />
+
+        <com.jmbon.widget.Shadow.ShadowLinearLayout
+            android:id="@+id/ll_tech"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_28"
+            android:layout_gravity="bottom|right"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_56"
+            android:background="@drawable/shape_hospital_tech_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_5"
+            app:shadow_shadowAlpha="0.3"
+            app:shadow_shadowColor="#5384ff"
+            app:shadow_shadowElevation="@dimen/dp_4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医院准入技术"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </com.jmbon.widget.Shadow.ShadowLinearLayout>
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_tech"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_8"
+            android:background="@color/colorF9F9F9" />
+
+
+        <TextView
+            android:id="@+id/tv_hospital_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:drawableStart="@drawable/shape_title_tag"
+            android:drawablePadding="@dimen/dp_8"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_40"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="医院概况"
+            android:textColor="#ff262626"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_leader_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="领导团队"
+            android:textColor="#ff262626"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_leader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_4" />
+
+        <FrameLayout
+            android:id="@+id/fl_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:drawableStart="@drawable/shape_title_tag"
+            android:drawablePadding="@dimen/dp_8"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_40"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="专家团队"
+            android:textColor="#ff262626"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20" />
+
+        <FrameLayout
+            android:id="@+id/fl_more_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_more_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/icon_more_doctor"
+                android:gravity="center_horizontal"
+                android:text="查看所有医生"
+                android:textColor="#ff5384ff"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="104dp" />
+    </com.donkingliang.consecutivescroller.SmoothRateConsecutiveScrollerLayout>
+
+    <com.jmbon.widget.tablayout.SlidingTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:visibility="gone"
+        app:tl_iconVisible="false"
+        app:tl_indicator_anim_duration="300"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_color="@color/color_currency"
+        app:tl_indicator_corner_radius="1dp"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_margin_bottom="1dp"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_openTextDmg="true"
+        app:tl_tab_padding="10dp"
+        app:tl_tab_space_equal="false"
+        app:tl_tab_view_margin="@dimen/dp_40"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/color_262626"
+        app:tl_textSelectSize="15sp"
+        app:tl_textUnSelectColor="@color/color_7F7F7F"
+        app:tl_textUnSelectSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="#08000000" />
+
+
+        <com.allen.library.shape.ShapeLinearLayout
+            android:id="@+id/fl_custom_scheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginVertical="@dimen/dp_10"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:shapeCornersRadius="@dimen/dp_11"
+            app:shapeSolidColor="#FF5384FF">
+
+            <TextView
+                android:id="@+id/tv_custom_scheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约医院"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加生育顾问，免费帮您预约"
+                android:textColor="#99FFFFFF"
+                android:textSize="@dimen/sp_12"
+                android:layout_gravity="center" />
+
+
+        </com.allen.library.shape.ShapeLinearLayout>
+
+    </FrameLayout>
+
+    <com.jmbon.widget.Shadow.ShadowLinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_gravity="bottom|right"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_109"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:shadow_radius="@dimen/dp_28"
+        app:shadow_shadowAlpha="0.4"
+        app:shadow_shadowColor="#000000"
+        app:shadow_shadowElevation="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目录"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </com.jmbon.widget.Shadow.ShadowLinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_bg_round"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20">
+
+        <com.jmbon.widget.OrderTabLayout
+            android:id="@+id/order_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text_comments_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="0条评论"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_down"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:background="@drawable/shape_reply_circle_shadow_bg"
+            android:src="@drawable/icon_nav_dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/ColorFAFA" />
+
+    <com.apkdv.mvvmfast.view.StateLayout
+        android:id="@+id/state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:emptyLayout="@layout/layout_comments_empty"
+        app:noNetLayout="@layout/layout_comments_empty">
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableRefresh="false">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </com.apkdv.mvvmfast.view.StateLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/ColorFAFA" />
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_8">
+
+        <ImageView
+            android:id="@+id/image_head"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_2"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/icon_default_login_avatar" />
+
+        <TextView
+            android:id="@+id/textReply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_input_login"
+            android:gravity="center_vertical"
+            android:hint="@string/published_under_your_point_view"
+            android:maxLines="3"
+            android:minHeight="@dimen/dp_40"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_9"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_9"
+            android:textColorHint="@color/color_BFBFBF"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</LinearLayout>

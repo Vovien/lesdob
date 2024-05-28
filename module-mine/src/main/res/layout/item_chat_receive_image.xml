@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="#ffbfbfbf"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="@dimen/dp_20"
+        tools:text="11:59" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/dp_42"
+        android:layout_height="@dimen/dp_42"
+        android:layout_below="@+id/tv_date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:src="@drawable/default_man_activies_icon" />
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_avatar"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_70"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/dp_160"
+        android:maxHeight="@dimen/dp_160"
+        android:minWidth="@dimen/dp_50"
+        android:minHeight="@dimen/dp_50"
+        android:transitionName="imageUserAvatar"
+        tools:src="@drawable/icon_occupy_column" />
+</RelativeLayout>

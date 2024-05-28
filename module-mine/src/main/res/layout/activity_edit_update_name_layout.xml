@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20">
+
+    <TextView
+	    android:id="@+id/textUpdateCount"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="16dp"
+		android:visibility="gone"
+	    android:text="@string/nickname_for_only_allow_to_modify_2_times_in_year"
+	    android:textColor="@color/color_7F7F7F"
+	    android:textSize="@dimen/sp_12" />
+
+    <com.jmbon.widget.ClearableEditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/shape_input_login_radius_8"
+        android:hint="@string/input_nick_name_hint"
+        android:paddingStart="@dimen/dp_12"
+        android:paddingEnd="@dimen/dp_12"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColorHint="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/tipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_20"
+	        android:text="@string/number_characters_has_reached_limit"
+	        android:textColor="@color/color_7F7F7F"
+            android:textSize="@dimen/sp_12"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@id/text_size"
+            app:layout_constraintTop_toTopOf="@id/text_size" />
+
+        <TextView
+            android:id="@+id/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/10"
+            android:textColor="@color/color_BFBFBF"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintEnd_toEndOf="parent"
+			android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

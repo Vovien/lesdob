@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:shadow_radius="@dimen/dp_8"
+    app:shadow_shadowAlpha="0.03"
+    app:shadow_shadowColor="#ff000000"
+    app:shadow_shadowElevation="4.0dip">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ff262626"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_32"
+        android:background="#E5E5E5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_line">
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_BFBFBF"
+            android:textSize="@dimen/sp_17" />
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_50"
+            android:background="#E5E5E5" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_currency_error"
+            android:textSize="@dimen/sp_17" />
+    </LinearLayout>
+
+
+</com.jmbon.widget.Shadow.ShadowConstraintLayout>

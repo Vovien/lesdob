@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jmbon.widget.tablayout.SlidingTabLayout
+	        android:id="@+id/commonTabLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp_44"
+	        app:tl_iconVisible="false"
+	        app:tl_indicator_anim_duration="300"
+	        app:tl_indicator_anim_enable="true"
+	        app:tl_indicator_bounce_enable="false"
+	        app:tl_indicator_color="#0EA9B0"
+	        app:tl_indicator_corner_radius="1dp"
+	        app:tl_indicator_height="2dp"
+            app:tl_indicator_margin_bottom="1dp"
+            app:tl_openTextDmg="true"
+            app:tl_tab_padding="10dp"
+            app:tl_tab_space_equal="true"
+            app:tl_textBold="SELECT"
+            android:visibility="visible"
+            app:tl_textSelectColor="@color/color_262626"
+            app:tl_textSelectSize="15sp"
+            app:tl_textUnSelectColor="@color/color_7F7F7F"
+            app:tl_textUnSelectSize="15sp" />
+
+        <com.jmbon.widget.tablayout.SegmentTabLayout
+            android:id="@+id/segment_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_12"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:visibility="gone"
+            app:tl_bar_color="@color/colorF5F5F5"
+            app:tl_corner_radius="7.2dp"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="@color/white"
+            app:tl_indicator_corner_radius="4.8dp"
+            app:tl_indicator_margin_bottom="@dimen/dp_4"
+            app:tl_indicator_margin_left="@dimen/dp_5"
+            app:tl_indicator_margin_right="@dimen/dp_5"
+            app:tl_indicator_margin_top="@dimen/dp_4"
+            app:tl_textBold="NONE"
+            app:tl_textSelectColor="@color/color_262626"
+            app:tl_textUnSelectColor="@color/color_BFBFBF" />
+
+        <com.jmbon.widget.NoScrollViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

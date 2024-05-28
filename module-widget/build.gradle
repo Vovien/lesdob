@@ -1,0 +1,28 @@
+apply {
+    from("$rootDir/module-build.gradle")
+}
+dependencies {
+    kapt rootProject.ext.dependencies["arouter_compiler"]
+    api(rootProject.ext.dependencies["x5browser"]) {
+        exclude group: 'androidx.recyclerview'
+        exclude group: 'androidx.core'
+    }
+    api 'com.qmuiteam:qmui:2.1.0'
+//    api(name: 'picture_library-release', ext: 'aar')
+    api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+//    api(name: 'picture_library-release', ext: 'aar')
+//    api(name: 'ucrop-release', ext: 'aar')
+//    api(name: 'easyfloat-release', ext: 'aar')
+//    api(name: 'consecutivescroller-release', ext: 'aar')
+    kapt "androidx.lifecycle:lifecycle-compiler:2.4.0"
+    api 'com.tubb.smrv:swipemenu-recyclerview:5.4.8'
+    compileOnly project(path: ':resources')
+    compileOnly project(path: ':MVVMFast')
+    api 'xyz.doikki.android.dkplayer:dkplayer-java:3.3.5'
+    api 'xyz.doikki.android.dkplayer:dkplayer-ui:3.3.5'
+    api 'xyz.doikki.android.dkplayer:player-exo:3.3.5'
+
+    api 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    api 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation rootProject.ext.androidx["annotation"]
+}

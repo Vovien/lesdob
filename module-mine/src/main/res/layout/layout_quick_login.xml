@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20">
+
+    <TextView
+        android:id="@+id/text_mobile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="138dp"
+        android:text="@string/machine_number_quick_to_log_in"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_create_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="179dp"
+        android:text="@string/machine_number_unregistered_will_automatically_create_new_account"
+        android:textColor="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_14" />
+
+
+    <com.jmbon.widget.progress_button.JmbonButton
+        android:id="@+id/text_use_other"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="360dp"
+        android:text="@string/use_other_mobile_phone_number"
+        android:textSize="@dimen/sp_14"
+        app:jButtonStyle="gray_border"
+        app:jCornersRadius="@dimen/dp_10"
+        app:jSelectText="@string/use_other_mobile_phone_number"
+        app:jSelectorNormalColor="@color/picture_color_26"
+        app:jShowLoading="false"
+        app:jShowLoadingWhenClick="false"
+        app:jSolidColor="@color/white"
+        app:jUseSelector="true" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_wx_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/shape_wx_login_bg2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_14">
+
+        <ImageView
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:src="@drawable/icon_wx_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:text="@string/wx_login"
+            android:textColor="@color/color_7F7F7F"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/anchor_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_70"
+        android:alpha="0"
+        android:background="@drawable/icon_login_privacy_tips_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_21"
+            android:text="请勾选用户协议和隐私\n政策"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</FrameLayout>

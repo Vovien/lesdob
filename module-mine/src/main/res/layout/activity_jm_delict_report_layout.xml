@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fa">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frame_btn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/shape_input_bg_e37f11"
+                android:padding="@dimen/dp_12"
+                android:text="亲爱的用户，您好！以下内容是LesDoB其他用户对您的创作内容提出的疑问或建议，为了保障搜索用户体验，建议参考内容详情，及时评估处理"
+                android:textColor="#ffe37f11"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="受反馈的链接为："
+                android:textColor="#ff262626"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/bg_border_stoke_radius_10_curr_color"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_14"
+                android:paddingEnd="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_14"
+                android:singleLine="true"
+                android:textColor="#ff0ea9b0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="http://m.jmbon.com/question/48865" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@color/ColorF5F5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="以下反馈内容及材料仅用于解决本次反馈相关问题，不得进行任何其他形式的使用或泄漏。否则，您应承担由此造成的全部损失"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:textColor="#ff262626"
+                android:textSize="16sp"
+                tools:text="举报描述详情举报描述详情举报描述详情举报描述详情举报描述详情" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_82"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_radius_corner_body"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_16">
+
+        <com.jmbon.widget.progress_button.JmbonButton
+            android:id="@+id/tv_handle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_72"
+            android:text="@string/handle_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:jButtonStyle="green_full"
+            app:jDisableText="@string/handle_report"
+            app:jSelectText="@string/handle_now"
+            app:jShowLoading="false"
+            app:jShowLoadingWhenClick="false"
+            app:jUseSelector="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </FrameLayout>
+
+</RelativeLayout>

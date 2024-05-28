@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_24"
+    app:shapeCornersRadius="@dimen/dp_8"
+    app:shapeSolidColor="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_140"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:src="@drawable/home_close_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_24"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:layout_constraintTop_toBottomOf="@id/iv_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_14"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_3"
+        android:paddingBottom="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@id/ll_desc">
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_160"
+            android:layout_marginVertical="@dimen/dp_24"
+            android:scaleType="fitXY" />
+
+        <com.allen.library.shape.ShapeTextView
+            android:id="@+id/tv_wechat_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginHorizontal="@dimen/dp_32"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/dp_20"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_16"
+            app:shapeCornersRadius="@dimen/dp_12"
+            app:shapeSolidColor="@color/color_F7F7F7"
+            tools:text="微信号：xsdsddssdsdxsdsddssdsd" />
+    </LinearLayout>
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_open_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginHorizontal="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_12"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:gravity="center"
+        android:text="复制微信号并跳转至微信"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/ll_qr_code"
+        app:shapeCornersRadius="@dimen/dp_11"
+        app:shapeSolidColor="@color/themePrimary" />
+
+</com.allen.library.shape.ShapeConstraintLayout>

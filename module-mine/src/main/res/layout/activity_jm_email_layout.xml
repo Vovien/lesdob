@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/shape_input_login_f5"
+        android:gravity="center"
+        android:textColor="#ff262626"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="postmaster@jmbon.com" />
+
+
+    <com.jmbon.widget.progress_button.JmbonButton
+        android:id="@+id/tv_copy"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_72"
+        android:text="@string/copy_email"
+        android:textColor="@color/color_currency"
+        android:textSize="@dimen/sp_17"
+        app:jButtonStyle="green_border"
+        app:jSelectText="@string/copy_email"
+        app:jShowLoading="false"
+        app:jShowLoadingWhenClick="false"
+        app:jUseSelector="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

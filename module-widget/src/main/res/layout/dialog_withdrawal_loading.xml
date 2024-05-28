@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#CC000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingEnd="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_16"
+    app:shadow_radius="@dimen/dp_8">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现中"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_17" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        app:lottie_autoPlay="true"
+        app:lottie_cacheComposition="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="false"
+        app:lottie_fileName="lottie/white_loading.json"
+        app:lottie_loop="true"
+        app:lottie_renderMode="hardware" />
+</com.jmbon.widget.Shadow.ShadowLinearLayout>

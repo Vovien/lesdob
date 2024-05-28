@@ -1,0 +1,835 @@
+[
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\app\\src\\main\\res\\drawable\\ic_launcher.png",
+    "beforeSize": 73099,
+    "afterSize": 21137,
+    "md5": "45669c426297d2e9e3cdf536c76fd2c3",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\home\\src\\main\\res\\drawable\\icon_home_hi.png",
+    "beforeSize": 32546,
+    "afterSize": 8439,
+    "md5": "018c7b303b9a6c3929a89385c830f335",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\home\\src\\main\\res\\drawable\\icon_home_hi_person.png",
+    "beforeSize": 74431,
+    "afterSize": 18795,
+    "md5": "a4af81b3289b33a0eff6f57111543930",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\home\\src\\main\\res\\drawable\\icon_user_letter.png",
+    "beforeSize": 49665,
+    "afterSize": 13291,
+    "md5": "85d1335b4e91c2a91d5df45e21d6ff57",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\home\\src\\main\\res\\drawable\\icon_user_letter_love.png",
+    "beforeSize": 106678,
+    "afterSize": 24460,
+    "md5": "274ed708b9af73357d2208d63bef91e7",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\home\\src\\main\\res\\drawable-xxhdpi\\home_common_question.webp",
+    "beforeSize": 117844,
+    "afterSize": 34652,
+    "md5": "5ffb03bd18e3481522636b80a546dc8f",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\home\\src\\main\\res\\drawable-xxhdpi\\home_heart_icon.webp",
+    "beforeSize": 16440,
+    "afterSize": 16440,
+    "md5": "d6d664734845cf03d3f786d4d02c6c35",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\home\\src\\main\\res\\drawable-xxhdpi\\home_robot_icon.webp",
+    "beforeSize": 81288,
+    "afterSize": 14694,
+    "md5": "13eaf0fe151a58fee18ae3b497ff5ce8",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-middleware\\src\\main\\res\\mipmap-xxxhdpi\\icon_jmbon_launcher.png",
+    "beforeSize": 9661,
+    "afterSize": 3336,
+    "md5": "01b4e7763a01aa5e860fd9ecfeb2045c",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-middleware\\src\\main\\res\\mipmap-xxxhdpi\\icon_jmtuan_launcher.png",
+    "beforeSize": 17599,
+    "afterSize": 6462,
+    "md5": "e679318ac5e126b6efb443d37183cd23",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-minitools\\src\\main\\res\\drawable-xxhdpi\\advisory_robot_icon.png",
+    "beforeSize": 17153,
+    "afterSize": 14563,
+    "md5": "8277f7d643ec2bb2324c9ea22fc856a9",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-minitools\\src\\main\\res\\drawable-xxhdpi\\advisory_send_icon.webp",
+    "beforeSize": 8170,
+    "afterSize": 2296,
+    "md5": "5c250706356caff003fd0c1e977c40cd",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-minitools\\src\\main\\res\\drawable-xxhdpi\\fertility_counselor_dialog_bg.webp",
+    "beforeSize": 21136,
+    "afterSize": 20436,
+    "md5": "dd9ba8b131453b77033c91456bdb9c2c",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-minitools\\src\\main\\res\\drawable-xxhdpi\\home_add_counselor_text.png",
+    "beforeSize": 5896,
+    "afterSize": 5530,
+    "md5": "920d81273939a85bd956d4e5f1f6dd18",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-minitools\\src\\main\\res\\drawable-xxhdpi\\home_counselor_image.webp",
+    "beforeSize": 12794,
+    "afterSize": 12474,
+    "md5": "5a11b29c1582750f30a3ef07923691b4",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-minitools\\src\\main\\res\\drawable-xxhdpi\\home_fertility_test_text.webp",
+    "beforeSize": 6562,
+    "afterSize": 6562,
+    "md5": "8666ed785b8830ecf7cf4a7b79d236da",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\module-minitools\\src\\main\\res\\drawable-xxhdpi\\recommend_budget_indicator_icon.webp",
+    "beforeSize": 5848,
+    "afterSize": 3126,
+    "md5": "b399c12e92ce1a085c947ac0c9e99650",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable\\icon_slogan_image.webp",
+    "beforeSize": 212496,
+    "afterSize": 29566,
+    "md5": "ca03c2ea6f5907ad1a3342a8a36eda25",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-nodpi\\default_man_activies_icon.webp",
+    "beforeSize": 6304,
+    "afterSize": 2232,
+    "md5": "f6700acc3fa8ab4941da893566b5cda8",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-nodpi\\default_man_unactivies_icon.webp",
+    "beforeSize": 27600,
+    "afterSize": 12746,
+    "md5": "82162777cbe7e9d680ee0a2e0a184d05",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-nodpi\\default_women_activies_icon.webp",
+    "beforeSize": 5756,
+    "afterSize": 2314,
+    "md5": "4a713054fd9f1bbc71d6d0c8320fae9d",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-nodpi\\default_women_unctivies_icon.webp",
+    "beforeSize": 25202,
+    "afterSize": 13274,
+    "md5": "4644bac76c99b50270e3f27996195cc0",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\bg_main.png",
+    "beforeSize": 87996,
+    "afterSize": 22352,
+    "md5": "8982f797ed4c59c4c963990e3975d831",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\bg_top_bg.webp",
+    "beforeSize": 36862,
+    "afterSize": 26328,
+    "md5": "a5c08060600e990497a7ebb1a1bf214e",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_baby_tube_status_selected.webp",
+    "beforeSize": 5342,
+    "afterSize": 1078,
+    "md5": "827b273003c52dbd27eba073d9f5d1db",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_hot_qa_bg.webp",
+    "beforeSize": 10366,
+    "afterSize": 8948,
+    "md5": "4bfa134dea36cf7a5d510e87954e0ca8",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_login_face.webp",
+    "beforeSize": 19482,
+    "afterSize": 4500,
+    "md5": "7ea66d4122cae48b6e5789bbabbee194",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_message_comment.webp",
+    "beforeSize": 7030,
+    "afterSize": 2152,
+    "md5": "cc67dc71227bab71b94811a9d4e799e3",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_message_exceptional.webp",
+    "beforeSize": 6354,
+    "afterSize": 2494,
+    "md5": "ee8899e21157676afbee018bcb19e404",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_message_fans.webp",
+    "beforeSize": 5654,
+    "afterSize": 2008,
+    "md5": "d6e85486dd9234ae838679ae98d6ff6e",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_message_to_answer.webp",
+    "beforeSize": 7526,
+    "afterSize": 2098,
+    "md5": "03b662043315ce447e824c55167fc9de",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_me_circle.webp",
+    "beforeSize": 7232,
+    "afterSize": 784,
+    "md5": "d6b9b9e808b5e3fcf7e2d9818a2a6c84",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_no_data.webp",
+    "beforeSize": 9946,
+    "afterSize": 4408,
+    "md5": "9fd82de29e3bc867fd9488a9c820d3e6",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_occupy_column.webp",
+    "beforeSize": 51228,
+    "afterSize": 9742,
+    "md5": "ae164d6d91748f6ae3e0828297cd6962",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_pregnant_have_baby_selected.webp",
+    "beforeSize": 5916,
+    "afterSize": 1794,
+    "md5": "8b0b58beca4dd5198b367a75b24d5544",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_pregnant_ing_selected.webp",
+    "beforeSize": 8012,
+    "afterSize": 2756,
+    "md5": "f1aa7e5c0e3782c1818c5e6fec80f73d",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\icon_ready_pregnant_selected.webp",
+    "beforeSize": 6332,
+    "afterSize": 1736,
+    "md5": "b7580e5e6beb946d1edc68821ee83807",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\ic_logo.png",
+    "beforeSize": 61218,
+    "afterSize": 15701,
+    "md5": "66cd7d38887f5e624f3cbad292d0a40f",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xhdpi\\main_home_hot_top_bg.webp",
+    "beforeSize": 110210,
+    "afterSize": 40364,
+    "md5": "80513b37f16106ebfb89b30dd9cfbb2c",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\aliyun_network_lost.png",
+    "beforeSize": 9906,
+    "afterSize": 1583,
+    "md5": "d4de5466c73d811f25c816582dddc73e",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\bg_main.png",
+    "beforeSize": 132910,
+    "afterSize": 43074,
+    "md5": "938a7ef11b36c35979d4d982e6463a42",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\bg_top_bg.webp",
+    "beforeSize": 66778,
+    "afterSize": 43112,
+    "md5": "3470a2aa0972da173b0f43e77b6ae416",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_baby_tube_status_select.webp",
+    "beforeSize": 7134,
+    "afterSize": 1116,
+    "md5": "85cbad96770e8c262371a3cb52b075b2",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_baby_tube_status_selected.webp",
+    "beforeSize": 9184,
+    "afterSize": 1580,
+    "md5": "9df3b8145e680cd1cf9afd5611ead1b7",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_empty_comment.webp",
+    "beforeSize": 8192,
+    "afterSize": 3072,
+    "md5": "d0d2c217cd026af2229b1857e43bc5eb",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_empty_message.webp",
+    "beforeSize": 7290,
+    "afterSize": 3112,
+    "md5": "a3a26a278f2d239140b3d9967a9be232",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_hot_qa_bg.webp",
+    "beforeSize": 31384,
+    "afterSize": 31384,
+    "md5": "24cc281697da09a92e56a77fafa0acb2",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_hot_topic.webp",
+    "beforeSize": 8954,
+    "afterSize": 2412,
+    "md5": "1613241a9b5ff26ef47e0d4ba61724ec",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_into_group.png",
+    "beforeSize": 45843,
+    "afterSize": 9993,
+    "md5": "818fe414f5d5157cc26498fce986ccc5",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_login_face.webp",
+    "beforeSize": 32352,
+    "afterSize": 6092,
+    "md5": "63218bcc6cf7b5716c62898c3dd83775",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_message_comment.webp",
+    "beforeSize": 12932,
+    "afterSize": 3420,
+    "md5": "d9c913b6b4db7ce5755c6e7c8bddc6c8",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_message_exceptional.webp",
+    "beforeSize": 11274,
+    "afterSize": 4142,
+    "md5": "e4842da035d04c549cf97985da13edaf",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_message_fans.webp",
+    "beforeSize": 10326,
+    "afterSize": 3188,
+    "md5": "c45df6a92b6812565f0da435b661426c",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_message_to_answer.webp",
+    "beforeSize": 12666,
+    "afterSize": 3456,
+    "md5": "513439292fafc0b8eedb8a99ccc9ed29",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_me_circle.webp",
+    "beforeSize": 12206,
+    "afterSize": 1222,
+    "md5": "3b05b2f3e73ced4a76fa7ca740d96573",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_mutually_message.webp",
+    "beforeSize": 6988,
+    "afterSize": 3848,
+    "md5": "94dfb42334b8ed2d08cf197e69b09a56",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_new_tube_dialog.webp",
+    "beforeSize": 21286,
+    "afterSize": 2592,
+    "md5": "a117f71ccc37a8f8442a60eea6629972",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_no_data.webp",
+    "beforeSize": 15136,
+    "afterSize": 6506,
+    "md5": "3bd014a4553cf4200a072a3c653dfc72",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_occupy_column.webp",
+    "beforeSize": 95038,
+    "afterSize": 13580,
+    "md5": "1be9fcbaf9d333c1938fdf8a838b2f40",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_popwindow.webp",
+    "beforeSize": 71490,
+    "afterSize": 2966,
+    "md5": "ef28a6090ff903d901e60bc6e83dfa71",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_pregnant_have_baby_normal.webp",
+    "beforeSize": 5888,
+    "afterSize": 2382,
+    "md5": "dc906e2eb5d22ed624d0b8e577c80934",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_pregnant_have_baby_selected.webp",
+    "beforeSize": 11006,
+    "afterSize": 2882,
+    "md5": "2447ce888d7f0c1e0702060df4adb09c",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_pregnant_ing_naomal.webp",
+    "beforeSize": 6776,
+    "afterSize": 3502,
+    "md5": "814b52d217cc8f0fba172a56e18314a7",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_pregnant_ing_selected.webp",
+    "beforeSize": 14600,
+    "afterSize": 4206,
+    "md5": "ed540a1a658b37e6a297ac8805ddd95e",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_ready_pregnant_selected.webp",
+    "beforeSize": 11736,
+    "afterSize": 2556,
+    "md5": "f507f706e1bc18ffb0ee3464e21ce993",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_rocket.webp",
+    "beforeSize": 46040,
+    "afterSize": 7418,
+    "md5": "00e5b4598a724da2111c1dfa08abb803",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_smiling_face.webp",
+    "beforeSize": 6182,
+    "afterSize": 1974,
+    "md5": "e687fe25a910cca9d461d3d58aef3b80",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_tube_pos1.png",
+    "beforeSize": 12554,
+    "afterSize": 2635,
+    "md5": "f7b757d418a124fa2f18db1209c3c7f7",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_tube_pos2.png",
+    "beforeSize": 14991,
+    "afterSize": 3533,
+    "md5": "303272f7a0e056e5553a23f6c985aa55",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_tube_pos3.png",
+    "beforeSize": 13969,
+    "afterSize": 3806,
+    "md5": "3171fa84d4ba82c67c236afcc95503bc",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_tube_pos4.png",
+    "beforeSize": 15147,
+    "afterSize": 3372,
+    "md5": "e21a1df0f0bc73c5245f42b280327b57",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_tube_pos5.png",
+    "beforeSize": 13192,
+    "afterSize": 3469,
+    "md5": "06b809eb282145e11c5699cdd6925dcd",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_tube_pos6.png",
+    "beforeSize": 17692,
+    "afterSize": 4151,
+    "md5": "995dfb448f91387c55b6de1baaf29c84",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\icon_user_bg.png",
+    "beforeSize": 51905,
+    "afterSize": 8329,
+    "md5": "a1ed73af233d8313ef728561cf04d6ac",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\main_home_hot_top_bg.webp",
+    "beforeSize": 154330,
+    "afterSize": 65090,
+    "md5": "2cc09321c99ab35c9ccebcc5ea752d3c",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxhdpi\\pic_toady_hot_bg.webp",
+    "beforeSize": 7778,
+    "afterSize": 7778,
+    "md5": "1b0c6bb4fadc7835861b496841a60066",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\bg_main.png",
+    "beforeSize": 162170,
+    "afterSize": 68125,
+    "md5": "6be72979e62169a0dfb37e8f2cbb4e36",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\bg_top_bg.webp",
+    "beforeSize": 99764,
+    "afterSize": 84804,
+    "md5": "0bea60ca55339d8f6654068bf3c8681f",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_article_doctor_tag.png",
+    "beforeSize": 13513,
+    "afterSize": 3800,
+    "md5": "7030d5feb17f37ea1933bfbf8bd48864",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_baby_tube_status_select.webp",
+    "beforeSize": 9642,
+    "afterSize": 1536,
+    "md5": "9ae05fffb49d3771f186c3ace3c4adc3",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_baby_tube_status_selected.webp",
+    "beforeSize": 14292,
+    "afterSize": 2160,
+    "md5": "38fcef80890b0cfa39127ea7aee6684b",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_circle_detail_bg.png",
+    "beforeSize": 416340,
+    "afterSize": 170311,
+    "md5": "dd904beae91e5bead8fd26bd2639f5fd",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_circle_qa_top_bg.webp",
+    "beforeSize": 6512,
+    "afterSize": 6512,
+    "md5": "592ec009ae679e8d69966fd25063c27d",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_collect.webp",
+    "beforeSize": 10212,
+    "afterSize": 1934,
+    "md5": "4da51ae2a5e787df46fef7c1463a82ab",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_describe.png",
+    "beforeSize": 12508,
+    "afterSize": 3350,
+    "md5": "2285e0729696c3fbbbd48e6b53f399d3",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_empty_comment.webp",
+    "beforeSize": 10370,
+    "afterSize": 3898,
+    "md5": "755f809e9182a82471a753f3a755c4db",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_empty_message.webp",
+    "beforeSize": 10650,
+    "afterSize": 4956,
+    "md5": "b24a1e1158a0cac468d2a9a3201c3299",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_good_question_tag.webp",
+    "beforeSize": 31772,
+    "afterSize": 25982,
+    "md5": "b6f462229fd669498ad055a7bd809ce9",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_hospital_manager_tag.png",
+    "beforeSize": 102889,
+    "afterSize": 73782,
+    "md5": "1043f74beb5539d0acf9add453e7d491",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_hospital_selected.png",
+    "beforeSize": 5153,
+    "afterSize": 1636,
+    "md5": "9d798232811a9b7f98b736b3e3190dbd",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_hot_qa_bg.webp",
+    "beforeSize": 66570,
+    "afterSize": 66570,
+    "md5": "eb43aa9b40c9741fcadbaf9fd2928f23",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_hot_topic.webp",
+    "beforeSize": 12876,
+    "afterSize": 3268,
+    "md5": "b0cd1891d942ee7e7ca8f000692217fb",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_login_face.webp",
+    "beforeSize": 48852,
+    "afterSize": 8664,
+    "md5": "7e0be82466ac9c7b8d442391c2428488",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_login_privacy_tips_bg.png",
+    "beforeSize": 6002,
+    "afterSize": 909,
+    "md5": "e2d9d9c893fed7ebe4dfe60376131008",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_message_comment.webp",
+    "beforeSize": 25274,
+    "afterSize": 4582,
+    "md5": "0ca6c276a006b3a9a26b0398ced13ccf",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_message_exceptional.webp",
+    "beforeSize": 17438,
+    "afterSize": 5334,
+    "md5": "122c0f4dbb1ab3e3262505f028a5e344",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_message_fans.webp",
+    "beforeSize": 16316,
+    "afterSize": 4332,
+    "md5": "ab0768419dd6746695f11d19c7cac466",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_message_to_answer.webp",
+    "beforeSize": 19744,
+    "afterSize": 4728,
+    "md5": "9c3c83a4b214ed78cb6dbe11b8c00647",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_me_circle.webp",
+    "beforeSize": 13522,
+    "afterSize": 1850,
+    "md5": "ca90f58cf49ecff9211cbd45c1bf2350",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_mutually_message.webp",
+    "beforeSize": 10010,
+    "afterSize": 5248,
+    "md5": "c72c83e1b2f45d38ed8bbd38d5868eea",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_no_data.webp",
+    "beforeSize": 21206,
+    "afterSize": 9214,
+    "md5": "2983380f1df801bf39af930fd5fc8dd2",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_occupy_column.webp",
+    "beforeSize": 146432,
+    "afterSize": 18356,
+    "md5": "01d2b590947e8322a94a79b36b840f40",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_pregnant_have_baby_normal.webp",
+    "beforeSize": 8514,
+    "afterSize": 3256,
+    "md5": "60cf21d157e7c2fb89a665a75c2f2bd0",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_pregnant_have_baby_selected.webp",
+    "beforeSize": 17770,
+    "afterSize": 4050,
+    "md5": "fc8490eb9371f0d4a3c563a4dbb80bf4",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_pregnant_ing_naomal.webp",
+    "beforeSize": 9946,
+    "afterSize": 4468,
+    "md5": "4a6e56ba3ccb19f82501ae1a356c4761",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_pregnant_ing_selected.webp",
+    "beforeSize": 21684,
+    "afterSize": 5500,
+    "md5": "5f3a64fa51bbd8f83ecb69d63f59e4ea",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_ready_pregnant_normal.webp",
+    "beforeSize": 7684,
+    "afterSize": 2764,
+    "md5": "3ea38f38ff758ac58bb9b0fc463b2bed",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_ready_pregnant_selected.webp",
+    "beforeSize": 16906,
+    "afterSize": 3442,
+    "md5": "2a8fd13fb7532b16921a85604cedce9a",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_session_log.webp",
+    "beforeSize": 9110,
+    "afterSize": 1786,
+    "md5": "58d91883d53b25398985f1e587e32249",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_setting.webp",
+    "beforeSize": 10792,
+    "afterSize": 1980,
+    "md5": "fc56459a8ac6cb05d8bf1ffea1be03ab",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_test_tube_bill.webp",
+    "beforeSize": 8960,
+    "afterSize": 8960,
+    "md5": "6c0ca3c6d902d734e33ee17409da4c11",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\icon_tube_wiki_tag.png",
+    "beforeSize": 6209,
+    "afterSize": 2114,
+    "md5": "edd2eb0f27ba98214552b535402c0d25",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\img_no_network.png",
+    "beforeSize": 58627,
+    "afterSize": 13257,
+    "md5": "fd650144cbcd5bea7ed566033c8dca6e",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\logo.webp",
+    "beforeSize": 211408,
+    "afterSize": 19346,
+    "md5": "6f086bc4779e0e42f7164217ca0b8405",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\main_home_hot_top_bg.webp",
+    "beforeSize": 189240,
+    "afterSize": 89578,
+    "md5": "bc0c2144d31a5d1d70826b79bac38a97",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\pay_pwd_success_icon.png",
+    "beforeSize": 8451,
+    "afterSize": 2449,
+    "md5": "15d3898096e40d442c1ca1f3f29180a7",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\drawable-xxxhdpi\\pic_toady_hot_bg.webp",
+    "beforeSize": 10874,
+    "afterSize": 10874,
+    "md5": "86636c1e063e8c5fc7290bcce71bb76e",
+    "ignore": true
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\mipmap-xxxhdpi\\icon_follow_empty.png",
+    "beforeSize": 22349,
+    "afterSize": 6193,
+    "md5": "3e86bca237e3f36c45ef3b96fcdee521",
+    "ignore": false
+  },
+  {
+    "path": "F:\\AndroidProject\\tubewiki\\resources\\src\\main\\res\\mipmap-xxxhdpi\\icon_login_lesborn.png",
+    "beforeSize": 216307,
+    "afterSize": 33731,
+    "md5": "01cca521e9a9ffa1ae2025ed807b5f35",
+    "ignore": false
+  }
+]

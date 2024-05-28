@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="homeBean"
+            type="com.tubewiki.home.bean.HomeBean" />
+    </data>
+
+    <com.apkdv.mvvmfast.view.StateLayout
+        android:id="@+id/state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/disFl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/dp_220"
+                android:layout_height="@dimen/dp_220"
+                android:layout_marginTop="64dp"
+                app:load="@{homeBean.logoRight}"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_100"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_220"
+                    android:layout_height="@dimen/dp_70"
+                    android:scaleType="centerCrop"
+                    app:load="@{homeBean.logo}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white75"
+                    android:textSize="16sp"
+                    android:text="@{homeBean.sentence}"
+                    android:layout_marginTop="@dimen/dp_16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_70"
+                android:text="您或许关心的问题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/ll_header"
+                app:layout_constraintLeft_toLeftOf="@id/ll_header"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_tube"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_20"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_question_title" />
+
+            <ImageView
+                android:id="@+id/iv_robot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_70"
+                android:src="@drawable/home_robot_icon"
+                app:layout_constraintLeft_toLeftOf="@id/ll_header"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_56"
+                android:layout_marginLeft="@dimen/dp_107"
+                android:text="有什么问题都可以问我哦"
+                android:textColor="@color/white60"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintTop_toTopOf="@id/iv_robot"
+                app:layout_constraintLeft_toLeftOf="@id/iv_robot" />
+
+            <TextView
+                android:id="@+id/tv_advisory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_64"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_90"
+                android:gravity="center_vertical"
+                android:text="对话从这里开始..."
+                android:textColor="@color/color_7F7F7F"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintTop_toTopOf="@id/iv_robot" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/gp_advisory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="iv_robot, tv_tip, tv_advisory"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.apkdv.mvvmfast.view.StateLayout>
+</layout>

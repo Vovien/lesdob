@@ -1,0 +1,14 @@
+apply {
+    from("$rootDir/module-build.gradle")
+}
+dependencies {
+    // 阿里视频播放器, 注意: 5.4.6.0版本以上需要申请License
+    implementation 'com.aliyun.sdk.android:AliyunPlayer:5.4.6.0-full-15467853'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    kapt rootProject.ext.dependencies["arouter_compiler"]
+    compileOnly project(path: ':resources')
+    api project(path: ':module-middleware')
+    compileOnly project(path: ':module-widget')
+    implementation rootProject.ext.androidx["annotation"]
+}

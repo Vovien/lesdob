@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smart_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableRefresh="false"
+    tools:context=".activity.ShareToCircleActivity">
+
+
+    <com.apkdv.mvvmfast.view.state.MultiStateContainer
+        android:id="@+id/state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_empty_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="您还未添加任何圈子"
+                android:paddingBottom="@dimen/dp_32"
+                android:textColor="#ffbfbfbf"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </com.apkdv.mvvmfast.view.state.MultiStateContainer>
+
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:orientation="horizontal">
+
+	<ImageView
+		android:id="@+id/imageAvatarBig"
+		android:layout_width="@dimen/dp_44"
+		android:layout_height="@dimen/dp_44"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<ImageView
+		android:id="@+id/certificate"
+		android:layout_width="@dimen/dp_14"
+		android:layout_height="@dimen/dp_14"
+		app:layout_constraintCircle="@+id/imageAvatarBig"
+		app:layout_constraintCircleAngle="135"
+		app:layout_constraintCircleRadius="22dp" />
+
+
+	<TextView
+		android:id="@+id/textName"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/dp_8"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_14"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@id/textSub"
+		app:layout_constraintEnd_toStartOf="@id/tv_sure"
+		app:layout_constraintStart_toEndOf="@id/imageAvatarBig"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textSub"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dp_2"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textColor="@color/color_BFBFBF"
+		android:textSize="@dimen/sp_12"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="@id/textName"
+		app:layout_constraintStart_toStartOf="@id/textName"
+		app:layout_constraintTop_toBottomOf="@id/textName" />
+
+	<com.jmbon.widget.progress_button.JmbonButton
+		android:id="@+id/tv_sure"
+		android:layout_width="@dimen/dp_59"
+		android:layout_height="@dimen/dp_32"
+		android:layout_gravity="center_vertical"
+		android:layout_marginStart="@dimen/dp_24"
+		android:text="@string/home_follow"
+		app:jSelectText="@string/home_have_follow"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_13"
+		app:jButtonStyle="green_full"
+		app:jGravity="center"
+		app:jShowLoading="true"
+		app:jShowLoadingWhenClick="true"
+		app:jUseSelector="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/textName"
+		app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

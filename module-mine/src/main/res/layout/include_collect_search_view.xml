@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_44"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2">
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/icon_back_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jmbon.widget.ClearableEditText
+        android:id="@+id/ed_input"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/search_edit_bg"
+        android:drawableLeft="@drawable/icon_search_black"
+        android:drawablePadding="@dimen/dp_10"
+        android:focusable="true"
+        android:hint="搜索收藏的内容"
+        android:imeOptions="actionSearch"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toRightOf="@id/ic_back"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

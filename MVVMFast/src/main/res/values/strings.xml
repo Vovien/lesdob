@@ -1,0 +1,8 @@
+<resources>
+    <string name="now_loading">加载中...</string>
+    <string name="titlebar_search_hint">搜索</string>
+    <string name="click_retry">点击重试</string>
+    <string name="network_error_disconnect">网络错误，断开连接</string>
+    <string name="to_network_settings">前往网络设置</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56"
+    android:background="@color/white"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_12"
+    android:orientation="vertical"
+    app:shapeCornersRadius="@dimen/dp_8">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="标题党"
+        android:textColor="#ff262626"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</com.allen.library.shape.ShapeFrameLayout>

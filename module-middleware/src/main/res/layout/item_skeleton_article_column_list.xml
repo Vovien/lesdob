@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@drawable/follow_special_column_hot_bg"
+    app:shadow_shadowAlpha="0.1"
+    app:shadow_shadowColor="#000000"
+    app:shadow_shadowElevation="8dp">
+
+    <com.jmbon.widget.SuperView
+        android:id="@+id/iv_column_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:vCornersTopLeftRadius="@dimen/dp_8"
+        app:vCornersTopRightRadius="@dimen/dp_8"
+
+        app:vSelectorNormalColor="@color/colorF5F5F5"
+        app:vSelectorPressedColor="@color/colorF5F5F5"
+        app:vUseSelector="true" />
+
+    <com.jmbon.widget.SuperView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginEnd="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="@id/iv_column_bg"
+        app:layout_constraintTop_toBottomOf="@id/iv_column_bg"
+        app:vSelectorNormalColor="@color/colorF9F9F9"
+
+        app:vSelectorPressedColor="@color/colorF9F9F9"
+        app:vUseSelector="true" />
+
+    <com.jmbon.widget.SuperView
+        android:id="@+id/tv_column_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_column_bg"
+        app:vSelectorNormalColor="@color/colorF9F9F9"
+        app:vSelectorPressedColor="@color/colorF9F9F9"
+        app:vUseSelector="true" />
+
+</com.jmbon.widget.Shadow.ShadowConstraintLayout>

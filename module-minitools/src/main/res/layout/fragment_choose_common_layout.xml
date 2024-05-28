@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_164">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="您想了解的是？"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_64"
+        android:layout_marginBottom="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="@id/ww_value"
+        app:layout_constraintTop_toTopOf="@id/ww_value"
+        app:shapeCornersRadius="@dimen/dp_12"
+        app:shapeSolidColor="@color/color_F1F1F1" />
+
+    <com.github.gzuliyujiang.wheelview.widget.WheelView
+        android:id="@+id/ww_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_54"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:wheel_atmosphericEnabled="false"
+        app:wheel_curvedEnabled="false"
+        app:wheel_curvedIndicatorSpace="4dp"
+        app:wheel_indicatorColor="@color/color_E1E1E1"
+        app:wheel_indicatorEnabled="false"
+        app:wheel_itemSpace="@dimen/dp_80"
+        app:wheel_itemTextBoldSelected="true"
+        app:wheel_itemTextColor="@color/color_BFBFBF"
+        app:wheel_itemTextColorSelected="@color/themePrimary"
+        app:wheel_itemTextSize="@dimen/sp_18"
+        app:wheel_itemTextSizeSelected="@dimen/sp_24"
+        app:wheel_visibleItemCount="3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

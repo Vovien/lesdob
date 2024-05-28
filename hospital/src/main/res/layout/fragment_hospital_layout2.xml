@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fa">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@android:color/transparent"
+                app:titleEnabled="false">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_136"
+                    android:visibility="invisible"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="174dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_30">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="推荐医院"
+                            android:textColor="#ff262626"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="查看全部"
+                            android:textColor="#ff7f7f7f"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_hospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="true"
+                        android:paddingStart="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_20" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40" />
+
+                    <TextView
+                        android:id="@+id/tv_local"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+
+                        android:text="本地医院"
+                        android:textColor="#ff262626"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:background="@color/ColorF5F5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        android:background="@color/ColorFAFA"
+                        android:orientation="horizontal"
+                        app:layout_isSticky="true">
+
+                        <LinearLayout
+                            android:id="@+id/ll_all_sort"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_all_sort"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="综合排序"
+                                android:textColor="#ff262626"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_all_sort"
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="@dimen/dp_20"
+                                android:layout_marginStart="@dimen/dp_4"
+                                android:src="@drawable/icon_choice_sort" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="@dimen/dp_12"
+                            android:layout_gravity="center"
+                            android:background="@color/picture_color_e5" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_hospital_level"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_hospital_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="医院登记"
+                                android:textColor="#ff262626"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_hospital_level"
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="@dimen/dp_20"
+                                android:layout_marginStart="@dimen/dp_4"
+                                android:src="@drawable/icon_choice_sort" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1200dp"
+                    android:text="数据萨克德克士焚枯食淡开发商看 " />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/recycle_local"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1500dp"-->
+        <!--            android:layout_marginStart="@dimen/dp_20"-->
+        <!--            android:layout_marginEnd="@dimen/dp_20"-->
+        <!--            android:clipToPadding="true"-->
+        <!--            android:paddingBottom="@dimen/dp_16"-->
+        <!--            app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+        <!--        <androidx.viewpager2.widget.ViewPager2-->
+        <!--            android:id="@+id/viewpager"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:overScrollMode="never"-->
+        <!--            app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!--    <com.jmbon.widget.consecutivescroller.ConsecutiveScrollerLayout-->
+    <!--        android:id="@+id/scroller_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@id/search_rl_top"-->
+    <!--        android:overScrollMode="never">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="@dimen/dp_20"-->
+    <!--            android:layout_marginEnd="@dimen/dp_20"-->
+    <!--            android:paddingTop="@dimen/dp_30">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                -->
+    <!--                android:text="推荐医院"-->
+    <!--                android:textColor="#ff262626"-->
+    <!--                android:textSize="18sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_all"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentRight="true"-->
+    <!--                android:text="查看全部"-->
+    <!--                android:textColor="#ff7f7f7f"-->
+    <!--                android:textSize="16sp" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <View-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/dp_20" />-->
+
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/recycle_hospital"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:clipToPadding="true"-->
+    <!--            android:paddingStart="@dimen/dp_4"-->
+    <!--            android:paddingEnd="@dimen/dp_20" />-->
+
+
+    <!--        <View-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/dp_40" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_local"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="@dimen/dp_20"-->
+    <!--            -->
+    <!--            android:text="本地医院"-->
+    <!--            android:textColor="#ff262626"-->
+    <!--            android:textSize="18sp" />-->
+
+    <!--        <View-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/dp_12" />-->
+
+    <!--        <View-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/dp_1"-->
+    <!--            android:layout_marginStart="@dimen/dp_20"-->
+    <!--            android:layout_marginEnd="@dimen/dp_20"-->
+    <!--            android:background="@color/ColorF5F5" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/dp_44"-->
+    <!--            android:background="@color/ColorFAFA"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_isSticky="true">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/ll_all_sort"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:gravity="center"-->
+    <!--                android:orientation="horizontal">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/tv_all_sort"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="综合排序"-->
+    <!--                    android:textColor="#ff262626"-->
+    <!--                    android:textSize="14sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/iv_all_sort"-->
+    <!--                    android:layout_width="@dimen/dp_20"-->
+    <!--                    android:layout_height="@dimen/dp_20"-->
+    <!--                    android:layout_marginStart="@dimen/dp_4"-->
+    <!--                    android:src="@drawable/icon_choice_sort" />-->
+    <!--            </LinearLayout>-->
+
+    <!--            <View-->
+    <!--                android:layout_width="@dimen/dp_1"-->
+    <!--                android:layout_height="@dimen/dp_12"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="@color/picture_color_e5" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/ll_hospital_level"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:gravity="center"-->
+    <!--                android:orientation="horizontal">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/tv_hospital_level"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="医院登记"-->
+    <!--                    android:textColor="#ff262626"-->
+    <!--                    android:textSize="14sp" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/iv_hospital_level"-->
+    <!--                    android:layout_width="@dimen/dp_20"-->
+    <!--                    android:layout_height="@dimen/dp_20"-->
+    <!--                    android:layout_marginStart="@dimen/dp_4"-->
+    <!--                    android:src="@drawable/icon_choice_sort" />-->
+    <!--            </LinearLayout>-->
+    <!--        </LinearLayout>-->
+
+    <!--    -->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="1500dp"-->
+    <!--            android:text="asdasd" />-->
+
+    <!--    </com.jmbon.widget.consecutivescroller.ConsecutiveScrollerLayout>-->
+    <RelativeLayout
+        android:id="@+id/search_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fa"
+        android:paddingTop="@dimen/dp_44">
+
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_2"
+                android:layout_toEndOf="@+id/iv_location"
+                android:text="定位中"
+                android:textColor="#ff262626"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <com.jmbon.widget.Shadow.ShadowLinearLayout
+            android:id="@+id/search_ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_radius_8_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:shadow_radius="@dimen/dp_8"
+            app:shadow_shadowAlpha="0.1"
+            app:shadow_shadowColor="#000000"
+            app:shadow_shadowElevation="@dimen/dp_8">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_search_black" />
+
+            <TextView
+                android:id="@+id/search_tv_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="疾病、医院、科室"
+                android:textColor="@color/color_BFBFBF"
+                android:textSize="@dimen/sp_16" />
+
+
+        </com.jmbon.widget.Shadow.ShadowLinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tubewiki.mine">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 粗略的位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 精确的位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application>
+        <activity
+            android:name="com.tubewiki.mine.view.setting.ContactAppActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.LogOffActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.coupon.CouponActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.tubewiki.mine.view.collect.CollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.collect.CollectSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppGlobalTheme.NoActionBar" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.LoginSafeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.edit.EditPersonNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.edit.EditPersonDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.edit.EditPersonGenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.edit.EditPersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.login.InitialSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreView.NoActionBar" />
+
+        <activity
+            android:name="com.tubewiki.mine.view.login.LoginWelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreView.NoActionBar" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.MessageCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.MessageFansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.mine.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.mine.FollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.MessageRewardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.MessageAnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.JmHomeMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.JmOfficialEmailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tubewiki.mine.view.message.JmDelictReportActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tubewiki.mine.view.message.JmHandleReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name="com.tubewiki.mine.view.message.JmHandleReportResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.MessageMutuallyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.ViolateAnswerCommentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.ViolateArticleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.ViolateQuestionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.CheckFailQuestionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.CheckFailAnswerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.ModifyViolateQuestionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.ModifyViolateVideoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.ModifyViolateAnswerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.message.PersonalPageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreView.NoActionBar" /> <!-- 联通电信授权页 -->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 协议页面webview -->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" /> <!-- 移动授权页 -->
+        <activity
+            android:name="com.cmic.sso.sdk.view.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.login.QuickLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppGlobalTheme.NoActionBar.NoAnimation" />
+        <activity
+            android:name="com.tubewiki.mine.view.login.InputCaptchaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.login.MobileLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.password.RetrievePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.password.PasswordSetSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.password.SetNewPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.ValidationEmailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jmbon.middleware.activity.PhotoPreviewActivity"
+            android:configChanges="screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreView.NoActionBar" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.AboutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.setting.ModifyWithdrawalPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.setting.SetWithdrawalPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.details.IncomeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.setting.WalletResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.WithdrawActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.setting.ModifyWithdrawalPasswordTipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.setting.UnbindWithdrawalPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.setting.UnbindWithdrawalAccountTipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.wallet.details.WithdrawalDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.mine.DraftActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tubewiki.mine.view.setting.MinePhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppGlobalTheme.NoActionBar" />
+        <activity
+            android:name="com.tubewiki.mine.view.login.QrCodeLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.setting.FeedbackActivity" />
+        <activity android:name=".view.setting.CollectingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommonBlackTheme"/>
+        <activity android:name=".view.setting.LogOffIdentifyActivity" />
+        <activity android:name=".view.login.jmbon.CaptchaLoginActivity" />
+        <activity android:name=".view.login.jmbon.PasswordLoginActivity" />
+        <activity
+            android:name=".view.login.GenderSelectionActivity"
+            android:theme="@style/AppGlobalTheme.NoActionBar" />
+        <activity
+            android:name=".view.ConversationRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommonBlackTheme"/>
+    </application>
+
+</manifest>

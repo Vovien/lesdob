@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jmbon.pay">
+
+    <application>
+        <activity
+            android:launchMode="singleInstance"
+            android:name="com.tubewiki.android.wxapi.WXPayEntryActivity"
+            android:theme="@style/AppGlobalTheme.Pay"
+            android:exported="true" />
+        <activity
+            android:launchMode="singleTop"
+            android:name="com.yxbabe.lesdob.wxapi.WXEntryActivity"
+            android:theme="@style/AppGlobalTheme.Pay"
+            android:exported="true" />
+
+    </application>
+</manifest>

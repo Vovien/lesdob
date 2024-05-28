@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_20">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_skip"
+        android:layout_width="@dimen/dp_78"
+        android:layout_height="@dimen/dp_36"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:text="跳过填写"
+        android:textColor="@color/color_currency"
+        android:textSize="@dimen/sp_13"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:shapeCornersRadius="@dimen/dp_9"
+        app:shapeSolidColor="@color/colorF5F5F5" />
+
+    <com.allen.library.shape.ShapeLinearLayout
+        android:id="@+id/ll_operate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_18"
+        android:paddingBottom="@dimen/dp_24"
+        android:visibility="gone"
+        app:shapeGradientAngle="top_bottom"
+        app:shapeGradientEndColor="@color/color_fa"
+        app:shapeGradientStartColor="#E6FAFAFA">
+
+        <com.allen.library.shape.ShapeTextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:shapeCornersRadius="@dimen/dp_11"
+            app:shapeSolidColor="@color/color_currency" />
+
+        <TextView
+            android:id="@+id/tv_pre"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="center"
+            android:text="上一步"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+    </com.allen.library.shape.ShapeLinearLayout>
+
+</FrameLayout>

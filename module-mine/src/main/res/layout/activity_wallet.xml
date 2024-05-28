@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@android:color/transparent"
+                app:titleEnabled="false">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ColorFAFA"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_scrollFlags="scroll">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_8" />
+
+                            <com.lihang.ShadowLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_8"
+                                android:layout_marginEnd="@dimen/dp_8"
+                                app:hl_cornerRadius="@dimen/dp_8"
+                                app:hl_layoutBackground="@color/color_currency"
+                                app:hl_shadowColor="#260EA9B0"
+                                app:hl_shadowLimit="@dimen/dp_12"
+                                app:hl_shadowOffsetY="@dimen/dp_4">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_84"
+                                    android:paddingStart="@dimen/dp_16"
+                                    android:paddingTop="@dimen/dp_12"
+                                    android:paddingEnd="@dimen/dp_16"
+                                    android:paddingBottom="@dimen/dp_12">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/total_revenue"
+                                        android:textColor="#80ffffff"
+                                        android:textSize="@dimen/sp_12"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/text_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_26"
+                                        android:text="0"
+                                        android:textColor="@color/colorF9F9F9"
+                                        android:textSize="@dimen/sp_24"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <com.allen.library.SuperButton
+                                        android:id="@+id/sb_withdraw"
+                                        android:layout_width="@dimen/dp_60"
+                                        android:layout_height="@dimen/dp_44"
+                                        android:text="@string/withdrawal"
+                                        android:textColor="@color/color_currency"
+                                        android:textSize="@dimen/sp_14"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:sCornersRadius="@dimen/dp_8"
+                                        app:sSelectorDisableColor="@color/ColorC5C5"
+                                        app:sSelectorNormalColor="@color/white"
+                                        app:sSelectorPressedColor="@color/white"
+                                        app:sUseSelector="true" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </com.lihang.ShadowLayout>
+
+                            <com.lihang.ShadowLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_16"
+                                android:layout_marginEnd="@dimen/dp_16"
+                                app:hl_cornerRadius="@dimen/dp_8"
+	                            android:layout_marginTop="@dimen/dp_4"
+	                            app:hl_layoutBackground="@color/white"
+                                app:hl_shadowColor="#05000000"
+                                app:hl_shadowHiddenTop="true"
+                                app:hl_shadowLimit="@dimen/dp_4"
+                                app:hl_shadowOffsetY="@dimen/dp_6">
+
+                                <com.allen.library.SuperTextView
+                                    android:id="@+id/st_withdrawal_set"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_50"
+                                    app:sDividerLineColor="@color/white_color_line"
+                                    app:sDividerLineHeight="@dimen/dp_1"
+                                    app:sLeftTextColor="@color/color_262626"
+                                    app:sLeftTextSize="@dimen/sp_16"
+                                    app:sLeftTextString="@string/withdrawal_setting"
+                                    app:sLeftViewMarginLeft="@dimen/dp_20"
+                                    app:sRightTextColor="@color/colorFF5050"
+                                    app:sRightTextGravity="center"
+                                    app:sRightTextSize="@dimen/sp_14"
+                                    app:sRightTextString="未设置"
+                                    app:sRightTvDrawableRight="@drawable/ic_go_forward"
+                                    app:sRightViewMarginRight="@dimen/dp_23"
+                                    app:sTextViewDrawablePadding="@dimen/dp_5"
+                                    app:sUseRipple="false" />
+                            </com.lihang.ShadowLayout>
+
+                            <com.lihang.ShadowLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_16"
+                                android:layout_marginEnd="@dimen/dp_16"
+                                android:visibility="gone"
+                                app:hl_cornerRadius="@dimen/dp_8"
+                                app:hl_layoutBackground="@color/white"
+                                app:hl_shadowColor="#05000000"
+                                app:hl_shadowHiddenTop="true"
+                                app:hl_shadowLimit="@dimen/dp_4"
+                                app:hl_shadowOffsetY="@dimen/dp_6">
+
+                                <com.allen.library.SuperTextView
+                                    android:id="@+id/st_rebate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_50"
+                                    app:sDividerLineColor="@color/white_color_line"
+                                    app:sDividerLineHeight="@dimen/dp_1"
+                                    app:sLeftTextColor="@color/color_262626"
+                                    app:sLeftTextSize="@dimen/sp_16"
+                                    app:sLeftTextString="@string/rebate"
+                                    app:sLeftViewMarginLeft="@dimen/dp_20"
+                                    app:sRightTextColor="@color/colorFF5050"
+                                    app:sRightTextSize="@dimen/sp_14"
+                                    app:sRightTvDrawableRight="@drawable/ic_go_forward"
+                                    app:sRightViewMarginRight="@dimen/dp_23"
+                                    app:sTextViewDrawablePadding="@dimen/dp_5"
+                                    app:sUseRipple="false" />
+                            </com.lihang.ShadowLayout>
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_8" />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <FrameLayout
+	                    android:layout_marginTop="@dimen/dp_4"
+	                    android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dialog_currency_bg"
+                        android:paddingTop="@dimen/dp_24"
+                        android:paddingBottom="@dimen/dp_12">
+
+                        <com.jmbon.widget.OrderTabLayout
+                            android:id="@+id/order_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_36"
+                            android:layout_marginStart="@dimen/dp_20"
+                            android:layout_marginEnd="@dimen/dp_20"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

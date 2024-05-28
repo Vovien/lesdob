@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_34"
+    android:paddingEnd="@dimen/dp_20">
+
+
+    <com.allen.library.shape.ShapeFrameLayout
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_gravity="center_horizontal"
+        app:shapeCornersRadius="@dimen/dp_16"
+        app:shapeStrokeColor="@color/colorF5F5F5"
+        app:shapeStrokeWidth="@dimen/dp_1">
+
+        <ImageView
+            android:id="@+id/iv_app_icon"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_gravity="center_horizontal"
+            tools:src="@mipmap/ic_launcher" />
+    </com.allen.library.shape.ShapeFrameLayout>
+
+    <TextView
+        android:id="@+id/text_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_8"
+        android:singleLine="true"
+        android:textColor="@color/color_262626"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="LesDoB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="LesDoB授权登录"
+        android:textColor="#ff7f7f7f"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            tools:src="@drawable/icon_default_login_avatar" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            tools:text="用户昵称用户昵称用户昵称用户昵称" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/colorF9F9F9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="该应用将获得你的公开信息（头像、昵称、地区和性别）"
+        android:textColor="#ff7f7f7f"
+        android:textSize="14sp" />
+
+    <com.jmbon.widget.progress_button.JmbonButton
+        android:id="@+id/sb_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_54"
+        android:text="@string/auth_agree"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:jButtonStyle="green_full"
+        app:jCornersRadius="@dimen/dp_10"
+        app:jShowLoading="false"
+        app:jUseSelector="true" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+apply plugin: 'AndResGuard'
+andResGuard {
+    mappingFile = null
+    use7zip = true
+    useSign = true
+    // 打开这个开关，会keep住所有资源的原始路径，只混淆资源的名字
+    keepRoot = true
+    // 设置这个值，会把arsc name列混淆成相同的名字，减少string常量池的大小
+    fixedResName = "arg"
+    // 打开这个开关会合并所有哈希值相同的资源，但请不要过度依赖这个功能去除去冗余资源
+    mergeDuplicatedRes = true
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.gif",
+            "*.webp"
+    ]
+    finalApkBackupPath = "${project.rootDir}/final.apk"
+    whiteList = [
+            // Umeng sdk
+            "R.anim.umeng*",
+            "R.string.umeng*",
+            "R.string.UM*",
+            "R.string.tb_*",
+            "R.layout.umeng*",
+            "R.layout.socialize_*",
+            "R.layout.*messager*",
+            "R.layout.tb_*",
+            "R.color.umeng*",
+            "R.color.tb_*",
+            "R.style.*UM*",
+            "R.style.umeng*",
+            "R.drawable.umeng*",
+            "R.drawable.tb_*",
+            "R.drawable.sina*",
+            "R.drawable.qq_*",
+            "R.drawable.tb_*",
+            "R.id.umeng*",
+            "R.id.*messager*",
+            "R.id.progress_bar_parent",
+            "R.id.socialize_*",
+            "R.id.webView",
+
+//            Huawei push
+            "R.string.hms_*",
+            "R.string.connect_server_fail_prompt_toast",
+            "R.string.getting_message_fail_prompt_toast",
+            "R.string.no_available_network_prompt_toast",
+            "R.string.third_app_*",
+            "R.string.upsdk_*",
+            "R.style.upsdkDlDialog",
+            "R.style.AppTheme",
+            "R.style.AppBaseTheme",
+            "R.dimen.upsdk_dialog_*",
+            "R.color.upsdk_*",
+            "R.layout.upsdk_*",
+            "R.drawable.upsdk_*",
+            "R.drawable.hms_*",
+            "R.layout.hms_*",
+            "R.id.hms_*",
+
+
+            "R.string.hms*",
+            "R.string.connect_server_fail_prompt_toast",
+            "R.string.getting_message_fail_prompt_toast",
+            "R.string.no_available_network_prompt_toast",
+            "R.string.third_app_*",
+            "R.string.upsdk_*",
+            "R.layout.hms*",
+            "R.layout.upsdk_*",
+            "R.drawable.upsdk*",
+            "R.color.upsdk*",
+            "R.dimen.upsdk*",
+            "R.style.upsdk*",
+            "R.string.agc*",
+
+//            shareSDK
+            "R.id.ssdk*",
+            "R.string.mobcommon*",
+            "R.string.ssdk*",
+            "R.string.mobdemo*",
+            "R.drawable.mobcommon*",
+            "R.drawable.ssdk*",
+            "R.layout.mob*",
+            "R.style.mobcommon*",
+
+            // 小米
+            "R.layout.mi_news_notification_layout",
+            "R.id.mi_news_title",
+
+            //布局白名单
+
+            //mob
+            "R.layout.mob_authorize_*",
+            "R.drawable.mobcommon_authorize_*",
+            "R.drawable.ssdk_*",
+            "R.drawable.ssdk_oks_*",
+            "R.string.ssdk_oks_*",
+            "R.string.ssdk_*",
+            "R.style.mobcommon_*",
+            "R.ssdk_strings.*",
+            "R.string.mobdemo_authorize_*",
+
+    ]
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.10'
+        //path = "/usr/local/bin/7za"
+    }
+}

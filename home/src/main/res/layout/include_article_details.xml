@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout
+        android:id="@+id/scrollerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_20"
+                tools:text="30岁月经不调1年，是多囊吗？检查项目全拆解，付虹医生科普！"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/sp_24"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/showMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_reference_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:divider="@android:drawable/divider_horizontal_bright"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_16"
+                android:visibility="visible">
+                <!--            参考资料-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_54"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/reference_media"
+                        android:textColor="@color/color_7F7F7F"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <CheckedTextView
+                        android:id="@+id/textShowMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:drawableStart="@drawable/checkbox_show_more_style"
+                        android:drawablePadding="@dimen/dp_8"
+                        android:gravity="center"
+                        android:text="展开"
+                        android:textColor="@color/color_7F7F7F"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_reference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_32" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@color/colorF9F9F9" />
+
+        <LinearLayout
+            android:id="@+id/rl_feed_error"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--            纠错-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_weight="1"
+                android:text="@string/if_you_are_suspicious_the_content_please_click_on_right_side_the_error_correction"
+                android:textColor="@color/color_BFBFBF"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@drawable/icon_check_error" />
+
+            <TextView
+                android:id="@+id/tv_feed_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:text="@string/error_correction"
+                android:textColor="@color/color_7F7F7F"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@color/colorF9F9F9" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_32"/>
+
+        <View
+            android:id="@+id/view_related_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_8"
+            android:background="@color/colorF9F9F9" />
+
+        <LinearLayout
+            android:id="@+id/ll_want_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_32"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:src="@drawable/icon_article_recommend_search" />
+
+                <TextView
+                    android:id="@+id/text_related_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:singleLine="true"
+                    android:text="@string/related_to_search"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_24" />
+
+            <com.jmbon.widget.FloatLayout
+                android:id="@+id/ry_related_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:overScrollMode="never"
+                app:childHorizontalSpacing="@dimen/dp_16"
+                app:childVerticalSpacing="@dimen/dp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_group_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_32"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:src="@drawable/icon_article_recommend_circle" />
+
+                <TextView
+                    android:id="@+id/text_related"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:singleLine="true"
+                    android:text="@string/group_recommend"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ry_related_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_85"/>
+
+    </com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_operate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@color/white">
+
+        <com.allen.library.shape.ShapeConstraintLayout
+            android:id="@+id/cl_tube_test"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginTop="@dimen/dp_19"
+            android:layout_marginLeft="@dimen/dp_20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_custom_scheme"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeCornersRadius="@dimen/dp_14"
+            app:shapeStrokeColor="#FF4EC004"
+            app:shapeStrokeWidth="0.5dp">
+
+            <com.allen.library.shape.ShapeFrameLayout
+                android:layout_width="32dp"
+                android:layout_height="16dp"
+                app:shapeSolidColor="#FF4EC004"
+                app:shapeCornersTopLeftRadius="@dimen/dp_14"
+                app:shapeCornersTopRightRadius="@dimen/dp_0"
+                app:shapeCornersBottomLeftRadius="@dimen/dp_0"
+                app:shapeCornersBottomRightRadius="@dimen/dp_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_tube_test"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_wechat_wight"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/tv_tube_test" />
+
+
+            </com.allen.library.shape.ShapeFrameLayout>
+
+            <TextView
+                android:id="@+id/tv_tube_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="助孕交流群"
+                android:textColor="#FF4EC004"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.allen.library.shape.ShapeConstraintLayout>
+
+        <com.allen.library.shape.ShapeTextView
+            android:id="@+id/tv_custom_scheme"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/dp_6"
+            android:text="定制生育方案"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/cl_tube_test"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cl_tube_test"
+            app:shapeCornersRadius="@dimen/dp_14"
+            app:shapeSolidColor="#FF4B4B" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_10"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.allen.library.shape.ShapeTextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:paddingBottom="@dimen/dp_3"
+                android:text="高成功率"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_12"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeCornersBottomLeftRadius="@dimen/dp_2"
+                app:shapeCornersBottomRightRadius="@dimen/dp_6"
+                app:shapeCornersTopLeftRadius="@dimen/dp_6"
+                app:shapeCornersTopRightRadius="@dimen/dp_2"
+                app:shapeGradientAngle="left_right"
+                app:shapeGradientEndColor="#6AD3F1"
+                app:shapeGradientStartColor="#3E39FA"
+                app:shapeSizeHeight="@dimen/dp_0"
+                app:shapeStrokeColor="@color/white"
+                app:shapeStrokeWidth="@dimen/dp_1" />
+
+            <com.allen.library.shape.ShapeTextView
+                android:id="@+id/tv_anim"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tv_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_label"
+                app:shapeGradientAngle="left_right"
+                app:shapeGradientCenterColor="@color/transparent"
+                app:shapeGradientEndColor="@color/transparent"
+                app:shapeGradientStartColor="@color/white"
+                app:shapeSizeHeight="@dimen/dp_0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/empty_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_64"
+        android:text="文章已删除"
+        android:textColor="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</FrameLayout>

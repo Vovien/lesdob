@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:background="@drawable/chat_receive_message_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            tools:src="@drawable/gray_e5_raduis_6_bg" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_cover"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@id/iv_cover"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="圈子昵称圈子昵称圈子昵称圈子昵称圈子昵称"
+            android:textColor="@color/color_262626"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_answer_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@id/tv_message"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_toRightOf="@id/iv_cover"
+            android:background="@drawable/shape_circle_tag_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            tools:text="xx问答"
+            android:textColor="#ff7f7f7f"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_person_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@id/tv_message"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_toRightOf="@id/tv_answer_tag"
+            android:background="@drawable/shape_circle_tag_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            tools:text="xx圈友"
+            android:textColor="#ff7f7f7f"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_cover"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_toRightOf="@id/iv_cover"
+            android:singleLine="true"
+            tools:text="简介：这是一个很好的圈子圈子圈子圈..."
+            android:textColor="#ffbfbfbf"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@color/colorF9F9F9" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF9F9F9"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_location"
+        layout="@layout/cp_list_item_location_layout" />
+
+    <include
+        android:id="@+id/layout_hot"
+        layout="@layout/cp_list_item_hot_layout" />
+
+</LinearLayout>

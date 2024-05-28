@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adv"
+            type="com.tubewiki.home.bean.CommonQuestionAdv" />
+
+        <import type="com.tubewiki.home.R" />
+    </data>
+
+    <com.allen.library.shape.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shadowCornersRadius="@dimen/dp_8">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cover"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,168:160"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:loadUrl="@{adv.cover}"
+            app:urlBottomLeftRadius="@{8}"
+            app:urlBottomRightRadius="@{0}"
+            app:urlTopLeftRadius="@{8}"
+            app:urlTopRightRadius="@{0}" />
+
+        <com.allen.library.shape.ShapeFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_margin="@dimen/dp_2"
+            android:paddingHorizontal="@dimen/dp_6"
+            app:layout_constraintBottom_toBottomOf="@id/cover"
+            app:layout_constraintEnd_toEndOf="@id/cover"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeCornersBottomLeftRadius="@dimen/dp_8"
+            app:shapeCornersBottomRightRadius="@dimen/dp_2"
+            app:shapeCornersTopLeftRadius="@dimen/dp_2"
+            app:shapeCornersTopRightRadius="@dimen/dp_2"
+            app:shapeSolidColor="#99250F18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{adv.title}"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="经验标题经验标题经验标题" />
+
+        </com.allen.library.shape.ShapeFrameLayout>
+
+        <com.allen.library.shape.ShapeConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:shapeSolidColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/cover"
+            app:layout_constraintTop_toTopOf="@id/cover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/cover"
+            app:shapeCornersBottomLeftRadius="@dimen/dp_0"
+            app:shapeCornersBottomRightRadius="@dimen/dp_8"
+            app:shapeCornersTopLeftRadius="@dimen/dp_0"
+            app:shapeCornersTopRightRadius="@dimen/dp_8">
+
+            <TextView
+                android:id="@+id/cost_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="花费"
+                android:textColor="#FF7F7F7F"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{adv.costStr}"
+                android:textColor="#FFB02054"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                app:invisible="@{adv.cost!=0}"
+                app:layout_constraintStart_toStartOf="@id/cost_hint"
+                app:layout_constraintTop_toBottomOf="@id/cost_hint"
+                tools:text="2023万" />
+
+            <TextView
+                android:id="@+id/illness_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="@{adv.diseaseNameTitle}"
+                android:textColor="#FF7F7F7F"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@id/cost"
+                app:layout_constraintTop_toBottomOf="@id/cost"
+                tools:text="疾病" />
+
+            <TextView
+                android:id="@+id/illness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{adv.diseaseName}"
+                android:textColor="#FF262626"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                app:invisible="@{adv.cost!=0}"
+                app:layout_constraintStart_toStartOf="@id/illness_hint"
+                app:layout_constraintTop_toBottomOf="@id/illness_hint"
+                tools:text="不孕不育" />
+
+            <TextView
+                android:id="@+id/hospital_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="@{adv.hospitalNameTitle}"
+                android:textColor="#FF7F7F7F"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@id/illness"
+                app:layout_constraintTop_toBottomOf="@id/illness"
+                tools:text="医院" />
+
+            <TextView
+                android:id="@+id/hospital"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_9"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{adv.hospitalName}"
+                android:textColor="#FF262626"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                app:invisible="@{adv.cost!=0}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/illness_hint"
+                app:layout_constraintTop_toBottomOf="@id/hospital_hint"
+                tools:text="成都中医药大学附属生殖妇幼医院成都中医药大学附属生殖妇幼医院 " />
+        </com.allen.library.shape.ShapeConstraintLayout>
+
+
+    </com.allen.library.shape.ShapeConstraintLayout>
+</layout>

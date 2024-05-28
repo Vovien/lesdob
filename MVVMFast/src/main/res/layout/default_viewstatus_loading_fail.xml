@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/vs_nn_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_64"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageError"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="@dimen/dp_160"
+                app:srcCompat="@drawable/img_no_network" />
+
+            <TextView
+                android:id="@+id/textErrorSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出了点问题"
+                android:textColor="#BFBFBF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbReTry"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginBottom="@dimen/dp_120"
+            android:gravity="center"
+            android:text="@string/click_retry"
+            android:textColor="@color/color_7F7F7F"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:sCornersRadius="8.8dp"
+            app:sSelectorNormalColor="@color/ColorF3F3"
+            app:sSelectorPressedColor="@color/ColorF3F3"
+            app:sUseSelector="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

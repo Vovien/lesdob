@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toStartOf="@id/sb_focus_on"
+        app:layout_constraintStart_toEndOf="@id/iv_avatar"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"
+        tools:text="用户id用户id用户id用户id用户id用户id用户id用户id用户id" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="关注了你"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name" />
+
+    <View
+        android:id="@+id/view_point"
+        android:layout_width="@dimen/dp_5"
+        android:layout_height="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:background="@drawable/shape_message_count"
+        app:layout_constraintBottom_toBottomOf="@id/tv_desc"
+        app:layout_constraintStart_toEndOf="@id/tv_desc"
+        app:layout_constraintTop_toTopOf="@id/tv_desc" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-08-20"
+        android:textColor="#ffbfbfbf"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+
+    <com.jmbon.widget.progress_button.JmbonButton
+        android:id="@+id/sb_focus_on"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_32"
+        android:text="回关"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        app:jButtonStyle="green_full"
+        app:jSelectText="相互关注"
+        app:jShowLoading="true"
+        app:jShowLoadingWhenClick="true"
+        app:jUseSelector="true"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

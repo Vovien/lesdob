@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bg_corner_shape">
+
+
+    <com.allen.library.shape.ShapeRelativeLayout
+        android:id="@+id/rl_cover"
+        android:layout_width="@dimen/dp_108"
+        android:layout_height="@dimen/dp_72"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeCornersRadius="@dimen/dp_8"
+        app:shapeSolidColor="#03000000"
+        tools:src="@drawable/icon_tube_placeholder">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_tube_placeholder" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_16"
+            android:background="@drawable/shape_hospital_level_bg"
+            android:paddingStart="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_1"
+            android:paddingEnd="@dimen/dp_2"
+            android:paddingBottom="@dimen/dp_1"
+            android:text="三甲"
+            android:textColor="#ffffffff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </com.allen.library.shape.ShapeRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="成都中医药大学第一附属医院成都中医药大学第一附属医院成都中医药大学第一附属医院成都中医药大学第一附属医院"
+        android:textColor="#ff262626"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rl_cover"
+        app:layout_constraintTop_toTopOf="@+id/rl_cover" />
+
+    <TextView
+        android:id="@+id/tv_simple_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:text="简称"
+        android:textColor="#ff7f7f7f"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/rl_cover"
+        app:layout_constraintStart_toEndOf="@+id/rl_cover" />
+
+    <TextView
+        android:id="@+id/tv_simple_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="成都第一医院"
+        android:textColor="#ff7f7f7f"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_simple_title"
+
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_simple_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_simple_title" />
+
+    <TextView
+        android:id="@+id/tv_doctor_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:text="1139位专家"
+        android:textColor="#ff7f7f7f"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_cover" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:src="@drawable/icon_location_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_doctor_num"
+        app:layout_constraintEnd_toEndOf="@id/rl_cover"
+        app:layout_constraintTop_toTopOf="@+id/tv_doctor_num" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="四川省成都市省成都市市"
+        android:textColor="#ffbfbfbf"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_doctor_num"
+        app:layout_constraintEnd_toStartOf="@+id/tv_length"
+        app:layout_constraintStart_toEndOf="@+id/iv_location"
+        app:layout_constraintTop_toTopOf="@id/tv_doctor_num" />
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:text="1232.9km"
+        android:textColor="#ff7f7f7f"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_doctor_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_doctor_num" />
+</androidx.constraintlayout.widget.ConstraintLayout>

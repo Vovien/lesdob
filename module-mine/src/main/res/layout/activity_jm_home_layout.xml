@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jmbon.widget.tablayout.SlidingTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tl_indicator_anim_duration="100"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_color="#0EA9B0"
+        app:tl_indicator_corner_radius="2dp"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_margin_bottom="0dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/color_262626"
+        app:tl_textSelectSize="17sp"
+        app:tl_textSize="@dimen/sp_17"
+        app:tl_textUnSelectColor="@color/color_7F7F7F"
+        app:tl_textUnSelectSize="17sp" />
+
+    <!--必须要加上这个app:layout_behavior="@string/appbar_scrolling_view_behavior"才能和CoordinatorLayout联动-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/commonTabLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

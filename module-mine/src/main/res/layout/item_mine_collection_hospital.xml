@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg_corner_stoke_f9_shape"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="@dimen/dp_108"
+            android:layout_height="@dimen/dp_72"
+            android:background="@drawable/gray_30_btn_raduis_8_bg"
+            android:src="@drawable/icon_accept_answer_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_16"
+            android:background="@drawable/bg_hospital_level_tag"
+            android:gravity="center"
+            android:text="三甲"
+            android:textColor="#ffffffff"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/iv_cover"
+            app:layout_constraintTop_toTopOf="@id/iv_cover" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lineHeight="@dimen/dp_21"
+            android:maxLines="2"
+            android:text="成都第一医院？"
+            android:textColor="@color/color_262626"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toTopOf="@id/iv_cover" />
+
+        <TextView
+            android:id="@+id/tv_name_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:text="简称"
+            android:textColor="#ff7f7f7f"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+            app:layout_constraintStart_toEndOf="@id/iv_cover" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="成都第一医院"
+            android:textColor="#ff7f7f7f"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name_tips"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_name_tips"
+            app:layout_constraintTop_toTopOf="@id/tv_name_tips" />
+
+        <TextView
+            android:id="@+id/tv_doc_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="1139位专家"
+            android:textColor="#ffbfbfbf"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/iv_cover"
+            app:layout_constraintTop_toBottomOf="@id/iv_cover" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_92"
+            android:drawableStart="@drawable/icon_hospital_location"
+            android:drawablePadding="@dimen/dp_4"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="四川省成都市市江汉区解四川省成都市市江汉区四川省成都市市江汉区解四川省成都市市江汉区"
+            android:textColor="@color/color_BFBFBF"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginEnd="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="@id/tv_doc_num"
+            app:layout_constraintEnd_toStartOf="@id/textDistance"
+            app:layout_constraintStart_toStartOf="@id/iv_cover"
+            app:layout_constraintTop_toTopOf="@id/tv_doc_num" />
+
+        <TextView
+            android:id="@+id/textDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.9km"
+            android:textColor="@color/color_BFBFBF"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/tv_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_location" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

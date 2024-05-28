@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_32">
+
+            <TextView
+                android:id="@+id/text_mobile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_to_login"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/sp_22"
+                android:textStyle="bold" />
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/dp_8"-->
+            <!--            android:text="@string/account_for_registered_mobile_phone_number"-->
+            <!--            android:textColor="@color/color_7F7F7F"-->
+            <!--            android:textSize="@dimen/sp_14" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_view"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:text="@string/read_agree_to"
+                    android:textColor="@color/color_7F7F7F"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/text_user_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_agreement"
+                    android:textColor="@color/privacy_color"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="和"
+                    android:textColor="@color/color_7F7F7F"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/text_privacy_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/privacy_color"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_28"
+                android:background="@drawable/shape_input_login"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_enter_phone_number"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingStart="@dimen/dp_12"
+                    android:paddingEnd="@dimen/dp_12"
+                    android:textColor="@color/color_262626"
+                    android:textColorHint="@color/color_BFBFBF"
+                    android:textSize="@dimen/sp_17" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="@drawable/shape_input_login"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_enter_password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingStart="@dimen/dp_12"
+                    android:paddingEnd="@dimen/dp_36"
+                    android:singleLine="true"
+                    android:textColor="@color/color_262626"
+                    android:textColorHint="@color/color_BFBFBF"
+                    android:textSize="@dimen/sp_17" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/image_see_pass"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:background="@color/transparent"
+                    android:src="@drawable/login_pwd_hide_icon" />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/textPassError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/account_password_error"
+                android:textColor="@color/colorFF5050"
+                android:textSize="@dimen/sp_14"
+                android:visibility="invisible" />
+
+            <com.jmbon.widget.progress_button.JmbonButton
+                android:id="@+id/sb_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_15"
+                android:enabled="false"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                app:jButtonStyle="green_full"
+                app:jShowLoading="true"
+                app:jUseSelector="true" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dp_32"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/color_7F7F7F"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/text_retrieve_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retrieve_password"
+                    android:textColor="@color/color_currency"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <com.allen.library.SuperButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_64"
+                android:enabled="false"
+                android:text="LesDoB处于内测阶段，暂不对外开放注册"
+                android:textColor="@color/color_7F7F7F"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:sCornersRadius="@dimen/dp_10"
+                app:sSelectorDisableColor="@color/transparent"
+                app:sStrokeColor="@color/picture_color_e5"
+                app:sStrokeDashGap="@dimen/dp_5"
+                app:sStrokeDashWidth="@dimen/dp_5"
+                app:sStrokeWidth="@dimen/dp_1"
+                app:sUseSelector="true" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/anchor_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:alpha="0"
+            android:background="@drawable/icon_login_privacy_tips_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingEnd="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_21"
+                android:text="请勾选用户协议和隐私\n政策"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

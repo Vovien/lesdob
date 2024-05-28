@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_32">
+
+    <TextView
+        android:id="@+id/tv_local_city_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前位置"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_local_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:drawableLeft="@drawable/home_locate_black_icon"
+        android:drawablePadding="@dimen/dp_4"
+        android:paddingHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_12"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:shapeCornersRadius="@dimen/dp_12"
+        app:shapeSolidColor="@color/white"
+        tools:text="成都"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_hot_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门城市"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hot_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3" />
+
+</LinearLayout>

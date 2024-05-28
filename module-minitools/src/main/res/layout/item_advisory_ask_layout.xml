@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_20">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/CircleStyle" />
+
+    <com.allen.library.shape.ShapeConstraintLayout
+        android:id="@+id/cl_replying"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_16"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"
+        app:shapeCornersBottomLeftRadius="@dimen/dp_12"
+        app:shapeCornersBottomRightRadius="@dimen/dp_12"
+        app:shapeCornersTopLeftRadius="@dimen/dp_2"
+        app:shapeCornersTopRightRadius="@dimen/dp_12"
+        app:shapeSolidColor="@color/white10">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小助手正在回复..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/dp_152"
+            android:layout_height="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_14"
+            android:progress="0"
+            android:max="100"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tip" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:textColor="#FF4B4B"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/pb_progress"
+            app:layout_constraintLeft_toRightOf="@id/pb_progress"
+            app:layout_constraintTop_toTopOf="@id/pb_progress"
+            tools:text="75%" />
+    </com.allen.library.shape.ShapeConstraintLayout>
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_6"
+        android:lineSpacingMultiplier="1.1"
+        android:maxWidth="232dp"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:paddingVertical="@dimen/dp_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeCornersBottomLeftRadius="@dimen/dp_12"
+        app:shapeCornersBottomRightRadius="@dimen/dp_12"
+        app:shapeCornersTopLeftRadius="@dimen/dp_2"
+        app:shapeCornersTopRightRadius="@dimen/dp_12"
+        app:shapeSolidColor="@color/white10" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_add_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_8"
+        android:drawableLeft="@drawable/advisory_wechat_icon"
+        android:drawablePadding="@dimen/dp_2"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:text="添加生育顾问微信"
+        android:textColor="@color/red"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/tv_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        app:shapeCornersRadius="@dimen/dp_10"
+        app:shapeSolidColor="@color/color_F1F1F1" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fl_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:flexWrap="wrap"
+        app:layout_constraintEnd_toEndOf="@id/tv_content"
+        app:layout_constraintStart_toStartOf="@id/tv_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        app:showDividerHorizontal="beginning|middle"
+        app:showDividerVertical="middle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

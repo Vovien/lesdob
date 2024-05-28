@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginStart="@dimen/dp_20"
+	android:layout_marginTop="@dimen/dp_16"
+	android:layout_marginEnd="@dimen/dp_20"
+	android:layout_marginBottom="@dimen/dp_24"
+	android:background="@color/white"
+	android:paddingStart="@dimen/dp_16"
+	android:paddingTop="@dimen/dp_12"
+	android:paddingEnd="@dimen/dp_16"
+	android:paddingBottom="@dimen/dp_24"
+	app:shadow_radius="@dimen/dp_8">
+
+	<TextView
+		android:id="@+id/text_setting_tilte"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:text="@string/set_up_service"
+		android:textColor="@color/color_262626"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textSetting"
+		android:layout_width="60dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dp_16"
+		android:drawableTop="@drawable/main_me_setting_icon"
+		android:drawablePadding="@dimen/dp_7"
+		android:gravity="center_horizontal"
+		android:text="@string/app_setting"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_12"
+		app:layout_constraintEnd_toStartOf="@+id/textCustomer"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/text_setting_tilte"
+		tools:drawableTop="@drawable/main_me_setting_icon" />
+
+	<TextView
+		android:id="@+id/textCustomer"
+		android:layout_width="60dp"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/mine_me_customer"
+		android:drawablePadding="@dimen/dp_7"
+		android:gravity="center_horizontal"
+		android:text="@string/customer_service"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_12"
+		app:layout_constraintEnd_toStartOf="@+id/textHelp"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textSetting"
+		app:layout_constraintTop_toTopOf="@id/textSetting"
+		tools:drawableTop="@drawable/mine_me_customer" />
+
+	<TextView
+		android:id="@+id/textHelp"
+		android:layout_width="60dp"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/icon_me_help"
+		android:drawablePadding="@dimen/dp_7"
+		android:gravity="center_horizontal"
+		android:text="@string/mine_help"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_12"
+		app:layout_constraintEnd_toStartOf="@+id/textFeedback"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textCustomer"
+		app:layout_constraintTop_toTopOf="@id/textSetting"
+		tools:drawableTop="@drawable/icon_me_help" />
+
+	<TextView
+		android:id="@+id/textFeedback"
+		android:layout_width="60dp"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/icon_me_feedback"
+		android:drawablePadding="@dimen/dp_7"
+		android:gravity="center_horizontal"
+		android:text="@string/mine_feedback"
+		android:textColor="@color/color_262626"
+		android:textSize="@dimen/sp_12"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textHelp"
+		app:layout_constraintTop_toTopOf="@id/textSetting"
+		tools:drawableTop="@drawable/icon_me_feedback" />
+</com.jmbon.widget.Shadow.ShadowConstraintLayout>

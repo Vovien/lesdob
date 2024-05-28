@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="did_not_get_permission_manual_open">未获取到权限，请手动开启</string>
+    <string name="share_to_external_faq">分享到APP首页问答</string>
+    <string name="ali_pay">支付宝</string>
+    <string name="wechat">微信</string>
+    <string name="choice_pay_mode">选择支付方式</string>
+    <string name="violative_tips">违规提示</string>
+    <string name="submitted_successful">提交成功</string>
+    <string name="we_have_received_your_complaints">我们已收到您的投诉</string>
+    <string name="your_content_will_be_approved_within_1_2_working_days">您的内容会在1～2个工作日内通过审核，我们会及时将结果反馈到您</string>
+    <string name="please_input_email">请输入联系邮箱</string>
+</resources>

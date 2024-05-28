@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/qmui_user_avatar"
+	android:layout_width="0dp"
+	android:layout_height="@dimen/dp_60"
+	android:outlineSpotShadowColor="#05000000"
+	android:translationZ="@dimen/dp_10"
+	app:cardCornerRadius="@dimen/dp_8"
+	app:cardElevation="@dimen/dp_3"
+	app:strokeColor="@color/picture_color_e5"
+	app:strokeWidth="@dimen/dp_1">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_60"
+		android:orientation="vertical"
+		android:paddingStart="@dimen/dp_6"
+		android:paddingTop="@dimen/dp_6"
+		android:paddingEnd="@dimen/dp_6">
+
+		<com.jmbon.widget.SuperView
+			android:layout_width="@dimen/dp_46"
+			android:layout_height="@dimen/dp_10"
+			app:vSelectorNormalColor="@color/colorF9F9F9"
+			app:vSelectorPressedColor="@color/colorF9F9F9"
+			app:vUseSelector="true" />
+
+		<com.jmbon.widget.SuperView
+			android:id="@+id/tv_title"
+			android:layout_marginTop="@dimen/dp_4"
+			android:layout_width="@dimen/dp_40"
+			android:layout_height="@dimen/dp_10"
+			app:vSelectorNormalColor="@color/colorF9F9F9"
+			app:vSelectorPressedColor="@color/colorF9F9F9"
+			app:vUseSelector="true" />
+
+	</LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

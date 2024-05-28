@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AbsLeafChart">
+
+        <attr name="lc_topPadding" format="dimension" />
+        <attr name="lc_leftPadding" format="dimension" />
+        <attr name="lc_bottomPadding" format="dimension" />
+        <attr name="lc_rightPadding" format="dimension" />
+
+        <attr name="lc_startMarginX" format="dimension" />
+
+        <attr name="lc_startMarginY" format="dimension" />
+
+        <attr name="lc_coordinateMode">
+            <enum name="across" value="1" />
+            <enum name="intersect" value="2" />
+            <enum name="x_across" value="3" />
+            <enum name="y_across" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="OutsideLineChart">
+        <attr name="lc_step" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ScrollRulerLayout">
+        <!--        刻度之间的间距-->
+        <attr name="rl_line_space" format="dimension" />
+        <!--        刻度线的宽度-->
+        <attr name="rl_line_width" format="dimension" />
+        <!--        长短刻度线的高度-->
+        <attr name="rl_short_line_height" format="dimension" />
+        <attr name="rl_long_line_height" format="dimension" />
+        <!--  短刻度个数-->
+        <attr name="rl_small_space_num" format="integer" />
+        <!--  短刻度数是否支持浮点型-->
+        <attr name="rl_is_float" format="boolean" />
+        <attr name="rl_text_color" format="color" />
+        <attr name="rl_line_color" format="color" />
+        <attr name="rl_start_line_index" format="integer" />
+    </declare-styleable>
+</resources>

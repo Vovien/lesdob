@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:text="@string/input_validation_code"
+        android:textStyle="bold"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_22" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_code_has_been_sent"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_14" />
+
+    <!--    <com.jmbon.widget.CodeEditText-->
+    <!--        android:id="@+id/edit_code"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <com.jmbon.widget.SplitEditText
+        android:id="@+id/splitEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginTop="@dimen/dp_32"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/color_262626"
+        app:setBorderColor="@color/color_BFBFBF"
+        app:setBorderCornerRadius="@dimen/dp_8"
+        app:setBorderSpacing="@dimen/dp_16"
+        android:focusable="true"
+        app:setTextStyle="plain_text"
+        app:setFocusBorderColor="@color/color_currency"
+        app:setInputBorderColor="@color/color_currency"
+        android:inputType="number" />
+
+    <com.jmbon.widget.CountDownTextView
+        android:id="@+id/text_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:text="@string/to_obtain"
+        android:textColor="@color/color_currency"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

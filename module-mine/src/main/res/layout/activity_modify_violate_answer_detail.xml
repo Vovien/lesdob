@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorFAFA">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_16"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="您在「xxxxxxxxxx」《xxxxx》问题中的回答已经由于违规，已被删除。" />
+
+    <LinearLayout
+        android:id="@+id/ll_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toTopOf="@+id/tv_comment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <TextView
+            android:id="@+id/tv_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即修改"
+            android:textColor="@color/color_currency"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_modify"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_4"
+            android:src="@drawable/icon_modify" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/top_radius_corner_body"
+        android:padding="@dimen/dp_20"
+        android:textColor="#d9000000"
+        android:textSize="17sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/cl_help"
+        app:layout_constraintTop_toBottomOf="@+id/ll_modify"
+        tools:text="备孕前做一个详细的孕前检查是非常有必要的，能准确的找出备孕未果的原因， 并且这个孕前检查男女双方都是必不可少的。
+男性孕前检查包括精液常规检查、泌尿系统检查、血液检查、传染病检查以及遗传病检查，女性孕前检查项目更多，身高、血型、血压、心率、妇科、染色体都会涉及到。
+孕前检查的目的不仅仅是为了弄清楚备孕未果的原因，更重要的是能判断女性的身体是否具备怀孕的条件，另外还能保证优生优育。
+一般来说，男女双方计划怀孕前3~6个月内就可以进行孕前检查，具体时间可以定为月经干净后3—7天，并且检查前3天需要禁欲，以确保检查结果的准确性。" />
+
+    <com.jmbon.widget.html.Html5WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/cl_help"
+        app:layout_constraintTop_toBottomOf="@+id/ll_modify" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_img"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/ll_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_F9F9F9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="点击查看LesDoB社区管理规定"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_phone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/currency_btn_circle_bg"
+            android:padding="@dimen/dp_13"
+            android:src="@drawable/icon_email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="若对处理结果有异议请发邮件联系官方."
+            android:textColor="#ff7f7f7f"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_rule"
+            app:layout_constraintTop_toBottomOf="@id/tv_rule" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_group_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_32"
+    android:paddingBottom="@dimen/dp_4"
+    android:text="试管婴儿"
+    android:textColor="@color/color_7F7F7F"
+    android:textSize="@dimen/sp_12"
+    android:textStyle="bold" />

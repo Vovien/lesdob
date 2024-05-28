@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_set_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sBottomDividerLineMarginLR="@dimen/dp_20"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftTextColor="@color/color_262626"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/login_password"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightTextColor="@color/colorFF5050"
+        app:sRightTextSize="@dimen/sp_17"
+        app:sRightTvDrawableRight="@drawable/ic_go_forward"
+        app:sRightViewMarginRight="@dimen/dp_25"
+        app:sTextViewDrawablePadding="@dimen/dp_5"
+        app:sUseRipple="false" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_modify_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sBottomDividerLineMarginLR="@dimen/dp_20"
+        app:sDividerLineColor="#08000000"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftTextColor="@color/color_262626"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/modify_phone"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightTextColor="@color/color_BFBFBF"
+        app:sRightTextSize="@dimen/sp_17"
+        app:sRightTextString=""
+        app:sRightTvDrawableRight="@drawable/ic_go_forward"
+        app:sRightViewMarginRight="@dimen/dp_25"
+        app:sTextViewDrawablePadding="@dimen/dp_5"
+        app:sUseRipple="false" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_secure_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftTextColor="@color/color_262626"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/secure_email"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightTextColor="@color/colorFF5050"
+        app:sRightTextSize="@dimen/sp_17"
+        app:sRightTvDrawableRight="@drawable/ic_go_forward"
+        app:sRightViewMarginRight="@dimen/dp_25"
+        app:sTextViewDrawablePadding="@dimen/dp_5"
+        app:sUseRipple="false" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_modify_wx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sBottomDividerLineMarginLR="@dimen/dp_20"
+        app:sDividerLineColor="#08000000"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftTextColor="@color/color_262626"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/bing_wx"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightTextColor="@color/color_FF5A5F"
+        app:sRightTextSize="@dimen/sp_17"
+        app:sRightTextString="未绑定"
+        app:sRightTvDrawableRight="@null"
+        app:sRightViewMarginRight="@dimen/dp_25"
+        app:sTextViewDrawablePadding="@dimen/dp_8"
+        app:sUseRipple="false" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <com.jmbon.widget.progress_button.JmbonButton
+        android:id="@+id/sb_log_off"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_64"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/log_off"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:jCornersRadius="@dimen/dp_16"
+        app:jButtonStyle="black_border"
+        app:jShowLoading="false"
+        app:jUseSelector="true" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sb_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_64"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_64"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:sCornersRadius="@dimen/dp_16"
+        app:sSelectorNormalColor="#D176EB"
+        app:sSelectorPressedColor="#D176EB"
+        app:sUseSelector="true" />
+</LinearLayout>

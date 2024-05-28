@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jmbon.widget.Shadow.ShadowFrameLayout
+        android:id="@+id/settingBtnLayout"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_vertical|start"
+        android:background="@color/white"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_50"
+        app:shadow_radius="@dimen/dp_22"
+        app:shadow_shadowAlpha="0.9"
+        app:shadow_shadowColor="#FFFFFF"
+        app:shadow_shadowElevation="4dp">
+
+        <ImageView
+            android:id="@+id/settingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/main_me_setting_slide_icon" />
+    </com.jmbon.widget.Shadow.ShadowFrameLayout>
+</FrameLayout>

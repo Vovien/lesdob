@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorFAFA"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_24"
+    android:paddingEnd="@dimen/dp_20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/withdrawal_account_binding"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_72"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_32"
+                    android:src="@drawable/icon_alipay" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+
+                    android:text="@string/ali_pay"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_17" />
+
+                <com.jmbon.widget.progress_button.JmbonButton
+                    android:id="@+id/sb_alipay_bind"
+                    android:layout_width="80dp"
+                    android:layout_height="38dp"
+                    android:text="@string/immediately_binding"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:jButtonStyle="green_full"
+                    app:jCornersRadius="@dimen/dp_7"
+                    app:jSelectText="@string/cancel_binding"
+                    app:jSelectorDisableColor="@color/color_262626"
+                    app:jSelectorNormalColor="@color/color_currency"
+                    app:jSelectorPressedColor="@color/color_currency"
+                    app:jUseSelector="true"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_F9F9F9" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_72"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_32"
+                    android:src="@drawable/icon_wechat" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/wechat"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_17" />
+
+                <com.jmbon.widget.progress_button.JmbonButton
+                    android:id="@+id/sb_wechat_bind"
+                    android:layout_width="80dp"
+                    android:layout_height="38dp"
+                    android:text="@string/immediately_binding"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:jButtonStyle="green_full"
+                    app:jCornersRadius="@dimen/dp_7"
+                    app:jSelectText="@string/cancel_binding"
+                    app:jSelectorDisableColor="@color/color_262626"
+                    app:jSelectorNormalColor="@color/color_currency"
+                    app:jSelectorPressedColor="@color/color_currency"
+                    app:jUseSelector="true"
+              />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_rebate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            app:sDividerLineColor="@color/white_color_line"
+            app:sLeftTextColor="@color/color_262626"
+            app:sLeftTextSize="@dimen/sp_16"
+            app:sLeftTextString="@string/money_password"
+            app:sLeftViewMarginLeft="@dimen/dp_20"
+            app:sRightTextColor="@color/colorFF5050"
+            app:sRightTextGravity="center"
+            app:sRightTextSize="@dimen/sp_14"
+            app:sRightTextString="未设置"
+            app:sRightTvDrawableRight="@drawable/ic_go_forward"
+            app:sRightViewMarginRight="@dimen/dp_23"
+            app:sTextViewDrawablePadding="@dimen/dp_5"
+            app:sUseRipple="false" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:text="@string/binding_least_one_withdrawal_account_set_up_withdrawal_password_before_withdrawal"
+        android:textColor="@color/color_7F7F7F" />
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="calendar_date1" type="id" />
+    <item name="calendar_date2" type="id" />
+    <item name="calendar_date3" type="id" />
+    <item name="calendar_date4" type="id" />
+    <item name="calendar_date5" type="id" />
+    <item name="calendar_date6" type="id" />
+    <item name="calendar_date7" type="id" />
+    <item name="calendar_date8" type="id" />
+    <item name="calendar_date9" type="id" />
+    <item name="calendar_date10" type="id" />
+    <item name="calendar_date11" type="id" />
+    <item name="calendar_date12" type="id" />
+    <item name="calendar_date13" type="id" />
+    <item name="calendar_date14" type="id" />
+    <item name="calendar_date15" type="id" />
+    <item name="calendar_date16" type="id" />
+    <item name="calendar_date17" type="id" />
+    <item name="calendar_date18" type="id" />
+    <item name="calendar_date19" type="id" />
+    <item name="calendar_date20" type="id" />
+    <item name="calendar_date21" type="id" />
+    <item name="calendar_date22" type="id" />
+    <item name="calendar_date23" type="id" />
+    <item name="calendar_date24" type="id" />
+    <item name="calendar_date25" type="id" />
+    <item name="calendar_date26" type="id" />
+    <item name="calendar_date27" type="id" />
+    <item name="calendar_date28" type="id" />
+    <item name="calendar_date29" type="id" />
+    <item name="calendar_date30" type="id" />
+    <item name="calendar_date31" type="id" />
+    <item name="calendar_date32" type="id" />
+    <item name="calendar_date33" type="id" />
+    <item name="calendar_date34" type="id" />
+    <item name="calendar_date35" type="id" />
+    <item name="calendar_date36" type="id" />
+    <item name="calendar_date37" type="id" />
+    <item name="calendar_date38" type="id" />
+    <item name="calendar_date39" type="id" />
+    <item name="calendar_date40" type="id" />
+    <item name="calendar_date41" type="id" />
+    <item name="calendar_date42" type="id" />
+
+
+    <item name="calendar_space1" type="id" />
+    <item name="calendar_space2" type="id" />
+    <item name="calendar_space3" type="id" />
+    <item name="calendar_space4" type="id" />
+    <item name="calendar_space5" type="id" />
+    <item name="calendar_space6" type="id" />
+    <item name="calendar_space7" type="id" />
+    <item name="calendar_space8" type="id" />
+    <item name="calendar_space9" type="id" />
+    <item name="calendar_space10" type="id" />
+    <item name="calendar_space11" type="id" />
+    <item name="calendar_space12" type="id" />
+    <item name="calendar_space13" type="id" />
+    <item name="calendar_space14" type="id" />
+    <item name="calendar_space15" type="id" />
+    <item name="calendar_space16" type="id" />
+    <item name="calendar_space17" type="id" />
+    <item name="calendar_space18" type="id" />
+    <item name="calendar_space19" type="id" />
+    <item name="calendar_space20" type="id" />
+    <item name="calendar_space21" type="id" />
+    <item name="calendar_space22" type="id" />
+    <item name="calendar_space23" type="id" />
+    <item name="calendar_space24" type="id" />
+    <item name="calendar_space25" type="id" />
+    <item name="calendar_space26" type="id" />
+    <item name="calendar_space27" type="id" />
+    <item name="calendar_space28" type="id" />
+    <item name="calendar_space29" type="id" />
+    <item name="calendar_space30" type="id" />
+
+
+    <item name="calendar_frame1" type="id" />
+    <item name="calendar_frame2" type="id" />
+    <item name="calendar_frame3" type="id" />
+    <item name="calendar_frame4" type="id" />
+    <item name="calendar_frame5" type="id" />
+    <item name="calendar_frame6" type="id" />
+
+
+</resources>

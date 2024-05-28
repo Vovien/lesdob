@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_133"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_125"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_exceptional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:drawableTop="@drawable/icon_message_exceptional"
+            android:drawablePadding="@dimen/dp_11"
+            android:gravity="center"
+            android:text="@string/exceptional"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/text_answer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_message_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_message_count"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_1"
+            android:paddingEnd="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_1"
+            android:singleLine="true"
+            android:text="11+"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            app:layout_constraintCircle="@+id/text_exceptional"
+            app:layout_constraintCircleAngle="20"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintRight_toRightOf="@id/text_exceptional"
+            app:layout_constraintTop_toTopOf="@id/text_exceptional" />
+
+
+        <TextView
+            android:id="@+id/text_answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:drawableTop="@drawable/icon_message_to_answer"
+            android:drawablePadding="@dimen/dp_11"
+            android:gravity="center"
+            android:text="@string/answer"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/text_exceptional"
+            app:layout_constraintRight_toLeftOf="@id/text_comment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_answer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_message_count"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_1"
+            android:paddingEnd="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_1"
+            android:singleLine="true"
+            android:text="11"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            app:layout_constraintCircle="@+id/text_answer"
+            app:layout_constraintCircleAngle="20"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintRight_toRightOf="@id/text_answer"
+            app:layout_constraintTop_toTopOf="@id/text_answer" />
+
+        <TextView
+            android:id="@+id/text_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_message_comment"
+            android:drawablePadding="@dimen/dp_11"
+            android:gravity="center"
+            android:text="@string/comment"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/text_answer"
+            app:layout_constraintRight_toLeftOf="@id/text_fans"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_message_count"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_1"
+            android:paddingEnd="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_1"
+            android:singleLine="true"
+            android:text="11"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            app:layout_constraintCircle="@+id/text_comment"
+            app:layout_constraintCircleAngle="20"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintRight_toRightOf="@id/text_comment"
+            app:layout_constraintTop_toTopOf="@id/text_comment" />
+
+        <TextView
+            android:id="@+id/text_fans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_message_fans"
+            android:drawablePadding="@dimen/dp_11"
+            android:gravity="center"
+            android:text="@string/fans"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/text_comment"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_fans_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_message_count"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_1"
+            android:paddingEnd="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_1"
+            android:singleLine="true"
+            android:text="11"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            app:layout_constraintCircle="@+id/text_fans"
+            app:layout_constraintCircleAngle="20"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintRight_toRightOf="@id/text_fans"
+            app:layout_constraintTop_toTopOf="@id/text_fans" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="@color/colorF9F9F9" />
+</LinearLayout>

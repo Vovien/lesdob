@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/loginSafeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sBottomDividerLineMarginLeft="@dimen/dp_20"
+        app:sBottomDividerLineMarginRight="@dimen/dp_20"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sGradientAngle="90"
+        app:sGradientEndColor="#FAC173"
+        app:sGradientStartColor="#FE7B11"
+        app:sLeftTextColor="@color/text_color"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/login_security"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightIconRes="@drawable/icon_more_info"
+        app:sRightViewMarginRight="@dimen/dp_25" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/msgNotificationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sGradientAngle="90"
+        app:sGradientEndColor="#FAC173"
+        app:sGradientStartColor="#FE7B11"
+        app:sLeftTextColor="@color/text_color"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/message_notification"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightIconRes="@drawable/icon_more_info"
+        app:sRightViewMarginRight="@dimen/dp_25" />
+    <com.allen.library.SuperTextView
+        android:id="@+id/aboutApp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sGradientAngle="90"
+        app:sGradientEndColor="#FAC173"
+        app:sGradientStartColor="#FE7B11"
+        app:sLeftTextColor="@color/text_color"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/about_sisters_bond"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightIconRes="@drawable/icon_more_info"
+        app:sRightViewMarginRight="@dimen/dp_25" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.allen.library.shape.ShapeFrameLayout
+        android:id="@+id/fl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_129"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/fcv_container"
+        app:shapeGradientEndColor="#FFEDF4"
+        app:shapeGradientStartColor="#FFC5DD"
+        app:shapeCornersRadius="@dimen/dp_12"/>
+
+    <ImageView
+        android:id="@+id/iv_add_counselor"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_add_counselor_text"
+        app:layout_constraintLeft_toLeftOf="@id/fl_bg"
+        app:layout_constraintTop_toTopOf="@id/fl_bg"
+        app:layout_goneMarginTop="@dimen/dp_16" />
+
+    <com.allen.library.shape.ShapeTextView
+        android:id="@+id/tv_add"
+        android:layout_width="@dimen/dp_78"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_7"
+        android:gravity="center"
+        android:text="立即添加"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        android:textStyle="bold"
+        app:shapeCornersRadius="@dimen/dp_9"
+        app:shapeSolidColor="@color/color_currency"
+        app:layout_constraintLeft_toLeftOf="@id/iv_add_counselor"
+        app:layout_constraintTop_toBottomOf="@id/iv_add_counselor" />
+
+    <ImageView
+        android:id="@+id/iv_doctor"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_marginRight="@dimen/dp_16"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_counselor_image"
+        app:layout_constraintBottom_toBottomOf="@id/fl_bg"
+        app:layout_constraintRight_toRightOf="@id/fl_bg" />
+
+    <ImageView
+        android:id="@+id/iv_chat"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_group_chat_icon"
+        app:layout_constraintLeft_toLeftOf="@id/fl_bg"
+        app:layout_constraintTop_toBottomOf="@id/fl_bg"/>
+
+    <TextView
+        android:id="@+id/tv_group_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:text="生育群聊"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_22"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/iv_chat"
+        app:layout_constraintBottom_toBottomOf="@id/iv_chat"
+        app:layout_constraintLeft_toRightOf="@id/iv_chat"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="多少姐妹在线，互帮互助，早日上岸"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="@id/iv_chat"
+        app:layout_constraintTop_toBottomOf="@id/tv_group_chat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

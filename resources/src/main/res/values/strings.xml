@@ -1,0 +1,234 @@
+<resources>
+    <string name="commond_more">更多</string>
+    <string name="browser_more">查看更多</string>
+    <string name="commond_text_end">到底啦</string>
+    <string name="search">搜索</string>
+    <string name="wx_login">微信号登录</string>
+    <!--    图片选择-->
+    <string name="picture_widget_camera_roll_num">%1$s (%2$d)</string>
+    <string name="picture_widget_preview">预览</string>
+    <string name="picture_widget_please">请稍候...</string>
+    <string name="picture_widget_done_front_num">确认%1$d/%2$d</string>
+    <string name="picture_widget_completed">已完成</string>
+    <string name="picture_widget_done">确认%1$d/%2$d</string>
+    <string name="picture_widget_please_select">请选择</string>
+    <string name="picture_widget_photograph">拍照</string>
+    <string name="picture_widget_long_chart">长图</string>
+    <string name="picture_widget_confirm">确定</string>
+    <string name="sure_confirm">确认</string>
+    <string name="picture_widget_preview_image_num">%1$d/%2$d</string>
+    <string name="picture_widget_send">完成</string>
+    <string name="picture_widget_send_num">完成(%1$d/%2$d)</string>
+    <string name="picture_widget_preview_num">您还能添加%1$d张图片</string>
+    <string name="picture_widget_select">选择</string>
+    <string name="currency_cancle">取消</string>
+    <string name="exit_edit">即将退出编辑</string>
+    <string name="save_to_sketch">保存至草稿</string>
+    <string name="not_save_to_sketch">不保存</string>
+    <string name="empty_follow_tips">您还没有关注哦</string>
+    <string name="time">时间</string>
+    <string name="order_default">默认</string>
+    <string name="accept_answer">该回答被提问者采纳</string>
+    <string name="qa_self_answer">提问者自己的回答</string>
+    <string name="all_answer_content">查看完整回答</string>
+    <string name="all_ad_content">查看完整内容</string>
+    <string name="no_answer_and_reward">暂无回答\n设置悬赏后能更快得到帮助哦</string>
+    <string name="share">分享</string>
+    <string name="accept">采纳</string>
+    <string name="have_accept">已采纳</string>
+    <string name="accept_rule">采纳规则</string>
+    <string name="reward_rule">悬赏规则</string>
+    <string name="self_answer">您的回答</string>
+    <string name="save_sketch_success">保存草稿成功</string>
+    <string name="save_sketch_fail">删除草稿失败</string>
+
+    <!--支付-->
+    <string name="setting_reward_money">设置悬赏金额</string>
+    <string name="coupon_pay">抵扣券支付</string>
+    <string name="custom">自定义</string>
+    <string name="pay_money">支付%1$s元</string>
+    <string name="coupon_pay_money">您还需支付%1$s元</string>
+    <string name="coupon_money">抵扣券余额：¥%1$s</string>
+    <string name="coupon_not_enough_tips">抵扣券余额不足时需自行付费</string>
+    <string name="max_reward_value_tips">最大金额200元</string>
+    <string name="pay_way">付款方式</string>
+    <string name="alipay">支付宝</string>
+    <string name="choice_pay_pay">选择支付方式</string>
+
+    <!--分享-->
+    <string name="wechat">微信</string>
+    <string name="wechat_circle">朋友圈</string>
+    <string name="qq">QQ</string>
+    <string name="weibo">微博</string>
+
+
+    <string name="share_to">分享至</string>
+    <string name="knowledge_and_accept">知道了并采纳</string>
+    <string name="knowledge_and_reward">知道了，继续设置悬赏</string>
+    <string name="consider">再想想</string>
+    <string name="logout_app">即将退出LesDoB</string>
+    <string name="logout_sure">确定退出</string>
+
+    <string name="report">举报</string>
+    <string name="violatice_detail">违规详情</string>
+    <string name="violatice_content">违规内容</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="report_question">举报该问题</string>
+    <string name="report_ask_answer">举报该回复</string>
+    <string name="report_comment">举报该评论</string>
+    <string name="infringement_report">侵权举报</string>
+    <string name="to_report_this_video">举报该视频</string>
+    <string name="infringement_info">申诉说明</string>
+    <string name="report_answer">举报该回答</string>
+    <string name="report_help">举报该求助</string>
+    <string name="report_topic">举报该话题</string>
+    <string name="report_user">举报该用户</string>
+    <string name="report_question_success">举报成功</string>
+    <string name="report_question_fail">举报失败或重复举报</string>
+    <string name="all_answer">查看全部%1$d回答</string>
+
+    <!--评论相关-->
+    <string name="published_under_your_point_view">发表下您的观点...</string>
+    <string name="see_all_comments">查看全部评论</string>
+    <string name="related_reading">相关阅读</string>
+    <string name="related_question">相关问答</string>
+    <string name="related_to_recommend">相关推荐</string>
+    <string name="group_recommend">群聊</string>
+    <string name="related_to_search">您可能还想看</string>
+    <string name="relevant_classification">相关分类</string>
+    <string name="exactly">到底啦</string>
+    <string name="post_comment">发表评论...</string>
+    <string name="home_share">分享</string>
+    <string name="home_collection">收藏</string>
+    <string name="home_collected">已收藏</string>
+    <string name="home_like">点赞</string>
+    <string name="be_first_to_comment">做第一个评论的人吧～</string>
+    <string name="send_data">发送</string>
+    <string name="comment">评论</string>
+    <string name="comment_area">评论区</string>
+
+    <!--关注-->
+    <string name="not_focus_self">不能关注自己哦</string>
+    <string name="home_follow">关注</string>
+    <string name="home_have_follow">已关注</string>
+    <string name="cancel_follow">已取消关注</string>
+    <string name="no_follow">取消关注</string>
+
+
+    <string name="set_speciality_success">设置擅长领域成功</string>
+    <string name="set_speciality_fail">设置擅长领域失败</string>
+
+    <string name="all_profile">全部简介</string>
+    <string name="reference_media">参考资料</string>
+    <string name="reference_knowledge">相关知识点</string>
+    <string name="introduction_fold">收起简介</string>
+
+    <!--聊天相关-->
+    <string name="chat_hint">友好的沟通从这里开始...</string>
+    <string name="want_send_hint">我要发言</string>
+    <string name="help_him_hint">帮助他...</string>
+
+    <string name="setting_special_field_clear">您还未设置擅长领域</string>
+    <string name="setting_special_field_success">成功设置擅长领域</string>
+    <string name="special_field">擅长领域</string>
+    <string name="about_privacy_policy">隐私政策</string>
+    <string name="about_terms_service">用户协议</string>
+    <string name="check_privacy">请勾选用户协议和隐私政策</string>
+    <string name="search_key_empty">搜索关键字不能为空</string>
+    <string name="comment_empty">回答内容不能为空</string>
+    <string name="call_kefu_permission_denied">未同意拨打客服电话权限</string>
+    <string name="call_kefu_permission">拨打电话</string>
+    <string name="call_kefu_function">拨打客服电话</string>
+    <string name="current_state_is_not_login_please_check_network">当前状态未登录，请检查网络</string>
+
+    <!--    // 问答-->
+    <string name="exit_will_not_retain_data">退出不会保留数据</string>
+    <string name="please_wait">再等等</string>
+    <string name="exit">退出</string>
+    <string name="wait_patiently_waiting_for_audit">申诉已提交，请耐心等待审核</string>
+    <!--    圈子-->
+    <string name="circle_blacklist">黑名单</string>
+    <string name="circle_banned">禁言</string>
+    <string name="circle_appeal">申诉</string>
+    <string name="text_filter">筛选</string>
+    <string name="number_characters_has_reached_its_limit">超出字数限制</string>
+    <string name="complete">完成</string>
+    <string name="reset">重置</string>
+
+    <string name="circle_violation_of_help">违规求助</string>
+    <string name="temporarily_no_news">暂时没有消息</string>
+    <string name="input_representation_content">输入申诉内容，申诉成功后会恢复您使用圈子的权利。</string>
+    <string name="input_representation_ban_content">输入申诉内容，申诉成功后会恢复您在圈子的发言权利。</string>
+    <string name="input_representation_post_content">输入申诉内容，申诉成功后会恢复您的帖子。</string>
+    <string name="have_submitted_complaint">已提交申诉，等待审核</string>
+    <string name="add_good_tag">加精</string>
+    <string name="cancel_good_tag">取消加精</string>
+    <string name="continue_to_appeal">继续申诉</string>
+    <string name="my_complaint">我的申诉</string>
+    <string name="illegal_content">违规内容</string>
+    <string name="appeal_is_not_through">申诉未通过</string>
+    <string name="complaint_by">申诉通过</string>
+    <string name="administrator_to_pull_into_blacklist">您已被管理员拉入黑名单</string>
+    <string name="hurry_up_to_help_him">快点来帮助他</string>
+    <string name="check_network_connected">请检查网络连接</string>
+    <string name="copy_email">复制邮箱</string>
+    <string name="handle_now">立即处理</string>
+    <string name="handle_report">已处理</string>
+    <string name="social_circle_rule">社区管理规定</string>
+
+    <string name="find_error">互助纠错</string>
+    <string name="content_error">内容有错误</string>
+    <string name="miss_part_content">部分内容缺失</string>
+    <string name="check_content">纠错内容</string>
+    <string name="contact_email">联系邮箱</string>
+    <string name="save">保存</string>
+    <string name="thanks_you_feed">感谢您对社区做的贡献</string>
+
+
+    <string name="tort_submit">提交</string>
+    <string name="infringement_tip">根据法律相关规定，LesDoB有权向投诉人转送本页内容，请谨慎填写，若材料中包含个人信息或敏感信息，将视为你许可平台对信息进行转送。如被投诉人不认可你的侵权投诉，可提交不侵权声明并要求平台恢复被处理的投诉内容。</string>
+    <string name="to_convey_instructions">转达说明：根据相关法律规定，LesDoB有权向被举报的用户转送本页面的内容。我们将转送的内容包括：举报描述、证明材料，请谨慎填写。若上述材料中包含个人信息或敏感信息，将视为你允许平台对信息进行转送。</string>
+
+
+    <string name="qa_lock_title">问题已被锁定</string>
+    <string name="article_lock_title">文章已被锁定</string>
+    <string name="qa_lock_content">当前内容暂时被官方锁定，暂时无法再添加新的回答和评论</string>
+    <string name="article_lock_content">当前内容暂时被官方锁定，暂时无法再添加新的评论</string>
+
+    <string name="user_has_log_off">该用户已注销</string>
+    <string name="log_off_success">注销成功</string>
+
+    <string name="ad">广告</string>
+
+    <string name="if_you_are_suspicious_the_content_please_click_on_right_side_the_error_correction">如果您对该内容存疑，请点击右侧纠错</string>
+    <string name="error_correction">纠错</string>
+    <string name="disclaimer">免责声明:</string>
+    <string name="disclaimer_content">LesDoB上所有内容均出于传递更多信息之目的，并不意味着赞同其观点或证实其描述。<br />任何关于疾病的建议都不能替代执业医师的面对面诊断，请谨慎参阅。本站不承担由此引起的法律责任。</string>
+
+    <string name="action_to_praise_author">辛苦创作，用行动赞美作者</string>
+    <string name="to_admire_authors">打赏作者</string>
+    <string name="subordinate_to_column">文章所属专栏</string>
+    <string name="cancel_attention">取消关注</string>
+    <string name="focus_on">关注</string>
+    <string name="this_article_does_not_have_directory">该文章没有目录</string>
+    <string name="paper_has_collected_to_floating_window">文章已收录至悬浮窗</string>
+    <string name="submitted_successful">提交成功</string>
+    <string name="tv_finish">完成</string>
+    <string name="circle_for_help">求助</string>
+    <string name="message_jmhome">官方消息</string>
+    <string name="see_more_circles">查看更多圈子</string>
+    <string name="recommended_for_you">为您推荐</string>
+    <string name="system_informs">系统通知</string>
+    <string name="updated_day">每日更新</string>
+    <string name="city">城市</string>
+
+    <string name="welcome_to_use_sisters">欢迎您使用LesDoB，为了建设更好的社群氛围欢迎您使用LesDoB，为了建设更好的社群氛围，以及更好地保护您的权益，我们依据最新的法律法规、监管政策要求，在您使用LesDoB服务之前，我们将向说明我们的《隐私政策》，让您了解我们收集和使用您的个人信息的目的、方式、范围；</string>
+    <string name="agree_and_continue_user">请选择同意\n继续使用LesDoB</string>
+    <string name="edit_info">编辑资料</string>
+    <string name="join_circle_now">立即加群</string>
+    <string name="want_feed">我要反馈</string>
+    <string name="exit_giveup_data">退出不会保留数据</string>
+
+    <string name="feedback_dialog_title">请您告知我们原由</string>
+    <string name="download_jmbon_app">下载孕小帮APP</string>
+</resources>

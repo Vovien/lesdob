@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<com.tubb.smrv.SwipeHorizontalMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:sml="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    sml:sml_scroller_interpolator="@android:anim/bounce_interpolator">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smContentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginBottom="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/default_man_activies_icon" />
+
+    <LinearLayout
+        android:id="@+id/ll_title_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/dp_8"
+        app:layout_constraintEnd_toStartOf="@id/text_message_time"
+        app:layout_constraintStart_toEndOf="@id/image_avatar"
+        app:layout_constraintTop_toTopOf="@id/image_avatar">
+
+        <TextView
+            android:id="@+id/text_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintStart_toEndOf="@id/image_avatar"
+            app:layout_constraintTop_toTopOf="@id/image_avatar"
+            tools:text="大萨达大大大萨" />
+
+        <TextView
+            android:id="@+id/tv_app_tag"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@drawable/main_theme_btn_raduis_4_bg"
+            android:gravity="center"
+            android:text="官方"
+            android:paddingBottom="@dimen/dp_1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_fail"
+        android:layout_width="@dimen/dp_16"
+        android:visibility="gone"
+        android:layout_height="@dimen/dp_16"
+        app:layout_constraintTop_toTopOf="@+id/text_message"
+        app:layout_constraintBottom_toBottomOf="@id/text_message"
+        app:layout_constraintStart_toStartOf="@id/ll_title_name"
+        android:src="@drawable/icon_send_message_fail" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:singleLine="true"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toEndOf="@+id/iv_fail"
+        app:layout_constraintBottom_toBottomOf="@id/image_avatar"
+        app:layout_constraintEnd_toStartOf="@id/text_message_count"
+        tools:text="我是官方消息我是 官方消息我是官方消息，你已经啊请您..." />
+
+    <TextView
+        android:id="@+id/text_message_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/shape_message_count"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_1"
+        android:paddingEnd="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/text_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_message"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:singleLine="true"
+        android:textColor="@color/color_BFBFBF"
+        android:textSize="@dimen/sp_12"
+        android:gravity="end"
+        app:layout_constraintBottom_toBottomOf="@id/ll_title_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_title_name"
+        tools:text="2019-10-22" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_86"
+        android:background="@color/color_F9F9F9"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/smMenuViewRight"-->
+    <!--        android:layout_width="@dimen/dp_78"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="@color/red"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="@dimen/dp_24"-->
+    <!--            android:layout_height="@dimen/dp_24"-->
+    <!--            android:src="@drawable/icon_message_delete" />-->
+    <!--    </LinearLayout>-->
+    <!--</com.tubb.smrv.SwipeHorizontalMenuLayout>-->

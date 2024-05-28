@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".view.setting.LogOffActivity">
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/ll_bottom"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        tools:context=".view.setting.LogOffActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="尊敬的用户，目前平台暂只支持致电客服进行注销申请，一旦申请成功后3至5个工作日内处理完毕。为了保证您的申请能够顺利通过，请您检查账号是否满足以下条件："
+                android:textColor="#ff262626"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:text="1.帐号处于安全状态"
+                android:textColor="#ff262626"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="帐号正常使用中，无被盗风险"
+                android:textColor="#ff7f7f7f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:text="2.帐号财产已结清"
+                android:textColor="#ff262626"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="钱包的金额已清空，且无处于审核中的提现申请"
+                android:textColor="#ff7f7f7f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:text="3.帐号无任何纠纷，包括投诉举报"
+                android:textColor="#ff262626"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_view"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/checkbox_style"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_2"
+                android:text="@string/read_and_agree_jmbon_to"
+                android:textColor="@color/color_7F7F7F"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/text_user_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_agreement_login_off"
+                android:textColor="@color/privacy_color"
+                android:textSize="@dimen/sp_13" />
+
+        </LinearLayout>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sb_logout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:text="@string/log_off_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:sCornersRadius="@dimen/dp_10"
+            app:sSelectorNormalColor="@color/color_FF5A5F"
+            app:sSelectorPressedColor="@color/color_FF5A5F"
+            app:sUseSelector="true" />
+    </LinearLayout>
+</LinearLayout>

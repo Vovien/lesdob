@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sbSelectCity"
+        android:layout_height="@dimen/dp_82"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:letterSpacing="0.09"
+        android:text="点击选择城市"
+        android:textColor="@color/color_currency"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold"
+        app:sCornersRadius="@dimen/dp_16"
+        app:sSelectorDisableColor="@color/ColorF3F3"
+        app:sSelectorNormalColor="@color/ColorF3F3"
+        app:sSelectorPressedColor="@color/ColorF3F3"
+        app:sUseSelector="true" />
+
+</FrameLayout>

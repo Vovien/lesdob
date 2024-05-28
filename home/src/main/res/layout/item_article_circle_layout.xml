@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="169dp"
+    android:layout_marginBottom="@dimen/dp_24"
+    android:padding="@dimen/dp_16"
+    app:shapeCornersRadius="@dimen/dp_8"
+    app:shapeStrokeColor="@color/color_262626"
+    app:shapeStrokeWidth="@dimen/dp_1">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:src="@drawable/icon_tube_placeholder" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="山大生殖试管助孕交流群 - 真实经验，安心借鉴"
+        android:textColor="#ff262626"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_cover"
+        app:layout_constraintTop_toTopOf="@+id/iv_cover" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="年龄原来不是怀孕年拦路虎”！"
+        android:textColor="#ff262626"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_title" />
+
+
+    <com.jmbon.widget.progress_button.JmbonButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/join_circle_now"
+        app:jButtonStyle="red_full"
+        app:jCornersRadius="@dimen/dp_8"
+        app:jSelectText="@string/join_circle_now"
+        app:jSelectorNormalColor="@color/white"
+        app:jUseSelector="true"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cover" />
+
+
+</com.allen.library.shape.ShapeConstraintLayout>

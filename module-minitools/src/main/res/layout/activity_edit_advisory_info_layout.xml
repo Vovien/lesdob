@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="advisoryInfo"
+            type="com.jmbon.minitools.advisory.bean.AdvisoryInfoBean" />
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_88"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/dp_28">
+
+                <FrameLayout
+                    android:id="@+id/fl_is_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_88"
+                    android:paddingHorizontal="@dimen/dp_2"
+                    android:paddingBottom="@dimen/dp_4"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:text="咨询人是否为本人"
+                        android:textColor="@color/color_262626"
+                        android:textSize="@dimen/sp_18"
+                        android:textStyle="bold" />
+
+                    <net.lucode.hackware.magicindicator.MagicIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginRight="@dimen/dp_18"
+                        android:paddingVertical="@dimen/dp_4"
+                        android:paddingHorizontal="@dimen/dp_5"
+                        android:layout_gravity="right|center_vertical"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_relationship_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:text="和本人的关系"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/fl_is_owner" />
+
+                <TextView
+                    android:id="@+id/tv_relationship"
+                    android:layout_width="@dimen/dp_84"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/dp_12"
+                    android:textColor="@color/red"
+                    android:text="@{advisoryInfo.relationShipStrWithDefault}"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/qa_info_edit_gray_icon"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_relationship_title"
+                    app:layout_constraintTop_toBottomOf="@id/tv_relationship_title"
+                    tools:text="朋友" />
+
+                <View
+                    android:id="@+id/v_relationship_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@color/colorF9F9F9"
+                    app:layout_constraintTop_toBottomOf="@id/tv_relationship" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/gp_relationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    visible="@{advisoryInfo.is_self() != 1}"
+                    app:constraint_referenced_ids="tv_relationship_title, tv_relationship, v_relationship_line" />
+
+                <TextView
+                    android:id="@+id/tv_age_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:textColor="@color/color_262626"
+                    android:text="@{advisoryInfo.ageTitleStr}"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v_relationship_line"
+                    tools:text="您朋友的年龄" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="@dimen/dp_84"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/dp_12"
+                    android:text="@{advisoryInfo.ageStr}"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/qa_info_edit_gray_icon"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_age_title"
+                    app:layout_constraintTop_toBottomOf="@id/tv_age_title"
+                    tools:text="32岁" />
+
+                <View
+                    android:id="@+id/v_age_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@color/colorF9F9F9"
+                    app:layout_constraintTop_toBottomOf="@id/tv_age" />
+
+                <TextView
+                    android:id="@+id/tv_gender_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:text="@{advisoryInfo.genderTitleStr}"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v_age_line"
+                    tools:text="您朋友的性别" />
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="@dimen/dp_84"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/dp_12"
+                    android:text="@{advisoryInfo.genderStr}"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/qa_info_edit_gray_icon"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_gender_title"
+                    app:layout_constraintTop_toBottomOf="@id/tv_gender_title"
+                    tools:text="男" />
+
+                <View
+                    android:id="@+id/v_gender_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@color/colorF9F9F9"
+                    app:layout_constraintTop_toBottomOf="@id/tv_gender" />
+
+                <TextView
+                    android:id="@+id/tv_fertility_history_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:text="@{advisoryInfo.fertilityHistoryTitleStr}"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v_gender_line"
+                    tools:text="您朋友是否有过生育史" />
+
+                <TextView
+                    android:id="@+id/tv_fertility_history"
+                    android:layout_width="@dimen/dp_84"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/dp_12"
+                    android:text="@{advisoryInfo.fertilityHistoryStr}"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/qa_info_edit_gray_icon"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_fertility_history_title"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fertility_history_title"
+                    tools:text="否" />
+
+                <View
+                    android:id="@+id/v_fertility_history_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@color/colorF9F9F9"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fertility_history" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/gp_fertility_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    visible="@{advisoryInfo.gender != 1}"
+                    app:constraint_referenced_ids="tv_fertility_history_title, tv_fertility_history, v_fertility_history_line" />
+
+                <TextView
+                    android:id="@+id/tv_report_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:text="上传的报告"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v_fertility_history_line" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_report"
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_marginTop="@dimen/dp_13"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_report_title"
+                    app:layout_constraintTop_toBottomOf="@id/tv_report_title" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:visibility="gone"
+                    android:src="@drawable/advisory_upload_close_icon"
+                    app:layout_constraintTop_toTopOf="@id/iv_report"
+                    app:layout_constraintRight_toRightOf="@id/iv_report"/>
+
+                <com.allen.library.shape.ShapeTextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_32"
+                    android:gravity="center"
+                    android:text="@{advisoryInfo.uploadReportText}"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_report"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_report"
+                    app:layout_constraintRight_toRightOf="@id/iv_report"
+                    app:shapeCornersRadius="@dimen/dp_10"
+                    app:shapeSolidColor="@color/white80" />
+
+                <View
+                    android:id="@+id/v_report_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:background="@color/colorF9F9F9"
+                    app:layout_constraintTop_toBottomOf="@id/iv_report" />
+
+                <TextView
+                    android:id="@+id/tv_question_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:text="问题描述"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v_report_line" />
+
+                <TextView
+                    android:id="@+id/tv_edit_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:drawableRight="@drawable/qa_desc_edit_icon"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:gravity="center_vertical"
+                    android:text="编辑"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_question_title" />
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:lineSpacingMultiplier="1.1"
+                    android:text="@{advisoryInfo.question}"
+                    android:textColor="@color/color_262626"
+                    android:textSize="@dimen/sp_18"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_question_title"
+                    app:layout_constraintRight_toRightOf="@id/tv_edit_question"
+                    app:layout_constraintTop_toBottomOf="@id/tv_edit_question"
+                    tools:text="我老婆也是罗氏易位，第一次胎停去做的检查发现的，我就给我爸妈说我有点问题，决定要做三代试管，准备了半年，结果又怀上了，生下来一个儿子一切正常。现在第二胎六个月，各项检查也一切正常。" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:background="@color/colorF9F9F9"
+                    app:layout_constraintTop_toBottomOf="@id/tv_question" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.allen.library.shape.ShapeTextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_64"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:gravity="center"
+            android:text="信息确认无误，发起咨询"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:shapeCornersRadius="@dimen/dp_16"
+            app:shapeSolidColor="@color/red" />
+    </FrameLayout>
+</layout>

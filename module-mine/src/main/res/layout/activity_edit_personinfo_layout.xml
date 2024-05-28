@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.layout.QMUIFrameLayout
+        android:id="@+id/qm_layout_avatar"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_90"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        app:qmui_radius="@dimen/dp_45">
+
+        <ImageView
+            android:id="@+id/image_user_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_women_activies_icon"
+            android:transitionName="imageUserAvatar" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/image_change_icon" />
+    </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+
+        android:text="@string/click_change_head_portrait"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="@dimen/sp_15" />
+
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:layout_marginTop="@dimen/dp_40"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftTextColor="@color/color_262626"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/nickname"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightTextColor="@color/color_BFBFBF"
+        app:sRightTextGravity="right"
+        app:sRightTextSize="@dimen/sp_17"
+        app:sRightTextString="@string/nickname"
+        app:sRightTvDrawableRight="@drawable/ic_go_forward"
+        app:sRightViewMarginLeft="@dimen/dp_100"
+        app:sRightViewMarginRight="@dimen/dp_25"
+        app:sTextViewDrawablePadding="@dimen/dp_5"
+        app:sUseRipple="false" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_display"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftTextColor="@color/color_262626"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/gender"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightTextColor="@color/color_BFBFBF"
+        app:sRightTextGravity="right"
+        app:sRightTextSize="@dimen/sp_17"
+        app:sRightTextString="@string/display"
+        app:sRightTvDrawableRight="@drawable/ic_go_forward"
+        app:sRightViewMarginLeft="@dimen/dp_100"
+        app:sRightViewMarginRight="@dimen/dp_25"
+        app:sTextViewDrawablePadding="@dimen/dp_5"
+        app:sUseRipple="false" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftTextColor="@color/color_262626"
+        app:sLeftTextSize="@dimen/sp_17"
+        app:sLeftTextString="@string/description"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightTextColor="@color/colorFF5050"
+        app:sRightTextGravity="right"
+        app:sRightTextSize="@dimen/sp_17"
+        app:sRightTextString="向别人介绍下你自己吧"
+        app:sRightTvDrawableRight="@drawable/ic_go_forward"
+        app:sRightViewMarginLeft="@dimen/dp_100"
+        app:sRightViewMarginRight="@dimen/dp_25"
+        app:sTextViewDrawablePadding="@dimen/dp_5"
+        app:sUseRipple="false" />
+
+</LinearLayout>

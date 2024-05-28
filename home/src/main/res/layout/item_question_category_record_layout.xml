@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:lineSpacingMultiplier="1.1"
+    android:maxLines="2"
+    android:minHeight="@dimen/dp_72"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:paddingVertical="@dimen/dp_12"
+    android:textColor="@color/white"
+    android:textSize="@dimen/sp_17"
+    app:shapeCornersRadius="@dimen/dp_16"
+    app:shapeSolidColor="@color/white10" />

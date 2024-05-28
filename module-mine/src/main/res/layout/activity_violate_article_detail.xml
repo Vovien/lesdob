@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorFAFA">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_16"
+        android:text="您的文章涉嫌违规，已被官方删除。"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout
+        android:id="@+id/cs_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/top_radius_corner_body"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/cl_help"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mc_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:outlineAmbientShadowColor="#7B000000"
+            android:outlineSpotShadowColor="#35000000"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/dp_8"
+            app:cardElevation="@dimen/dp_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <com.jmbon.widget.ExtendTextView
+                android:id="@+id/text_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_12"
+                app:animation_duration="150"
+                app:text_color="@color/color_262626"
+                app:text_size="@dimen/sp_16" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <View
+            android:id="@+id/view_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_8"
+            android:background="@color/colorF9F9F9" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:divider="@android:drawable/divider_horizontal_bright"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/colorF9F9F9" />
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_reference_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:divider="@android:drawable/divider_horizontal_bright"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_16"
+            android:showDividers="beginning|end"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reference_media"
+                android:textColor="@color/color_7F7F7F"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_F9F9F9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="点击查看LesDoB社区管理规定"
+            android:textColor="#ff262626"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_phone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/currency_btn_circle_bg"
+            android:padding="@dimen/dp_13"
+            android:src="@drawable/icon_email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="若对处理结果有异议请发邮件联系官方."
+            android:textColor="#ff7f7f7f"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_rule"
+            app:layout_constraintTop_toBottomOf="@id/tv_rule" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

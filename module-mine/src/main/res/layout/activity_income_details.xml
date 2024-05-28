@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apkdv.mvvmfast.view.StateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toools="http://schemas.android.com/tools"
+    android:id="@+id/state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:background="@color/ColorFAFA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:paddingBottom="@dimen/dp_24">
+
+                <TextView
+                    android:id="@+id/exceptional_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineHeight="@dimen/dp_45"
+                    toools:text="+322"
+                    android:textColor="@color/color_ff9823"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/get_to_admire_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    toools:text="文章获得打赏"
+                    android:textColor="@color/color_7F7F7F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/dialog_currency_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20"
+                android:divider="@android:drawable/divider_horizontal_bright"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:id="@+id/personInfoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/exceptional_person"
+                        android:textColor="@color/color_7F7F7F" />
+
+                    <ImageView
+                        android:id="@+id/image_avatar"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                    <TextView
+                        android:id="@+id/text_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:maxEms="12"
+                        toools:text="我的名字哈哈哈哈我的名字我的名字哈哈哈哈我的名字"
+                        android:textColor="@color/color_262626" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_7"
+                        android:layout_marginEnd="@dimen/dp_7"
+                        android:src="@drawable/ic_go_forward" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/exceptional_time"
+                        android:textColor="@color/color_7F7F7F" />
+
+                    <TextView
+                        android:id="@+id/text_exceptional_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        toools:text="2020-07-08 16:53:24"
+                        android:textColor="@color/color_262626" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/exceptional_type"
+                        android:textColor="@color/color_7F7F7F" />
+
+                    <TextView
+                        android:id="@+id/text_exceptional_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        toools:text="问答"
+                        android:textColor="@color/color_262626" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dp_60"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/article_title"
+                        android:textColor="@color/color_7F7F7F" />
+
+                    <TextView
+                        android:id="@+id/text_article_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="end"
+                        toools:text="文章标题文章标题文章标题文章标题文章标题文章标题文章标题"
+                        android:textColor="@color/color_262626" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dp_60"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/text_answer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/article_title"
+                        android:textColor="@color/color_7F7F7F" />
+
+                    <TextView
+                        android:id="@+id/text_answer_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:maxLines="3"
+                        android:gravity="end"
+                        android:ellipsize="end"
+                        toools:text="文章标题文章标标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题"
+                        android:textColor="@color/color_262626" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_color_line" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/colorF9F9F9"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/please_move_to_web_page_for_details"
+                    android:textColor="@color/color_BFBFBF"
+                    android:textSize="@dimen/sp_14" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.apkdv.mvvmfast.view.StateLayout>

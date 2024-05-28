@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_circle_detail_bg"
+    app:srlEnableRefresh="false">
+
+
+    <com.jmbon.widget.Shadow.ShadowFrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_64"
+        android:layout_marginEnd="@dimen/dp_38"
+        android:layout_marginBottom="@dimen/dp_64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_radius="@dimen/dp_32"
+        app:shadow_shadowAlpha="0.3"
+        app:shadow_shadowColor="#000000"
+        app:shadow_shadowElevation="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/icon_tube_placeholder" />
+
+        <com.allen.library.shape.ShapeTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            app:shapeCornersRadius="@dimen/dp_16"
+            app:shapeSolidColor="@color/color_F7F7F7" />
+
+    </com.jmbon.widget.Shadow.ShadowFrameLayout>
+
+    <com.allen.library.shape.ShapeRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="@dimen/dp_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,375:300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeCornersTopLeftRadius="@dimen/dp_32"
+        app:shapeCornersTopRightRadius="@dimen/dp_32"
+        app:shapeSolidColor="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_56"
+            android:text="上孕小帮开启群聊"
+            android:textColor="#ff262626"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_96"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:gravity="center"
+            android:text="同城同院同病姐妹在线热聊"
+            android:textColor="#ff7f7f7f"
+            android:textSize="16sp" />
+
+
+        <com.jmbon.widget.progress_button.JmbonButton
+            android:id="@+id/jb_download"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:text="@string/download_jmbon_app"
+            android:textSize="@dimen/sp_16"
+            app:jButtonStyle="green_full"
+            app:jCornersRadius="@dimen/dp_16"
+            app:jSelectText="@string/download_jmbon_app"
+            app:jSelectorNormalColor="@color/white"
+            app:jUseSelector="true" />
+    </com.allen.library.shape.ShapeRelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

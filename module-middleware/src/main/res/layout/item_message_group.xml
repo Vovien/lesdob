@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smContentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/default_man_activies_icon" />
+
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_5"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toEndOf="@id/image_avatar"
+        app:layout_constraintTop_toTopOf="@id/image_avatar"
+        tools:text="大萨达" />
+
+    <TextView
+        android:id="@+id/tv_app_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_theme_btn_raduis_4_bg"
+        android:padding="2dp"
+        android:text="官方"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/text_user_name"
+        app:layout_constraintLeft_toRightOf="@+id/text_user_name"
+        app:layout_constraintTop_toTopOf="@+id/text_user_name" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:singleLine="true"
+        android:textColor="@color/text_59_color"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="@id/image_avatar"
+        app:layout_constraintEnd_toStartOf="@id/text_message_count"
+        app:layout_constraintStart_toStartOf="@id/text_user_name"
+        tools:text="我是官方消息我是官方消息我是官方消息，你已经啊请您..." />
+
+    <TextView
+        android:id="@+id/text_message_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_20"
+        app:layout_goneMarginEnd="@dimen/dp_20"
+        android:minWidth="@dimen/dp_18"
+        android:minHeight="@dimen/dp_18"
+        android:background="@drawable/shape_message_count"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_1"
+        android:paddingEnd="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/text_message"
+        app:layout_constraintEnd_toStartOf="@+id/view_point"
+        app:layout_constraintStart_toEndOf="@+id/text_message"
+        app:layout_constraintTop_toTopOf="@id/text_message"
+        tools:text="99+" />
+
+    <View
+        android:id="@+id/view_point"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="@dimen/dp_4"
+        android:background="@drawable/shape_message_count"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/text_message_count"
+        app:layout_constraintBottom_toBottomOf="@id/text_message"
+        app:layout_constraintEnd_toStartOf="@+id/iv_message_status"
+        app:layout_constraintTop_toTopOf="@id/text_message" />
+
+    <ImageView
+        android:id="@+id/iv_message_status"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_goneMarginStart="@dimen/dp_0"
+        app:layout_constraintStart_toEndOf="@+id/view_point"
+        android:src="@drawable/icon_group_message_status"
+        app:layout_constraintBottom_toBottomOf="@id/text_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_message" />
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:singleLine="true"
+        android:textColor="@color/text_59_color"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="@id/text_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_user_name"
+        tools:text="2019-10-22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

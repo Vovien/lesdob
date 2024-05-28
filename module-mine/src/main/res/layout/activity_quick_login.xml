@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_32">
+
+        <TextView
+            android:id="@+id/text_mobile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_login"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_22"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_view"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/checkbox_style"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_2"
+                android:text="@string/read_agree_to"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/text_user_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_agreement"
+                android:textColor="@color/color_currency"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和"
+                android:textColor="@color/color_262626"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/text_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/color_currency"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:orientation="horizontal">
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_zip_code"
+                android:layout_width="@dimen/dp_47"
+                android:layout_height="@dimen/dp_32"
+                app:sCenterTextSize="@dimen/sp_13"
+                app:sCenterTextString="+86"
+                app:sShapeCornersRadius="6.5dp"
+                app:sShapeStrokeColor="@color/color_7F7F7F"
+                app:sShapeStrokeWidth="@dimen/dp_1"
+                app:sUseShape="true" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_phone_number"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@color/color_262626"
+                android:textColorHint="@color/color_BFBFBF"
+                android:textSize="@dimen/sp_17" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/picture_color_e5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/automatically_create_new_account"
+            android:textColor="@color/color_BFBFBF"
+            android:textSize="@dimen/sp_14" />
+
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sb_get_captcha"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_64"
+            android:layout_marginTop="@dimen/dp_32"
+            android:enabled="false"
+            android:text="@string/get_verification_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:sCornersRadius="@dimen/dp_16"
+            app:sSelectorDisableColor="@color/picture_color_e5"
+            app:sSelectorNormalColor="@color/color_currency"
+            app:sSelectorPressedColor="@color/color_currency"
+            app:sUseSelector="true" />
+
+        <TextView
+            android:id="@+id/text_use_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_32"
+            android:text="@string/account_password"
+            android:textColor="@color/color_currency"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <com.jmbon.widget.CountDownTextView
+            android:id="@+id/text_count_down"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_wx_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_wx_login_bg2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_14"
+            android:paddingEnd="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_14">
+
+            <ImageView
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_28"
+                android:src="@drawable/icon_black_wx_login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="@string/wx_login"
+                android:textColor="@color/color_7F7F7F"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/anchor_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:alpha="0"
+        android:background="@drawable/icon_login_privacy_tips_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_21"
+            android:text="请勾选用户协议和隐私\n政策"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</FrameLayout>

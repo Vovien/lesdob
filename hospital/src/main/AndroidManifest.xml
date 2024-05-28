@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tubewiki.hospital">
+
+    <application>
+        <activity android:name=".activity.DoctorDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.HospitalDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.AllRecommendHospitalActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.AllHospitalDoctorActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

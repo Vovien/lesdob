@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.shape.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:shapeCornersRadius="@dimen/dp_8"
+    app:shapeSolidColor="@color/colorF9F9F9">
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_14"
+        android:text="当前"
+        android:textColor="#ff262626"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="@dimen/dp_32"
+        android:visibility="invisible"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="@dimen/dp_19"
+        android:src="@drawable/icon_article_index_line"
+        app:layout_constraintStart_toEndOf="@+id/tv_index"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:text="共64篇"
+        android:visibility="invisible"
+        android:textColor="#ffbfbfbf"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_line"
+        app:layout_constraintStart_toEndOf="@id/iv_line" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_63"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="文本文本文本文本文本文本文本文本文本文本"
+        android:textColor="@color/color_7F7F7F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</com.allen.library.shape.ShapeConstraintLayout>

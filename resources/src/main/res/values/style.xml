@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.ASK" parent="AppGlobalTheme.NoActionBar">
+        <!-- 去除Activity顶部黑线 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 系统状态栏背景设置透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorPrimary">@color/color_currency</item>
+        <item name="colorAccent">@color/color_currency</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <!-- Activity背景 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="AppGlobalTheme1" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/color_currency</item>
+        <item name="colorAccent">@color/color_currency</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:statusBarColor" >@color/transparent</item>
+    </style>
+
+    <style name="CommonGrayTheme" parent="AppGlobalTheme1">
+        <item name="android:windowBackground">@color/color_fa</item>
+    </style>
+    <style name="CommonWhiteTheme" parent="AppGlobalTheme1">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- 不带TitleBar的灰色主题 -->
+    <style name="CommonGrayNoTitleTheme" parent="CommonGrayTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- 不带TitleBar的白色主题 -->
+    <style name="CommonWhiteNoTitleTheme" parent="AppGlobalTheme1">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- 不带TitleBar的黑色主题 -->
+    <style name="CommonBlackTheme" parent="AppGlobalTheme1">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <!-- 不带TitleBar的黑色主题 -->
+    <style name="CommonBlackNoTitleTheme" parent="AppGlobalTheme1">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="AppGlobalTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <!--修改RecyclerView item背景色-->
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <style name="AppGlobalTheme.NoActionBar2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <!--修改RecyclerView item背景色-->
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <style name="AppGlobalTheme.NoActionBar3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/empty</item>
+        <!--修改RecyclerView item背景色-->
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <style name="AppGlobalTheme.Transparent" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="AppGlobalTheme.NoActionBar.NoAnimation" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <!--修改RecyclerView item背景色-->
+        <item name="android:listDivider">@drawable/divider_bg</item>
+        <item name="android:windowAnimationStyle">@style/No_Animation</item>
+    </style>
+
+    <style name="AppGlobalTheme.SplashNoAnimation" parent="AppGlobalTheme.NoActionBar.NoAnimation">
+        <item name="android:windowBackground">@drawable/icon_splash</item>
+        <item name="android:windowFullscreen">false</item>
+        <!-- 解决部分华为手机显示StartingWindow时状态栏显示为黑色的问题 -->
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/transparent</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/transparent</item>
+        <!-- 设置StartingWindow状态栏文字为暗色 -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowAnimationStyle">@style/No_Animation</item>
+    </style>
+
+    <style name="No_Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="AppGlobalAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/amin_slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/amin_slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/amin_slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/amin_slide_out_right</item>
+    </style>
+
+    <style name="CustomSwitch" parent="Theme.AppCompat.Light">
+        <!-- Active thumb color & Active track color(30% transparency)
+            switch 打开时的拇指按钮的颜色 轨迹颜色默认为30%这个颜色 -->
+        <item name="colorControlActivated">@color/color_currency</item>
+    </style>
+    <style name="CustomAppTheme_textinputLayout" parent="AppGlobalTheme.NoActionBar">
+        <item name="colorControlNormal">@color/color_currency</item>
+        <item name="colorControlActivated">@color/color_currency</item>
+        <item name="colorControlHighlight">@color/color_currency</item>
+    </style>
+
+    <style name="CircleStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

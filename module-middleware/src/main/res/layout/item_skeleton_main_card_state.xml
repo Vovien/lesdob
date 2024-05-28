@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20">
+
+    <FrameLayout
+        android:id="@+id/frame_state_skeleton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_menu_state"
+        android:minWidth="@dimen/dp_44"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,1:0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.jmbon.widget.SuperView
+            android:id="@+id/image_icon_skeleton"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_72"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:vCornersRadius="3.2dp"
+            app:vSelectorNormalColor="@color/color_F9F9F9"
+            app:vSolidColor="@color/color_F9F9F9"
+            app:vUseSelector="true" />
+
+    </FrameLayout>
+
+    <com.jmbon.widget.Shadow.ShadowConstraintLayout
+        android:id="@+id/scl_card_skeleton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,2.176:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frame_state_skeleton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_radius="@dimen/dp_8">
+
+        <com.jmbon.widget.SuperView
+            android:id="@+id/textTitle_skeleton"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_16"
+            android:gravity="center"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/textSub_skeleton"
+            app:layout_constraintEnd_toStartOf="@id/imageState_skeleton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:vCornersRadius="4.8dp"
+            app:vSelectorNormalColor="@color/color_F9F9F9"
+            app:vSolidColor="@color/color_F9F9F9"
+            app:vUseSelector="true" />
+
+        <com.jmbon.widget.SuperView
+            android:id="@+id/textSub_skeleton"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_16"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_BFBFBF"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toTopOf="@+id/recycleTags_skeleton"
+            app:layout_constraintStart_toStartOf="@id/textTitle_skeleton"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle_skeleton"
+            app:vCornersRadius="@dimen/dp_4"
+            app:vSelectorNormalColor="@color/color_F9F9F9"
+            app:vSolidColor="@color/color_F9F9F9"
+            app:vUseSelector="true" />
+
+        <LinearLayout
+            android:id="@+id/recycleTags_skeleton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/dp_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageState_skeleton"
+            app:layout_constraintStart_toStartOf="@id/textTitle_skeleton"
+            app:layout_constraintTop_toBottomOf="@+id/textSub_skeleton">
+
+            <com.jmbon.widget.SuperView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:vCornersRadius="@dimen/dp_8"
+                app:vSelectorNormalColor="@color/color_F9F9F9"
+                app:vSolidColor="@color/color_F9F9F9"
+                app:vUseSelector="true" />
+
+            <com.jmbon.widget.SuperView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_16"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp_4"
+                android:gravity="center"
+                app:vCornersRadius="@dimen/dp_4"
+                app:vSelectorNormalColor="@color/color_F9F9F9"
+                app:vSolidColor="@color/color_F9F9F9"
+                app:vUseSelector="true" />
+        </LinearLayout>
+
+        <com.jmbon.widget.SuperView
+            android:id="@+id/imageState_skeleton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:vCornersRadius="@dimen/dp_4"
+            app:vSelectorNormalColor="@color/color_F9F9F9"
+            app:vSolidColor="@color/color_F9F9F9"
+            app:vUseSelector="true" />
+    </com.jmbon.widget.Shadow.ShadowConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

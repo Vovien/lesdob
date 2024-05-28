@@ -1,0 +1,58 @@
+<resources>
+    <string name="reason_hint">在这里填写问题原因</string>
+    <string name="reason_special_hint">在这里填写其他需求</string>
+    <string name="tube_test">试管自测</string>
+    <string name="please_choice_problem">请选择您的问题</string>
+    <string name="sperms_problem">准爸爸精子情况如何?</string>
+    <string name="uteruss_problem">准妈妈子宫情况如何?</string>
+    <string name="ovarys_problem">准妈妈卵巢情况如何?</string>
+    <string name="fallopians_problem">准妈妈输卵管情况如何?</string>
+    <string name="pregnant_num_problem">准妈妈曾经怀孕过多少次?</string>
+    <string name="pregnant_baby_num_problem">曾经生过多少个宝宝?</string>
+    <string name="pregnant_tube_num_problem">已经尝试过多少次试管?</string>
+    <string name="doctor_tube_type_problem">医生末次为您们拟定的试管类型是?</string>
+    <string name="doctor_tube_method_problem">医生末次为您们拟定的促排方案是?</string>
+    <string name="tube_user_city_problem">您所在城市是?</string>
+    <string name="tube_user_try_problem">您是否有意愿尝试试管婴儿助孕?</string>
+    <string name="tube_user_try_tube_city_problem">您希望进行试管婴儿的城市?</string>
+    <string name="tube_user_try_tube_cost_problem">您的试管婴儿预算?</string>
+    <string name="tube_user_try_tube_cost_tips_problem">试管单次成功率有限，可能需要多次尝试，费用较难控制</string>
+    <string name="tube_special_problem">您是否有特别的试管需求（多选）</string>
+    <string name="choice_city">选择城市</string>
+    <string name="forecast_result">预测结果</string>
+    <string name="more_content">查看更多</string>
+
+
+    <string-array name="tube_want">
+        <item>有意愿</item>
+        <item>没有意愿</item>
+        <item>考虑中</item>
+    </string-array>
+    <string-array name="tube_want_city">
+        <item>省内</item>
+        <item>国内</item>
+        <item>海外</item>
+    </string-array>
+    <string-array name="tube_want_cost">
+        <item>5万以下</item>
+        <item>10万以下</item>
+        <item>20万以下</item>
+        <item>30万以下</item>
+        <item>30万以上</item>
+    </string-array>
+
+
+    <string name="pregnant_tips">孕期提醒</string>
+    <string name="jmbon_menses">姐妹经期</string>
+    <string name="food_wiki">能不能吃</string>
+    <string name="food_wiki_category">分类详情</string>
+
+    <array name="food_pregnancy_state">
+        <item>怀孕</item>
+        <item>月子</item>
+        <item>哺乳</item>
+        <item>婴幼儿</item>
+    </array>
+
+    <string name="top_search">热门搜索</string>
+</resources>

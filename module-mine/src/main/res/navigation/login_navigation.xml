@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@+id/navigation_sex">
+
+    <fragment
+        android:id="@+id/navigation_sex"
+        android:name="com.tubewiki.mine.view.login.fragment.SexSelectionFragment"
+        android:label="选择性别"
+        tools:layout="@layout/fragment_sex_selection" />
+
+    <fragment
+        android:id="@+id/navigation_pregnancy"
+        android:name="com.tubewiki.mine.view.login.fragment.PregnancyStateFragment"
+        android:label="状态选择"
+        tools:layout="@layout/fragment_pregnancy_state" />
+
+    <fragment
+        android:id="@+id/navigation_city"
+        android:name="com.tubewiki.mine.view.login.fragment.CitySelectionFragment"
+        android:label="城市选择"
+        tools:layout="@layout/fragment_city_selection" />
+</navigation>

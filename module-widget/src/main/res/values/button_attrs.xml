@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="JmbonButton">
+        <attr name="jGravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+
+        <attr name="jShapeType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+
+        <attr name="jSolidColor" format="color" />
+
+        <attr name="jSelectorPressedColor" format="color" />
+        <attr name="jSelectorDisableColor" format="color" />
+        <attr name="jSelectorNormalColor" format="color" />
+
+        <attr name="jCornersRadius" format="dimension" />
+
+        <attr name="jCornersTopLeftRadius" format="dimension" />
+        <attr name="jCornersTopRightRadius" format="dimension" />
+        <attr name="jCornersBottomLeftRadius" format="dimension" />
+        <attr name="jCornersBottomRightRadius" format="dimension" />
+
+        <attr name="jStrokeWidth" format="dimension" />
+        <attr name="jStrokeDashWidth" format="dimension" />
+        <attr name="jStrokeDashGap" format="dimension" />
+        <attr name="jStrokeColor" format="color" />
+        <attr name="jStrokePressedColor" format="color" />
+        <attr name="jStrokeDisableColor" format="color" />
+
+
+        <attr name="jSizeWidth" format="dimension" />
+        <attr name="jSizeHeight" format="dimension" />
+
+        <attr name="jGradientAngle" format="float" />
+        <attr name="jGradientCenterX" format="dimension" />
+        <attr name="jGradientCenterY" format="dimension" />
+        <attr name="jGradientGradientRadius" format="dimension" />
+        <attr name="jGradientStartColor" format="color" />
+        <attr name="jGradientCenterColor" format="color" />
+        <attr name="jGradientEndColor" format="color" />
+        <attr name="jGradientUseLevel" format="boolean" />
+
+        <attr name="jDrawableTop" format="reference|color" />
+        <!-- The drawable to be drawn below the text. -->
+        <attr name="jDrawableBottom" format="reference|color" />
+        <!-- The drawable to be drawn to the left of the text. -->
+        <attr name="jDrawableLeft" format="reference|color" />
+        <!-- The drawable to be drawn to the right of the text. -->
+        <attr name="jDrawableRight" format="reference|color" />
+        <!-- The drawable to be drawn to the start of the text. -->
+        <attr name="jDrawableStart" format="reference|color" />
+        <!-- The drawable to be drawn to the end of the text. -->
+        <attr name="jDrawableEnd" format="reference|color" />
+        <!-- The padding between the drawables and the text. -->
+        <attr name="jDrawablePadding" format="dimension" />
+
+        <attr name="jUseSelector" format="boolean" />
+
+        <attr name="jGradientType" format="enum">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+
+
+        <attr name="android:layout_height" />
+        <attr name="android:text" />
+        <attr name="android:enabled" />
+
+        <attr name="jLoadingColorType" format="enum">
+            <enum name="white" value="1" />
+            <enum name="black" value="2" />
+            <enum name="green" value="3" />
+        </attr>
+
+        <attr name="jButtonStyle" format="enum">
+            <enum name="green_full" value="1" />
+            <enum name="black_border" value="2" />
+            <enum name="green_border" value="3" />
+            <enum name="red_full" value="4" />
+            <enum name="bar_right" value="5" />
+            <enum name="gray_border" value="6" />
+        </attr>
+        <attr name="jShowLoading" format="boolean" />
+        <attr name="jShowLoadingWhenClick" format="boolean" />
+        <attr name="jOnlyLoginToModifyState" format="boolean" />
+        <attr name="jSelectText" format="string" />
+        <attr name="jDisableText" format="string" />
+    </declare-styleable>
+
+</resources>

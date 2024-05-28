@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:layout_marginBottom="@dimen/dp_22"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_article_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:ellipsize="end"
+        android:lineHeight="@dimen/dp_22"
+        android:maxLines="3"
+        android:minLines="3"
+        tools:text="你知道吗，48岁并非绝经的最佳年龄48岁并非绝经的最佳年龄，但却是正常的绝经年龄"
+        android:textColor="#262626"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/image_article_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image_article_bg"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_90"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_article_title" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        app:layout_constraintRight_toLeftOf="@id/image_article_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp_16"
+        app:layout_constraintLeft_toLeftOf="@id/text_article_title"
+        app:layout_constraintBottom_toBottomOf="@+id/image_article_bg">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020-10-8"
+            android:textColor="@color/color_black_04"
+            android:textSize="@dimen/sp_12" />
+
+
+
+        <TextView
+            android:id="@+id/text_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black_04"
+            tools:text="111 赞"
+            android:layout_toLeftOf="@+id/text_comments"
+            android:layout_marginRight="@dimen/dp_12"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="・"
+            android:layout_toLeftOf="@id/text_comments"
+            android:textColor="@color/color_black_04"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/text_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="133 评论"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_black_04"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_1"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:background="@color/colorF9F9F9"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+</LinearLayout>

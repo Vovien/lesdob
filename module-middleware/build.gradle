@@ -1,0 +1,197 @@
+apply {
+    from("$rootDir/module-build.gradle")
+}
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        consumerProguardFiles "consumer-rules.pro"
+        buildConfigField("String", "AUTH_SECRET", AUTH_SECRET)
+        buildConfigField("String", "UMENG_API_KEY", umeng_api_key)
+        buildConfigField("String", "HOSPITAL_DOCTOR_ID", mini_program_hospital_doctor_id)
+        buildConfigField("String", "MENSES_ID", menses_id)
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi-v7a'
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField("String", "H5_URL", debug_h5)
+            buildConfigField("String", "H5_SHARE", share_debug_host)
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        pre_relesae {
+            buildConfigField("String", "H5_URL", debug_h5)
+            buildConfigField("String", "H5_SHARE", share_debug_host)
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField("String", "H5_URL", release_h5)
+            buildConfigField("String", "H5_SHARE", share_release_host)
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        bit32_release {
+            buildConfigField("String", "H5_URL", release_h5)
+            buildConfigField("String", "H5_SHARE", share_release_host)
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    kapt {
+        arguments {
+            arg("AROUTER_MODULE_NAME", project.getName())
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+dependencies {
+    kapt rootProject.ext.dependencies["arouter_compiler"]
+
+    api project(path: ':MVVMFast')
+    api project(path: ':module-widget')
+    // 阿里一键登录
+    api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+//    api(name: 'phoneNumber-L-AuthSDK-2.12.1', ext: 'aar')
+//    api(name: 'phoneNumber-L-AuthSDK-2.12.3', ext: 'aar')
+//    api(name: 'crashshield-2.1.2-release', ext: 'aar')
+//    api(name: 'logger-2.1.2-release', ext: 'aar')
+//    api(name: 'main-2.1.2-release', ext: 'aar')
+//    api(name: 'skeleton-release', ext: 'aar')
+//    api(name: 'oaid_sdk_1.1.0', ext: 'aar')
+
+
+    //腾讯推送发tpns
+    api 'com.tencent.jg:jg:1.1'
+    api 'com.tencent.tpns:tpns:1.3.5.0-release'
+
+    // tpns推送 离线
+    // 小米
+    implementation "com.tencent.tpns:xiaomi:1.3.5.0-release"
+    // 魅族
+    implementation "com.tencent.tpns:meizu:1.3.5.0-release"
+    // OPPO
+    implementation "com.tencent.tpns:oppo:1.3.5.0-release"
+    // vivo
+    implementation "com.tencent.tpns:vivo:1.3.5.0-release"
+    // 华为
+    implementation 'com.tencent.tpns:huawei:1.3.5.0-release'
+    implementation 'com.huawei.hms:push:6.11.0.300'
+
+    implementation 'commons-codec:commons-codec:1.15'
+
+
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-beta01'
+
+    // 统计
+    //api 'com.umeng.umsdk:apm:1.4.1'
+    api 'com.umeng.umsdk:common:9.5.0'// 必选
+    api 'com.umeng.umsdk:asms:1.6.3'// 必选
+    api 'com.umeng.umsdk:apm:1.6.4' // 错误分析升级为独立SDK，看crash数据请一定集
+
+    api 'com.umeng.umsdk:link:1.2.0'//集成智能超链SDK，必选
+
+    // Indicator
+    api 'com.github.hackware1993:MagicIndicator:1.7.0'
+
+    // 滚动组件
+    api 'com.github.gzu-liyujiang.AndroidPicker:WheelView:4.1.11'
+
+    // 阴影组件
+    api 'com.github.Liberuman:ShadowDrawable:0.1'
+
+//    api  'com.umeng.umsdk:share-core:7.1.5'//集成分享SDK，可选，可统计分享次数和分享回流次数
+    api 'com.github.fondesa:recycler-view-divider:3.5.0'
+
+    kapt rootProject.ext.dependencies["room-compiler"]
+    kapt rootProject.ext.dependencies["rxhttp-compiler"]
+    debugImplementation("com.github.chuckerteam.chucker:library:3.5.2") {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    pre_relesaeImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2") {
+        exclude group: 'com.squareup.okhttp3'
+    }
+
+    bit32_releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2") {
+        exclude group: 'com.squareup.okhttp3'
+    }
+
+    releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2") {
+        exclude group: 'com.squareup.okhttp3'
+    }
+
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0'
+    implementation rootProject.ext.androidx["annotation"]
+    api('androidx.palette:palette-ktx:1.0.0') {
+        exclude module: 'recyclerview'
+        exclude module: 'annotation'
+        exclude module: 'appcompat'
+        exclude module: 'material'
+    }
+
+    //添加对VasDolly helper类库的依赖
+    api 'com.leon.channel:helper:2.0.3'
+    // 阿里云点播上传
+    api 'com.aliyun.video.android:upload:1.6.5'
+
+}
+
+
+MobSDK {
+    appKey "28aa50d979349"
+    appSecret "38de8ab0c8ff2af8678a0ea421639eee"
+    spEdition "fp"
+    ShareSDK {
+        devInfo {
+            Wechat {
+                appId "wx3dca91f34e5559d9"
+                appSecret "4b9671170e0889362955c51d0676d704"
+                userName "gh_a1937d8ca562"
+                withShareTicket true
+                miniprogramType 2
+            }
+            QQ {
+                appId "101952777"
+                appKey "b0c264988b77390884ae5b7a2109cd12"
+            }
+            SinaWeibo {
+                appKey "1903304655"
+                appSecret "5c5cec7cf4d32127ab1dcd0e62dc364e"
+                callbackUri "https://www.jmbon.com/account/openid/weibo/bind/"
+            }
+            WechatMoments {
+                appId "wx3dca91f34e5559d9"
+                appSecret "4b9671170e0889362955c51d0676d704"
+            }
+            WechatFavorite {
+                appId "wx3dca91f34e5559d9"
+                appSecret "4b9671170e0889362955c51d0676d704"
+            }
+        }
+    }
+}

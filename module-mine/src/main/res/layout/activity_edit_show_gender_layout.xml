@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_by_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_93"
+        app:sBottomDividerLineMarginLR="@dimen/dp_20"
+        app:sCenterSpaceHeight="@dimen/dp_2"
+        app:sDividerLineColor="@color/white_color_line"
+        app:sDividerLineHeight="@dimen/dp_1"
+        app:sLeftBottomTextColor="@color/color_7F7F7F"
+        app:sLeftBottomTextSize="@dimen/sp_12"
+        app:sLeftBottomTextString="@string/displayed_on_home_page_my_gender"
+        app:sLeftTopTextColor="@color/color_262626"
+        app:sLeftTopTextSize="@dimen/sp_17"
+        app:sLeftTopTextString="@string/display"
+        android:theme="@style/MySwitch"
+        app:sLeftViewGravity="left_center"
+        app:sLeftViewMarginLeft="@dimen/dp_20"
+        app:sRightSwitchMarginRight="@dimen/dp_20"
+        app:sRightViewType="switchBtn"
+        app:sSwitchIsChecked="true"
+        app:sUseRipple="false" />
+</FrameLayout>

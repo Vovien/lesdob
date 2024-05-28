@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cp_city_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/cp_overlay"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cp_overlay_bg"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+    <!--右侧字母导航-->
+    <com.tubewiki.mine.view.city.SideIndexBar
+        android:id="@+id/cp_side_index_bar"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

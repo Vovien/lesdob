@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sl_float_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.jmbon.widget.Shadow.ShadowFrameLayout
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_margin="@dimen/dp_8"
+        android:background="#F2FFFFFF"
+        android:padding="@dimen/dp_7"
+        app:shadow_radius="@dimen/dp_28"
+        app:shadow_shadowAlpha="0.8"
+        app:shadow_shadowColor="#000000"
+        app:shadow_shadowElevation="@dimen/dp_6">
+
+        <ImageView
+            android:id="@+id/tvOpenMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_float_icon"
+            android:textColor="@color/white" />
+
+    </com.jmbon.widget.Shadow.ShadowFrameLayout>
+</FrameLayout>

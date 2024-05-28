@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:background="@color/white"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_16"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shadow_radius="@dimen/dp_8">
+
+    <TextView
+        android:id="@+id/textDraft"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_71"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center_horizontal"
+        android:text="@string/mine_draft_box"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/icon_me_draft_box"
+        app:layout_constraintEnd_toStartOf="@+id/textCollect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:drawableTop="@drawable/icon_me_draft_box"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textCollect"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_71"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center_horizontal"
+        android:text="@string/home_collection"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/icon_me_collection"
+        app:layout_constraintEnd_toStartOf="@+id/textWallet"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textDraft"
+        tools:drawableTop="@drawable/icon_me_collection"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textWallet"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_71"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center_horizontal"
+        android:text="@string/wallet"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/main_me_bullet_icon"
+        app:layout_constraintEnd_toStartOf="@+id/textJuanpizk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textCollect"
+        tools:drawableTop="@drawable/main_me_bullet_icon"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/textJuanpizk"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_71"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center_horizontal"
+        android:text="@string/mine_rebate"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/icon_me_rebate"
+        app:layout_constraintEnd_toStartOf="@+id/textCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textWallet"
+        tools:drawableTop="@drawable/icon_me_rebate"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:id="@+id/textCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_71"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textJuanpizk"
+        tools:drawableTop="@drawable/icon_me_circle">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:lottie_autoPlay="true"
+            app:lottie_cacheComposition="true"
+            app:lottie_enableMergePathsForKitKatAndAbove="false"
+            app:lottie_fileName="lottie/quanziicon.json"
+            app:lottie_loop="true"
+            app:lottie_renderMode="hardware" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_4"
+            android:gravity="center_horizontal"
+            android:text="@string/my_circle"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvCountNum"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:background="@drawable/message_point_bg_white_border"
+        android:gravity="center"
+        android:minWidth="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingEnd="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_11"
+        android:visibility="gone"
+        app:layout_constraintCircle="@id/textCircle"
+        app:layout_constraintCircleAngle="40"
+        app:layout_constraintCircleRadius="@dimen/dp_30"
+        tools:text="99" />
+
+</com.jmbon.widget.Shadow.ShadowConstraintLayout>

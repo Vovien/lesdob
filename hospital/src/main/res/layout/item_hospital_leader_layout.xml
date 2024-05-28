@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jmbon.widget.Shadow.ShadowConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_16"
+    android:background="@drawable/bg_border_stoke_f9_white_bg"
+    android:padding="@dimen/dp_12"
+    app:shadow_radius="@dimen/dp_8"
+    app:shadow_shadowAlpha="0.2"
+    app:shadow_shadowColor="#000000"
+    app:shadow_shadowElevation="@dimen/dp_8">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/dp_86"
+        android:layout_height="@dimen/dp_86"
+        android:src="@drawable/icon_tube_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="张抒扬张抒扬扬张抒扬"
+        android:textColor="#ff262626"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_cover" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:text="职务与职称"
+        android:textColor="#ff7f7f7f"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_office"
+        app:layout_constraintStart_toStartOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_office"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="院长、党委常委、主任医师、…"
+        android:textColor="#ff262626"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:src="@drawable/icon_hospital_manager_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</com.jmbon.widget.Shadow.ShadowConstraintLayout>

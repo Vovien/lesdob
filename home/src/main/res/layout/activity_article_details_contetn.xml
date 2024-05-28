@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_32"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_back_black" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:alpha="0"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_collect"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/content"
+        layout="@layout/include_article_details" />
+</LinearLayout>
+
+
+
+
+
